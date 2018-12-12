@@ -1,0 +1,4 @@
+#github "Alamofire/Alamofire"
+#github "SwiftyJSON/SwiftyJSON"
+#github "nvzqz/FileKit" "v5.1.0"
+git "/Users/hai/workspaces/FloUniversal" "core"

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>11348411501-i53152uf92aell8n3t88bofe2p5m2mkf.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.11348411501-i53152uf92aell8n3t88bofe2p5m2mkf</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.floware.universalflo.dev</string>
+	<key>AUTHORIZEURI</key>
+	<string>https://accounts.google.com/o/oauth2/v2/auth</string>
+	<key>TOKENURI</key>
+	<string>https://www.googleapis.com/oauth2/v4/token</string>
+	<key>SCOPES</key>
+	<array>
+		<string>https://www.googleapis.com/auth/calendar</string>
+		<string>https://mail.google.com/</string>
+		<string>profile</string>
+		<string>email</string>
+	</array>
+	<key>DRIVESCOPES</key>
+	<array>
+		<string>https://www.googleapis.com/auth/drive</string>
+		<string>https://www.googleapis.com/auth/drive.file</string>
+		<string>https://www.googleapis.com/auth/plus.me</string>
+	</array>
+	<key>ISSUER</key>
+	<string>https://accounts.google.com</string>
+</dict>
+</plist>

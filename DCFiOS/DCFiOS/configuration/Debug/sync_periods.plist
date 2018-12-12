@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>valueShow</key>
+		<string>1</string>
+		<key>value</key>
+		<string>30</string>
+		<key>title</key>
+		<string>Every 30 seconds</string>
+		<key>rawValue</key>
+		<string>30</string>
+		<key>titleSetting</key>
+		<string>30 seconds</string>
+	</dict>
+	<dict>
+		<key>valueShow</key>
+		<string>1</string>
+		<key>value</key>
+		<string>60</string>
+		<key>title</key>
+		<string>Every 1 min</string>
+		<key>rawValue</key>
+		<string>60</string>
+		<key>titleSetting</key>
+		<string>1 min</string>
+	</dict>
+	<dict>
+		<key>valueShow</key>
+		<string>5</string>
+		<key>value</key>
+		<string>300</string>
+		<key>title</key>
+		<string>Every 5 mins</string>
+		<key>rawValue</key>
+		<string>300</string>
+		<key>titleSetting</key>
+		<string>5 mins</string>
+	</dict>
+	<dict>
+		<key>valueShow</key>
+		<string>10</string>
+		<key>value</key>
+		<string>600</string>
+		<key>title</key>
+		<string>Every 10 mins</string>
+		<key>rawValue</key>
+		<string>600</string>
+		<key>titleSetting</key>
+		<string>10 mins</string>
+	</dict>
+	<dict>
+		<key>valueShow</key>
+		<string>30</string>
+		<key>value</key>
+		<string>1800</string>
+		<key>title</key>
+		<string>Every 30 mins</string>
+		<key>rawValue</key>
+		<string>1800</string>
+		<key>titleSetting</key>
+		<string>30 mins</string>
+	</dict>
+</array>
+</plist>
