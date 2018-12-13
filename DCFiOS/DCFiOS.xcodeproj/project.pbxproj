@@ -448,6 +448,7 @@
 				"$(SRCROOT)/Carthage/Build/iOS/FloRest.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/CoreFlo.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/FileKit.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/FloObjC.framework",
 			);
 			outputPaths = (
 			);
