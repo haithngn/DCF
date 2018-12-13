@@ -19,8 +19,6 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    FloConfigurations * config = [Dependences configurations];
-    NSLog(@"%@", config);
     
     return YES;
 }

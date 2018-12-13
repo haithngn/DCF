@@ -6,5 +6,10 @@
 #import <Foundation/Foundation.h>
 #import "AuthorizationApi.h"
 
+@class FloAuthenticationApi;
+
 @interface AuthorizationApiImpl : NSObject <AuthorizationApi>
+        
+- (instancetype)initWithApi:(FloAuthenticationApi *)api;
+
 @end

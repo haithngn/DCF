@@ -66,7 +66,7 @@
 
 - (NSObject <AuthorizationApi> *)authorizationApi {
     if (_authorizationApi == nil) {
-        _authorizationApi = [[AuthorizationApiImpl alloc] init];
+        _authorizationApi = [[AuthorizationApiImpl alloc] initWithApi:[[FloAuthenticationApi alloc] init] ];
     }
     return _authorizationApi;
 }
