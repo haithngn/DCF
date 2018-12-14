@@ -43,7 +43,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
-                                    <action selector="typingUsername:" destination="e9x-fr-rAF" eventType="editingDidEnd" id="HIX-TQ-FvS"/>
+                                    <action selector="typingUsername:" destination="e9x-fr-rAF" eventType="editingChanged" id="hVQ-vs-ZjV"/>
                                 </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1Dx-1M-OA7">
@@ -56,7 +56,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                 <connections>
-                                    <action selector="typingPassword:" destination="e9x-fr-rAF" eventType="editingDidEnd" id="6xk-aR-FTq"/>
+                                    <action selector="typingPassword:" destination="e9x-fr-rAF" eventType="editingChanged" id="8aS-fL-0X8"/>
                                 </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dkI-UY-lc7">

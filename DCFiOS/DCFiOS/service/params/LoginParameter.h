@@ -5,7 +5,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface LoginParams : NSObject
+@interface LoginParameter : NSObject
 
 @property (nonatomic, readonly) NSString * username;
 @property (nonatomic, readonly) NSString * password;

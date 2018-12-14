@@ -14,7 +14,7 @@
 		192904D832E27321F5841F23 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19290BA286E7C481ECD87B18 /* BaseViewController.m */; };
 		192905FC91ACEA6F0DAA98DA /* AuthorizationApiImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 192906676042109A23B629A1 /* AuthorizationApiImpl.m */; };
 		1929069AC172E74B6C5940D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19290EB1C47F136DC62E39B6 /* LaunchScreen.storyboard */; };
-		1929076161602B6E5EE4EC90 /* LoginParams.m in Sources */ = {isa = PBXBuildFile; fileRef = 192909191B5A628A14CCC6F8 /* LoginParams.m */; };
+		1929076161602B6E5EE4EC90 /* LoginParameter.m in Sources */ = {isa = PBXBuildFile; fileRef = 192909191B5A628A14CCC6F8 /* LoginParameter.m */; };
 		192908717A208E7A09E856AB /* AuthorizeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19290852D551E316C96F4FB9 /* AuthorizeViewController.m */; };
 		192908B1E6C88579DB2D4EA7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1929043FCBB54463F393FE9A /* AppDelegate.m */; };
 		19290B985A65E3DD8D3EBCA1 /* FloUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 19290D59ED5BA6084956CC56 /* FloUser.m */; };
@@ -22,6 +22,7 @@
 		19290C8C974CB63F22ECB67B /* BootstrapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 192904D6CC936190361C4899 /* BootstrapViewController.m */; };
 		19290D14E4A3BEBE41108330 /* AuthorizeViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 192909F28EAD57D1B30ED394 /* AuthorizeViewModel.m */; };
 		19290FBA8F50A133694786DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1929019C928AB3E629798E87 /* Assets.xcassets */; };
+		2708F94E21C35F3B001D7D90 /* FloObjC.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2708F94D21C35F3A001D7D90 /* FloObjC.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		27C16DEA21C0C69400E9ADA3 /* FileKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 27C16DE421C0C69200E9ADA3 /* FileKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		27C16DEC21C0C69400E9ADA3 /* FloRest.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 27C16DE521C0C69300E9ADA3 /* FloRest.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		27C16DEE21C0C69400E9ADA3 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 27C16DE621C0C69300E9ADA3 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -41,6 +42,7 @@
 				27C16DEA21C0C69400E9ADA3 /* FileKit.framework in Embed Frameworks */,
 				27C16DF021C0C69400E9ADA3 /* CoreFlo.framework in Embed Frameworks */,
 				27C16DF221C0C69400E9ADA3 /* SwiftyJSON.framework in Embed Frameworks */,
+				2708F94E21C35F3B001D7D90 /* FloObjC.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -66,11 +68,11 @@
 		1929089C49695F2E4F3B11C4 /* BootstrapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BootstrapViewController.h; sourceTree = "<group>"; };
 		192909097E1C3EE4D7DD4AA4 /* UserService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserService.h; sourceTree = "<group>"; };
 		192909125D2135DAC65CFEB0 /* AuthorizationApiImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthorizationApiImpl.h; sourceTree = "<group>"; };
-		192909191B5A628A14CCC6F8 /* LoginParams.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginParams.m; sourceTree = "<group>"; };
+		192909191B5A628A14CCC6F8 /* LoginParameter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginParameter.m; sourceTree = "<group>"; };
 		192909F28EAD57D1B30ED394 /* AuthorizeViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuthorizeViewModel.m; sourceTree = "<group>"; };
 		19290A470AA7A684E32CF0B1 /* Configurations.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Configurations.plist; sourceTree = "<group>"; };
 		19290BA286E7C481ECD87B18 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
-		19290C1567A3A64441114001 /* LoginParams.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginParams.h; sourceTree = "<group>"; };
+		19290C1567A3A64441114001 /* LoginParameter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginParameter.h; sourceTree = "<group>"; };
 		19290D59ED5BA6084956CC56 /* FloUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FloUser.m; sourceTree = "<group>"; };
 		19290D7CE6CE2B858A675151 /* Configurations.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Configurations.plist; sourceTree = "<group>"; };
 		19290DFB8C17445C4BA325E2 /* Dependences.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dependences.m; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 		19290FADBBF7CC43C3A8F2E1 /* UserServiceImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserServiceImpl.m; sourceTree = "<group>"; };
 		19290FE4331E660C19DE20F4 /* AuthorizeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthorizeViewController.h; sourceTree = "<group>"; };
 		19290FED0D1016CEE8981AC0 /* AuthorizationApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthorizationApi.h; sourceTree = "<group>"; };
+		2708F94D21C35F3A001D7D90 /* FloObjC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FloObjC.framework; path = Carthage/Build/iOS/FloObjC.framework; sourceTree = "<group>"; };
 		276F084321C0F1B400C65405 /* sync_periods.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = sync_periods.plist; sourceTree = "<group>"; };
 		276F084421C0F1B400C65405 /* google_app_oauth.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = google_app_oauth.plist; sourceTree = "<group>"; };
 		276F084521C0F1B400C65405 /* caldav_configurations.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = caldav_configurations.plist; sourceTree = "<group>"; };
@@ -254,8 +257,8 @@
 		19290C2DA1CF02A6E524C5EB /* params */ = {
 			isa = PBXGroup;
 			children = (
-				192909191B5A628A14CCC6F8 /* LoginParams.m */,
-				19290C1567A3A64441114001 /* LoginParams.h */,
+				192909191B5A628A14CCC6F8 /* LoginParameter.m */,
+				19290C1567A3A64441114001 /* LoginParameter.h */,
 			);
 			path = params;
 			sourceTree = "<group>";
@@ -363,6 +366,7 @@
 				27C16DE421C0C69200E9ADA3 /* FileKit.framework */,
 				27C16DE521C0C69300E9ADA3 /* FloRest.framework */,
 				27C16DE821C0C69300E9ADA3 /* SwiftyJSON.framework */,
+				2708F94D21C35F3A001D7D90 /* FloObjC.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -484,7 +488,7 @@
 				192900DC83919B6037E07302 /* Dependences.m in Sources */,
 				19290B985A65E3DD8D3EBCA1 /* FloUser.m in Sources */,
 				19290293F4078F0F6384C4A8 /* UserServiceImpl.m in Sources */,
-				1929076161602B6E5EE4EC90 /* LoginParams.m in Sources */,
+				1929076161602B6E5EE4EC90 /* LoginParameter.m in Sources */,
 				192905FC91ACEA6F0DAA98DA /* AuthorizationApiImpl.m in Sources */,
 				1929033B36342A4C1EE60776 /* BaseViewModel.m in Sources */,
 				19290D14E4A3BEBE41108330 /* AuthorizeViewModel.m in Sources */,

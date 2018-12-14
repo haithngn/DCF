@@ -28,8 +28,10 @@
 }
 
 
-- (void)signIn:(LoginParams *)params complete:(void (^)(FloUser *user, NSError *error))handler {
-    [_authorizeApi signIn: params complete: handler];
+- (void)signIn:(LoginParameter *)params complete:(void (^)(FloUser *user, NSError *error))handler {
+    [_authorizeApi signIn: params complete:^(FloUser * user, Credentials * credentials, NSError * error){
+        handler ? handler(user, error) : 0;
+    }];
 }
 
 @end

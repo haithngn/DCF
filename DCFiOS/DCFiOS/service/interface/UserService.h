@@ -6,11 +6,11 @@
 #import <Foundation/Foundation.h>
 
 @class FloUser;
-@class LoginParams;
+@class LoginParameter;
 
 @protocol UserService <NSObject>
 @required
 
-- (void)signIn:(LoginParams*) params complete:(void(^)(FloUser * user, NSError * error))handler;
+- (void)signIn:(LoginParameter*) params complete:(void(^)(FloUser * user, NSError * error))handler;
 
 @end

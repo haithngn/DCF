@@ -5,7 +5,7 @@
 
 #import "AuthorizeViewModel.h"
 #import "UserService.h"
-#import "LoginParams.h"
+#import "LoginParameter.h"
 
 @interface AuthorizeViewModel()
 
@@ -25,17 +25,19 @@
 #pragma mark -
 
 - (void)login {
-    LoginParams * params = [[LoginParams alloc] initWithUsername:_username password:_password];
+    LoginParameter * params = [[LoginParameter alloc] initWithUsername:_username password:_password];
     [_userService signIn:params complete:^(FloUser *user, NSError *error) {
         if (error != nil) {
             _onError != nil ? _onError(error.localizedDescription) : nil;
+        } else {
+            NSLog(@"User %@", user);
         }
     }];
 }
 
 #pragma mark - Constructors
 
-- (instancetype)initWithUserService:(NSObject *)userService {
+- (instancetype)initWithUserService:(NSObject <UserService>*)userService {
     self = [super init];
     if (self) {
         self.userService = userService;

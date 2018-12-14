@@ -3,10 +3,10 @@
 // Copyright (c) 2018 Hai Nguyen. All rights reserved.
 //
 
-#import "LoginParams.h"
+#import "LoginParameter.h"
 
 
-@implementation LoginParams {
+@implementation LoginParameter {
 
 }
 - (instancetype)initWithUsername:(NSString *)username password:(NSString *)password {

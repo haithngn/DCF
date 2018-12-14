@@ -6,13 +6,15 @@
 #import <Foundation/Foundation.h>
 #import "BaseViewModel.h"
 
+@protocol UserService;
+
 @interface AuthorizeViewModel : BaseViewModel
 
 @property (nonatomic, strong) NSString * username;
 @property (nonatomic, strong) NSString * password;
 @property (nonatomic, assign) void (^onError)(NSString * message);
 
-- (instancetype)initWithUserService:(NSObject *)userService;
+- (instancetype)initWithUserService:(NSObject <UserService> *)userService;
 - (void)login;
 
 @end

@@ -4,9 +4,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <FloObjC/FloObjC.h>
 #import "AuthorizationApi.h"
-
-@class FloAuthenticationApi;
 
 @interface AuthorizationApiImpl : NSObject <AuthorizationApi>
         
