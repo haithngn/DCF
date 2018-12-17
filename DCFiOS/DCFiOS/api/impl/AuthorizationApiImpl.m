@@ -39,7 +39,7 @@
                                               activatedPush:user.activatedPush quotaLimitBytes:user.quotaLimitBytes disabled:user.disabled];
         handler ? handler(floUser, credentials, nil) : 0;
     } failure: ^(id error){
-        handler ? handler(nil, nil, error) : 0;
+        handler!= nil ? handler(nil, nil, error) : 0;
     }];
 }
 

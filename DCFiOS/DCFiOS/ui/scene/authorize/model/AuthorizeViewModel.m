@@ -29,9 +29,10 @@ static const DDLogLevel ddLogLevel = DDLogLevelDebug | DDLogLevelVerbose;
 
 - (void)login {
     LoginParameter * params = [[LoginParameter alloc] initWithUsername:_username password:_password];
+    __weak AuthorizeViewModel *weakSelf = self;
     [_userService signIn:params complete:^(FloUser *user, NSError *error) {
         if (error != nil) {
-            _onError != nil ? _onError(error.localizedDescription) : nil;
+            weakSelf.onError != nil ? weakSelf.onError(@"") : nil;
         } else {
             DDLogVerbose(@"User %@", user);
         }

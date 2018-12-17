@@ -38,7 +38,8 @@
         if (user != nil) {
             [self announceAuthenticationChanged:user];
         }
-        handler ? handler(user, error) : 0;
+        NSLog(@"%@, %@", user, error);
+        handler != nil ? handler(user, error) : 0;
     }];
 }
 
