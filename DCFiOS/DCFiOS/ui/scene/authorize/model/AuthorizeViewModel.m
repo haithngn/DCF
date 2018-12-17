@@ -3,9 +3,12 @@
 // Copyright (c) 2018 Hai Nguyen. All rights reserved.
 //
 
+#import <CocoaLumberjack/CocoaLumberjack.h>
 #import "AuthorizeViewModel.h"
 #import "UserService.h"
 #import "LoginParameter.h"
+
+static const DDLogLevel ddLogLevel = DDLogLevelDebug | DDLogLevelVerbose;
 
 @interface AuthorizeViewModel()
 
@@ -30,7 +33,7 @@
         if (error != nil) {
             _onError != nil ? _onError(error.localizedDescription) : nil;
         } else {
-            NSLog(@"User %@", user);
+            DDLogVerbose(@"User %@", user);
         }
     }];
 }

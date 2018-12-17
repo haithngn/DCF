@@ -6,6 +6,7 @@
 #import <FloObjC/FloObjC.h>
 #import "FloUser.h"
 #import "LoginParameter.h"
+#import "BroadcastService.h"
 
 
 @implementation FloUser {

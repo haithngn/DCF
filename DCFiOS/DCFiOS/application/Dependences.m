@@ -4,17 +4,21 @@
 //
 
 #import <FloRest/FloRest.h>
+#import <FloObjC/FloObjC.h>
 #import "Dependences.h"
 #import "UserService.h"
 #import "UserServiceImpl.h"
 #import "AuthorizationApiImpl.h"
 #import "AuthorizationApi.h"
+#import "BroadcastService.h"
+#import "BroadcastServiceImpl.h"
 
 @interface Dependences ()
 
 @property (nonatomic, strong) FloConfigurations * config;
 @property (nonatomic, strong) NSObject <UserService> * userService;
 @property (nonatomic, strong) NSObject <AuthorizationApi> * authorizationApi;
+@property (nonatomic, strong) NSObject <BroadcastService> * broadcastService;
 
 @end
 
@@ -23,12 +27,13 @@
     NSObject <UserService> *_userService;
     NSObject <AuthorizationApi> *_authorizationApi;
     FloConfigurations *_config;
+    NSObject <BroadcastService> *_broadcastService;
 }
 
 @synthesize userService = _userService;
 @synthesize authorizationApi = _authorizationApi;
-
 @synthesize config = _config;
+@synthesize broadcastService = _broadcastService;
 
 + (instancetype)sharedInstance {
     static Dependences *sharedInstance = nil;
@@ -56,6 +61,10 @@
     return _config;
 }
 
++ (NSObject <BroadcastService> *)broadcastService {
+    return [Dependences sharedInstance].broadcastService;
+}
+
 - (NSObject <UserService> *)userService {
     if (_userService == nil) {
         _userService = [[UserServiceImpl alloc] initWithAuthorizeApi:self.authorizationApi];
@@ -69,6 +78,14 @@
         _authorizationApi = [[AuthorizationApiImpl alloc] initWithApi:[[FloAuthenticationApi alloc] init] ];
     }
     return _authorizationApi;
+}
+
+- (NSObject <BroadcastService> *)broadcastService {
+    if (_broadcastService == nil) {
+        _broadcastService = [[BroadcastServiceImpl alloc] initWithersUserService:self.userService];
+    }
+
+    return _broadcastService;
 }
 
 @end

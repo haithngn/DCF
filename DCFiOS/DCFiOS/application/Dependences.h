@@ -8,10 +8,12 @@
 
 @class FloConfigurations;
 @protocol UserService;
+@protocol BroadcastService;
 
 @interface Dependences : NSObject
 
 + (FloConfigurations*)configurations;
 + (NSObject <UserService>*) userService;
++ (NSObject <BroadcastService> *)broadcastService;
 
 @end

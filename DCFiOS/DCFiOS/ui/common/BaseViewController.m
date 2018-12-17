@@ -3,7 +3,10 @@
 // Copyright (c) 2018 Hai Nguyen. All rights reserved.
 //
 
+#import <CocoaLumberjack/CocoaLumberjack.h>
 #import "BaseViewController.h"
+
+static const DDLogLevel ddLogLevel = DDLogLevelDebug | DDLogLevelVerbose;
 
 @implementation BaseViewController {
 
@@ -21,6 +24,10 @@
                                             handler:^(UIAlertAction *action) {
                                                 confirmed ? confirmed : nil;
                                             }] ];
+}
+
+- (void)dealloc {
+    DDLogDebug(@"%@ dealocing....", THIS_FILE);
 }
 
 @end

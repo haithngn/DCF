@@ -4,14 +4,16 @@
 //
 
 #import "BaseViewModel.h"
+#import "DCFiOS-Bridging-Header.h"
 
+static const DDLogLevel ddLogLevel = DDLogLevelDebug | DDLogLevelVerbose;
 
 @implementation BaseViewModel {
 
 }
 
 - (void)dealloc {
-    NSLog(@"dealocing....");
+    DDLogDebug(@"%@ dealocing....", THIS_FILE);
 }
 
 

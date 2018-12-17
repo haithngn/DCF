@@ -8,9 +8,13 @@
 @class FloUser;
 @class LoginParameter;
 
+@protocol AuthenticationObserver;
+
 @protocol UserService <NSObject>
 @required
 
 - (void)signIn:(LoginParameter*) params complete:(void(^)(FloUser * user, NSError * error))handler;
+
+- (void)subscribeOnAuthentication:(NSObject <AuthenticationObserver> *)subscriber;
 
 @end
