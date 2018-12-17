@@ -92,10 +92,10 @@
             </objects>
             <point key="canvasLocation" x="586" y="69"/>
         </scene>
-        <!--Main View Controller-->
+        <!--Home View Controller-->
         <scene sceneID="Od9-am-W8T">
             <objects>
-                <viewController storyboardIdentifier="MainViewController" id="EQX-QR-wN6" customClass="MainViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeViewController" id="EQX-QR-wN6" customClass="HomeViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="SrB-nD-l2s"/>
                         <viewControllerLayoutGuide type="bottom" id="Ucq-Up-spN"/>
@@ -109,6 +109,41 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H7C-Nz-Kee" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1340" y="69"/>
+        </scene>
+        <!--Navigations View Controller-->
+        <scene sceneID="r27-j1-W8E">
+            <objects>
+                <viewController storyboardIdentifier="NavigationsViewController" id="Upr-3A-KJd" customClass="NavigationsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9BP-RC-MoQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="r9D-R4-uOc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fKc-hz-cOP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dmB-bE-bYS">
+                                <rect key="frame" x="107.5" y="617" width="160" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="WzH-vL-eCa"/>
+                                    <constraint firstAttribute="width" constant="160" id="fGp-FT-1qF"/>
+                                </constraints>
+                                <state key="normal" title="Sign Out"/>
+                                <connections>
+                                    <action selector="signOut:" destination="Upr-3A-KJd" eventType="touchUpInside" id="TYU-mw-xjd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="dmB-bE-bYS" firstAttribute="centerX" secondItem="fKc-hz-cOP" secondAttribute="centerX" id="2Ch-Se-iYm"/>
+                            <constraint firstAttribute="bottom" secondItem="dmB-bE-bYS" secondAttribute="bottom" constant="20" id="xfS-NH-Tdd"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9IR-QZ-94N" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2144.8000000000002" y="68.815592203898049"/>
         </scene>
     </scenes>
 </document>

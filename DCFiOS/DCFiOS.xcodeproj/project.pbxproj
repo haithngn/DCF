@@ -7,12 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		192900BF5A31B913C85A1D3D /* NavigationsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1929072574C0F371E91C830D /* NavigationsViewController.m */; };
 		192900DC83919B6037E07302 /* Dependences.m in Sources */ = {isa = PBXBuildFile; fileRef = 19290DFB8C17445C4BA325E2 /* Dependences.m */; };
 		1929017635BADDB3867A9161 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1929035CEF4DF27DDD33BC74 /* main.m */; };
 		19290293F4078F0F6384C4A8 /* UserServiceImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 19290FADBBF7CC43C3A8F2E1 /* UserServiceImpl.m */; };
 		1929033B36342A4C1EE60776 /* BaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 192906CB89D1E0C5CD9BA0C2 /* BaseViewModel.m */; };
+		192903A548AAE5F4686C80CE /* NavigationsViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1929012709CA9329FAE97A4F /* NavigationsViewModel.m */; };
 		192904D832E27321F5841F23 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19290BA286E7C481ECD87B18 /* BaseViewController.m */; };
 		192905FC91ACEA6F0DAA98DA /* AuthorizationApiImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 192906676042109A23B629A1 /* AuthorizationApiImpl.m */; };
+		19290685C3BBF9A21031D876 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 192906D2A36632976E27F7B0 /* HomeViewController.m */; };
 		1929069AC172E74B6C5940D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19290EB1C47F136DC62E39B6 /* LaunchScreen.storyboard */; };
 		19290755646258267AE3D56A /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19290B85C3FC5CCE3FCACF19 /* MainViewController.m */; };
 		1929076161602B6E5EE4EC90 /* LoginParameter.m in Sources */ = {isa = PBXBuildFile; fileRef = 192909191B5A628A14CCC6F8 /* LoginParameter.m */; };
@@ -33,6 +36,7 @@
 		27C16DEE21C0C69400E9ADA3 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 27C16DE621C0C69300E9ADA3 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		27C16DF021C0C69400E9ADA3 /* CoreFlo.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 27C16DE721C0C69300E9ADA3 /* CoreFlo.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		27C16DF221C0C69400E9ADA3 /* SwiftyJSON.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 27C16DE821C0C69300E9ADA3 /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		27D668BD21C7AA0B00E20109 /* LGSideMenuController.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 27D668BA21C7A9F400E20109 /* LGSideMenuController.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -45,6 +49,7 @@
 				27C16DEC21C0C69400E9ADA3 /* FloRest.framework in Embed Frameworks */,
 				27C16DEE21C0C69400E9ADA3 /* Alamofire.framework in Embed Frameworks */,
 				27C16DEA21C0C69400E9ADA3 /* FileKit.framework in Embed Frameworks */,
+				27D668BD21C7AA0B00E20109 /* LGSideMenuController.framework in Embed Frameworks */,
 				27C16DF021C0C69400E9ADA3 /* CoreFlo.framework in Embed Frameworks */,
 				27C16DF221C0C69400E9ADA3 /* SwiftyJSON.framework in Embed Frameworks */,
 				276DC45E21C78D26008AD49D /* CocoaLumberjack.framework in Embed Frameworks */,
@@ -56,6 +61,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1929012709CA9329FAE97A4F /* NavigationsViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationsViewModel.m; sourceTree = "<group>"; };
 		1929019C928AB3E629798E87 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		192901C01B4D8E928C793768 /* UserServiceImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserServiceImpl.h; sourceTree = "<group>"; };
 		192901FF68819C3EAD92511B /* BroadcastServiceImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BroadcastServiceImpl.m; sourceTree = "<group>"; };
@@ -72,17 +78,22 @@
 		19290677072AF6507938CEAB /* AuthorizeViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthorizeViewModel.h; sourceTree = "<group>"; };
 		192906805A0AE62B14A3D850 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		192906CB89D1E0C5CD9BA0C2 /* BaseViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewModel.m; sourceTree = "<group>"; };
+		192906D2A36632976E27F7B0 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		192906F8D84DC5F24BE65812 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		1929072574C0F371E91C830D /* NavigationsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationsViewController.m; sourceTree = "<group>"; };
 		19290852D551E316C96F4FB9 /* AuthorizeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuthorizeViewController.m; sourceTree = "<group>"; };
 		1929085A7A9CA2241F04121E /* BroadcastServiceImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BroadcastServiceImpl.h; sourceTree = "<group>"; };
 		1929087DBDC2C5400A9A2A65 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1929089C49695F2E4F3B11C4 /* BootstrapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BootstrapViewController.h; sourceTree = "<group>"; };
+		192908A46895AB82D010F8F9 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		192909097E1C3EE4D7DD4AA4 /* UserService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserService.h; sourceTree = "<group>"; };
 		192909125D2135DAC65CFEB0 /* AuthorizationApiImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthorizationApiImpl.h; sourceTree = "<group>"; };
 		192909191B5A628A14CCC6F8 /* LoginParameter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginParameter.m; sourceTree = "<group>"; };
 		192909F28EAD57D1B30ED394 /* AuthorizeViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuthorizeViewModel.m; sourceTree = "<group>"; };
 		19290A10D475BE49794ACAA7 /* BroadcastService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BroadcastService.h; sourceTree = "<group>"; };
+		19290A43B6464D0E9C16DECA /* NavigationsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationsViewController.h; sourceTree = "<group>"; };
 		19290A470AA7A684E32CF0B1 /* Configurations.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Configurations.plist; sourceTree = "<group>"; };
+		19290A70505C9E3AE813FE4D /* NavigationsViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationsViewModel.h; sourceTree = "<group>"; };
 		19290B1EF4BA5DE614CB85D1 /* BootstrapViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BootstrapViewModel.m; sourceTree = "<group>"; };
 		19290B85C3FC5CCE3FCACF19 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		19290BA286E7C481ECD87B18 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
@@ -117,6 +128,7 @@
 		27C16DE621C0C69300E9ADA3 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		27C16DE721C0C69300E9ADA3 /* CoreFlo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFlo.framework; path = Carthage/Build/iOS/CoreFlo.framework; sourceTree = "<group>"; };
 		27C16DE821C0C69300E9ADA3 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
+		27D668BA21C7A9F400E20109 /* LGSideMenuController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LGSideMenuController.framework; path = Carthage/Build/iOS/LGSideMenuController.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +158,15 @@
 				19290B441E12BEA163F4F063 /* model */,
 			);
 			path = authorize;
+			sourceTree = "<group>";
+		};
+		1929012D916E81FA41609984 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				1929012709CA9329FAE97A4F /* NavigationsViewModel.m */,
+				19290A70505C9E3AE813FE4D /* NavigationsViewModel.h */,
+			);
+			path = model;
 			sourceTree = "<group>";
 		};
 		1929047DEEC5C0201C6EE5A4 /* ui */ = {
@@ -221,6 +242,15 @@
 			path = Release;
 			sourceTree = "<group>";
 		};
+		1929078FEDD5A9233684CE38 /* navigations */ = {
+			isa = PBXGroup;
+			children = (
+				19290E30B8496F0A136AD0E4 /* view */,
+				1929012D916E81FA41609984 /* model */,
+			);
+			path = navigations;
+			sourceTree = "<group>";
+		};
 		1929079318C512CC7820FC19 /* storyboard */ = {
 			isa = PBXGroup;
 			children = (
@@ -232,6 +262,14 @@
 			path = storyboard;
 			sourceTree = "<group>";
 		};
+		192908E94588E417634A04A7 /* home */ = {
+			isa = PBXGroup;
+			children = (
+				19290A567F469DFC7416A8A8 /* view */,
+			);
+			path = home;
+			sourceTree = "<group>";
+		};
 		19290A4E12B582A91D295A0E /* model */ = {
 			isa = PBXGroup;
 			children = (
@@ -239,6 +277,15 @@
 				192902C9D4E32EFC61588E3E /* BootstrapViewModel.h */,
 			);
 			path = model;
+			sourceTree = "<group>";
+		};
+		19290A567F469DFC7416A8A8 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				192906D2A36632976E27F7B0 /* HomeViewController.m */,
+				192908A46895AB82D010F8F9 /* HomeViewController.h */,
+			);
+			path = view;
 			sourceTree = "<group>";
 		};
 		19290A5ECAF5986AA044C154 /* bootstrap */ = {
@@ -318,6 +365,15 @@
 			path = interface;
 			sourceTree = "<group>";
 		};
+		19290E30B8496F0A136AD0E4 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				1929072574C0F371E91C830D /* NavigationsViewController.m */,
+				19290A43B6464D0E9C16DECA /* NavigationsViewController.h */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
 		19290EC7504FBB2335CDBF64 /* model */ = {
 			isa = PBXGroup;
 			children = (
@@ -372,6 +428,8 @@
 				19290A5ECAF5986AA044C154 /* bootstrap */,
 				19290037D29AC68EF08710EE /* authorize */,
 				19290EEDFD3FC60CCABAD572 /* main */,
+				192908E94588E417634A04A7 /* home */,
+				1929078FEDD5A9233684CE38 /* navigations */,
 			);
 			path = scene;
 			sourceTree = "<group>";
@@ -416,6 +474,7 @@
 				27C16DE521C0C69300E9ADA3 /* FloRest.framework */,
 				27C16DE821C0C69300E9ADA3 /* SwiftyJSON.framework */,
 				2708F94D21C35F3A001D7D90 /* FloObjC.framework */,
+				27D668BA21C7A9F400E20109 /* LGSideMenuController.framework */,
 				276DC45B21C78D21008AD49D /* CocoaLumberjack.framework */,
 			);
 			name = Frameworks;
@@ -504,6 +563,7 @@
 				"$(SRCROOT)/Carthage/Build/iOS/FileKit.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/FloObjC.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/CocoaLumberjack.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/LGSideMenuController.framework",
 			);
 			outputPaths = (
 			);
@@ -547,6 +607,9 @@
 				19290948A8BEC10175086B52 /* BootstrapViewModel.m in Sources */,
 				192909F5C592B4A28B2DD0CF /* Storyboards.m in Sources */,
 				19290755646258267AE3D56A /* MainViewController.m in Sources */,
+				19290685C3BBF9A21031D876 /* HomeViewController.m in Sources */,
+				192900BF5A31B913C85A1D3D /* NavigationsViewController.m in Sources */,
+				192903A548AAE5F4686C80CE /* NavigationsViewModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

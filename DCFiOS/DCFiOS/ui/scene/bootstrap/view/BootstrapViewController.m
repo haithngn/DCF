@@ -45,7 +45,7 @@
 }
 
 - (void)navigateToMainScreen {
-    MainViewController * controller = [[Storyboards main] instantiateViewControllerWithIdentifier:@"MainViewController"];
+    MainViewController * controller = [[MainViewController alloc] init];
     self.viewControllers = @[controller];
 }
 

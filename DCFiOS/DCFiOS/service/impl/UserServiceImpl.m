@@ -42,6 +42,11 @@
     }];
 }
 
+- (void)logOut {
+    [self announceAuthenticationChanged:nil];
+}
+
+
 - (void)announceAuthenticationChanged:(FloUser *)user {
     [_authenticationSubscribers enumerateObjectsUsingBlock:^(NSObject <AuthenticationObserver> *subcribers, NSUInteger idx, BOOL *stop) {
         [subcribers onChange:user];

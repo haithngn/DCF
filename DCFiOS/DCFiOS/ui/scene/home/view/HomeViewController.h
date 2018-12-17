@@ -5,7 +5,7 @@
 
 #import <Foundation/Foundation.h>
 #import "BaseViewController.h"
-#import <LGSideMenuController/LGSideMenuController.h>
 
-@interface MainViewController : LGSideMenuController
+@interface HomeViewController : BaseViewController
+
 @end

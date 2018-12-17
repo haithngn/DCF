@@ -17,4 +17,5 @@
 
 - (void)subscribeOnAuthentication:(NSObject <AuthenticationObserver> *)subscriber;
 
+- (void)logOut;
 @end

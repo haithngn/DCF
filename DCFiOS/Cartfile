@@ -2,4 +2,6 @@
 #github "SwiftyJSON/SwiftyJSON"
 #github "nvzqz/FileKit" "v5.1.0"
 #git "/Users/hai/workspaces/FloUniversal" "core"
-github "CocoaLumberjack/CocoaLumberjack"
+#github "CocoaLumberjack/CocoaLumberjack"
+#github "sascha/DrawerController"
+github "Friend-LGA/LGSideMenuController"
