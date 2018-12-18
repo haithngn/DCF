@@ -9,11 +9,13 @@
 @class FloConfigurations;
 @protocol UserService;
 @protocol BroadcastService;
+@protocol CollectionService;
 
 @interface Dependences : NSObject
 
 + (FloConfigurations*)configurations;
 + (NSObject <UserService>*) userService;
 + (NSObject <BroadcastService> *)broadcastService;
++ (NSObject <CollectionService> *)collectionService;
 
 @end

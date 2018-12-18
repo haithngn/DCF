@@ -36,7 +36,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Pxo-jQ-Xhg">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="ios@123flo.com" borderStyle="roundedRect" placeholder="username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Pxo-jQ-Xhg">
                                 <rect key="frame" x="112.5" y="263.5" width="150" height="36"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -45,7 +45,7 @@
                                     <action selector="typingUsername:" destination="e9x-fr-rAF" eventType="editingChanged" id="hVQ-vs-ZjV"/>
                                 </connections>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1Dx-1M-OA7">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="111111" borderStyle="roundedRect" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1Dx-1M-OA7">
                                 <rect key="frame" x="112.5" y="315.5" width="150" height="36"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="36" id="Ate-1s-fAf"/>
@@ -144,6 +144,36 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9IR-QZ-94N" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2144.8000000000002" y="68.815592203898049"/>
+        </scene>
+        <!--Collections View Controller-->
+        <scene sceneID="FNa-e6-8gs">
+            <objects>
+                <viewController storyboardIdentifier="CollectionsViewController" id="dfD-Ng-oWJ" customClass="CollectionsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="oyX-EW-OA1"/>
+                        <viewControllerLayoutGuide type="bottom" id="SJh-3q-cw7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hqi-ZF-KGU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="8Dk-j9-ZG4">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="8Dk-j9-ZG4" firstAttribute="leading" secondItem="hqi-ZF-KGU" secondAttribute="leading" id="2pW-LO-W0B"/>
+                            <constraint firstItem="8Dk-j9-ZG4" firstAttribute="top" secondItem="hqi-ZF-KGU" secondAttribute="top" id="ACw-96-sfi"/>
+                            <constraint firstAttribute="trailing" secondItem="8Dk-j9-ZG4" secondAttribute="trailing" id="ie5-qA-WPo"/>
+                            <constraint firstAttribute="bottom" secondItem="8Dk-j9-ZG4" secondAttribute="bottom" id="oGx-Rc-ZY4"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5Vk-Pk-8Y4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3052" y="69"/>
         </scene>
     </scenes>
 </document>

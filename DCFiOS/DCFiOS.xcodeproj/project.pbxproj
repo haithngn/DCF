@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		192900BF5A31B913C85A1D3D /* NavigationsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1929072574C0F371E91C830D /* NavigationsViewController.m */; };
 		192900DC83919B6037E07302 /* Dependences.m in Sources */ = {isa = PBXBuildFile; fileRef = 19290DFB8C17445C4BA325E2 /* Dependences.m */; };
+		1929013B7441B938EE4F243D /* GetCollectionParams.m in Sources */ = {isa = PBXBuildFile; fileRef = 1929043B44BF10AD04F6C773 /* GetCollectionParams.m */; };
 		1929017635BADDB3867A9161 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1929035CEF4DF27DDD33BC74 /* main.m */; };
 		19290293F4078F0F6384C4A8 /* UserServiceImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 19290FADBBF7CC43C3A8F2E1 /* UserServiceImpl.m */; };
+		192902EB674333D27A4F555E /* CollectionServiceImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 19290D2AD8B003C1D91CF283 /* CollectionServiceImpl.m */; };
 		1929033B36342A4C1EE60776 /* BaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 192906CB89D1E0C5CD9BA0C2 /* BaseViewModel.m */; };
+		1929033EB6602BDB54A125FC /* CollectionsViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 192908DF4349F4AA043765C6 /* CollectionsViewModel.m */; };
 		192903A548AAE5F4686C80CE /* NavigationsViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1929012709CA9329FAE97A4F /* NavigationsViewModel.m */; };
 		192904D832E27321F5841F23 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19290BA286E7C481ECD87B18 /* BaseViewController.m */; };
+		19290594FFD14CF5E4CD6628 /* CollectionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19290CCB009A4BEA3B8F183B /* CollectionsViewController.m */; };
 		192905FC91ACEA6F0DAA98DA /* AuthorizationApiImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 192906676042109A23B629A1 /* AuthorizationApiImpl.m */; };
 		19290685C3BBF9A21031D876 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 192906D2A36632976E27F7B0 /* HomeViewController.m */; };
 		1929069AC172E74B6C5940D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19290EB1C47F136DC62E39B6 /* LaunchScreen.storyboard */; };
 		19290755646258267AE3D56A /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19290B85C3FC5CCE3FCACF19 /* MainViewController.m */; };
 		1929076161602B6E5EE4EC90 /* LoginParameter.m in Sources */ = {isa = PBXBuildFile; fileRef = 192909191B5A628A14CCC6F8 /* LoginParameter.m */; };
+		192908606C140C4DD6591D77 /* FloCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 19290FCF6F736A2614A35CEF /* FloCollection.m */; };
 		192908717A208E7A09E856AB /* AuthorizeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19290852D551E316C96F4FB9 /* AuthorizeViewController.m */; };
 		192908B1E6C88579DB2D4EA7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1929043FCBB54463F393FE9A /* AppDelegate.m */; };
 		19290948A8BEC10175086B52 /* BootstrapViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 19290B1EF4BA5DE614CB85D1 /* BootstrapViewModel.m */; };
 		192909F5C592B4A28B2DD0CF /* Storyboards.m in Sources */ = {isa = PBXBuildFile; fileRef = 19290E3E79EC4CF567FDC2D0 /* Storyboards.m */; };
 		19290B985A65E3DD8D3EBCA1 /* FloUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 19290D59ED5BA6084956CC56 /* FloUser.m */; };
+		19290B9E89EE54C81F41C927 /* CollectionApiImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 1929036EE4CD901191311020 /* CollectionApiImpl.m */; };
 		19290C5F476558826A7397AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 192906805A0AE62B14A3D850 /* Main.storyboard */; };
 		19290C8C974CB63F22ECB67B /* BootstrapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 192904D6CC936190361C4899 /* BootstrapViewController.m */; };
 		19290D14E4A3BEBE41108330 /* AuthorizeViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 192909F28EAD57D1B30ED394 /* AuthorizeViewModel.m */; };
@@ -61,6 +67,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		192900320C610E8E5A00E32F /* CollectionService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionService.h; sourceTree = "<group>"; };
 		1929012709CA9329FAE97A4F /* NavigationsViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationsViewModel.m; sourceTree = "<group>"; };
 		1929019C928AB3E629798E87 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		192901C01B4D8E928C793768 /* UserServiceImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserServiceImpl.h; sourceTree = "<group>"; };
@@ -69,6 +76,8 @@
 		192902C68348F1FAE14876FF /* Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
 		192902C9D4E32EFC61588E3E /* BootstrapViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BootstrapViewModel.h; sourceTree = "<group>"; };
 		1929035CEF4DF27DDD33BC74 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1929036EE4CD901191311020 /* CollectionApiImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionApiImpl.m; sourceTree = "<group>"; };
+		1929043B44BF10AD04F6C773 /* GetCollectionParams.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetCollectionParams.m; sourceTree = "<group>"; };
 		1929043E9E24EDEA379B46D8 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		1929043FCBB54463F393FE9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		192904D6CC936190361C4899 /* BootstrapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BootstrapViewController.m; sourceTree = "<group>"; };
@@ -81,11 +90,15 @@
 		192906D2A36632976E27F7B0 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		192906F8D84DC5F24BE65812 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		1929072574C0F371E91C830D /* NavigationsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationsViewController.m; sourceTree = "<group>"; };
+		19290730F17FA4FC791C50C1 /* FloCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FloCollection.h; sourceTree = "<group>"; };
+		192907605448ED698C33612A /* GetCollectionParams.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetCollectionParams.h; sourceTree = "<group>"; };
 		19290852D551E316C96F4FB9 /* AuthorizeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuthorizeViewController.m; sourceTree = "<group>"; };
 		1929085A7A9CA2241F04121E /* BroadcastServiceImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BroadcastServiceImpl.h; sourceTree = "<group>"; };
+		192908669F03D2A026B4A874 /* CollectionApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionApi.h; sourceTree = "<group>"; };
 		1929087DBDC2C5400A9A2A65 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1929089C49695F2E4F3B11C4 /* BootstrapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BootstrapViewController.h; sourceTree = "<group>"; };
 		192908A46895AB82D010F8F9 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		192908DF4349F4AA043765C6 /* CollectionsViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionsViewModel.m; sourceTree = "<group>"; };
 		192909097E1C3EE4D7DD4AA4 /* UserService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserService.h; sourceTree = "<group>"; };
 		192909125D2135DAC65CFEB0 /* AuthorizationApiImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthorizationApiImpl.h; sourceTree = "<group>"; };
 		192909191B5A628A14CCC6F8 /* LoginParameter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginParameter.m; sourceTree = "<group>"; };
@@ -98,6 +111,10 @@
 		19290B85C3FC5CCE3FCACF19 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		19290BA286E7C481ECD87B18 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		19290C1567A3A64441114001 /* LoginParameter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginParameter.h; sourceTree = "<group>"; };
+		19290C2BDBED06E50D0A884E /* CollectionApiImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionApiImpl.h; sourceTree = "<group>"; };
+		19290CCB009A4BEA3B8F183B /* CollectionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionsViewController.m; sourceTree = "<group>"; };
+		19290D11FA69CD7D122C7C0C /* CollectionServiceImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionServiceImpl.h; sourceTree = "<group>"; };
+		19290D2AD8B003C1D91CF283 /* CollectionServiceImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionServiceImpl.m; sourceTree = "<group>"; };
 		19290D59ED5BA6084956CC56 /* FloUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FloUser.m; sourceTree = "<group>"; };
 		19290D7CE6CE2B858A675151 /* Configurations.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Configurations.plist; sourceTree = "<group>"; };
 		19290DFB8C17445C4BA325E2 /* Dependences.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dependences.m; sourceTree = "<group>"; };
@@ -105,8 +122,11 @@
 		19290EA3CEA86E9687AF9AA2 /* Dependences.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dependences.h; sourceTree = "<group>"; };
 		19290EB1C47F136DC62E39B6 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		19290EB735D536544434AC55 /* BaseViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewModel.h; sourceTree = "<group>"; };
+		19290EBA92119ABCCA3CE660 /* CollectionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionsViewController.h; sourceTree = "<group>"; };
 		19290EF1BD2654BE00D003A9 /* Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		19290F041D0A0DC3F8ECD45C /* CollectionsViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionsViewModel.h; sourceTree = "<group>"; };
 		19290FADBBF7CC43C3A8F2E1 /* UserServiceImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserServiceImpl.m; sourceTree = "<group>"; };
+		19290FCF6F736A2614A35CEF /* FloCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FloCollection.m; sourceTree = "<group>"; };
 		19290FE4331E660C19DE20F4 /* AuthorizeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthorizeViewController.h; sourceTree = "<group>"; };
 		19290FED0D1016CEE8981AC0 /* AuthorizationApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthorizationApi.h; sourceTree = "<group>"; };
 		2708F94D21C35F3A001D7D90 /* FloObjC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FloObjC.framework; path = Carthage/Build/iOS/FloObjC.framework; sourceTree = "<group>"; };
@@ -158,6 +178,15 @@
 				19290B441E12BEA163F4F063 /* model */,
 			);
 			path = authorize;
+			sourceTree = "<group>";
+		};
+		19290047D99AC85F4DF18CBD /* model */ = {
+			isa = PBXGroup;
+			children = (
+				192908DF4349F4AA043765C6 /* CollectionsViewModel.m */,
+				19290F041D0A0DC3F8ECD45C /* CollectionsViewModel.h */,
+			);
+			path = model;
 			sourceTree = "<group>";
 		};
 		1929012D916E81FA41609984 /* model */ = {
@@ -297,11 +326,21 @@
 			path = bootstrap;
 			sourceTree = "<group>";
 		};
+		19290AD3F891A914A5A2944A /* collection */ = {
+			isa = PBXGroup;
+			children = (
+				19290C23079BCD9A618A2B92 /* view */,
+				19290047D99AC85F4DF18CBD /* model */,
+			);
+			path = collection;
+			sourceTree = "<group>";
+		};
 		19290ADC0AA8A012EC11A0B5 /* interface */ = {
 			isa = PBXGroup;
 			children = (
 				192909097E1C3EE4D7DD4AA4 /* UserService.h */,
 				19290A10D475BE49794ACAA7 /* BroadcastService.h */,
+				192900320C610E8E5A00E32F /* CollectionService.h */,
 			);
 			path = interface;
 			sourceTree = "<group>";
@@ -339,11 +378,22 @@
 			path = service;
 			sourceTree = "<group>";
 		};
+		19290C23079BCD9A618A2B92 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				19290CCB009A4BEA3B8F183B /* CollectionsViewController.m */,
+				19290EBA92119ABCCA3CE660 /* CollectionsViewController.h */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
 		19290C2DA1CF02A6E524C5EB /* params */ = {
 			isa = PBXGroup;
 			children = (
 				192909191B5A628A14CCC6F8 /* LoginParameter.m */,
 				19290C1567A3A64441114001 /* LoginParameter.h */,
+				1929043B44BF10AD04F6C773 /* GetCollectionParams.m */,
+				192907605448ED698C33612A /* GetCollectionParams.h */,
 			);
 			path = params;
 			sourceTree = "<group>";
@@ -353,6 +403,8 @@
 			children = (
 				192906676042109A23B629A1 /* AuthorizationApiImpl.m */,
 				192909125D2135DAC65CFEB0 /* AuthorizationApiImpl.h */,
+				1929036EE4CD901191311020 /* CollectionApiImpl.m */,
+				19290C2BDBED06E50D0A884E /* CollectionApiImpl.h */,
 			);
 			path = impl;
 			sourceTree = "<group>";
@@ -361,6 +413,7 @@
 			isa = PBXGroup;
 			children = (
 				19290FED0D1016CEE8981AC0 /* AuthorizationApi.h */,
+				192908669F03D2A026B4A874 /* CollectionApi.h */,
 			);
 			path = interface;
 			sourceTree = "<group>";
@@ -379,6 +432,8 @@
 			children = (
 				19290D59ED5BA6084956CC56 /* FloUser.m */,
 				1929059F72DFCFB0822CC5E2 /* FloUser.h */,
+				19290FCF6F736A2614A35CEF /* FloCollection.m */,
+				19290730F17FA4FC791C50C1 /* FloCollection.h */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -409,6 +464,8 @@
 				192901C01B4D8E928C793768 /* UserServiceImpl.h */,
 				192901FF68819C3EAD92511B /* BroadcastServiceImpl.m */,
 				1929085A7A9CA2241F04121E /* BroadcastServiceImpl.h */,
+				19290D2AD8B003C1D91CF283 /* CollectionServiceImpl.m */,
+				19290D11FA69CD7D122C7C0C /* CollectionServiceImpl.h */,
 			);
 			path = impl;
 			sourceTree = "<group>";
@@ -430,6 +487,7 @@
 				19290EEDFD3FC60CCABAD572 /* main */,
 				192908E94588E417634A04A7 /* home */,
 				1929078FEDD5A9233684CE38 /* navigations */,
+				19290AD3F891A914A5A2944A /* collection */,
 			);
 			path = scene;
 			sourceTree = "<group>";
@@ -610,6 +668,12 @@
 				19290685C3BBF9A21031D876 /* HomeViewController.m in Sources */,
 				192900BF5A31B913C85A1D3D /* NavigationsViewController.m in Sources */,
 				192903A548AAE5F4686C80CE /* NavigationsViewModel.m in Sources */,
+				19290594FFD14CF5E4CD6628 /* CollectionsViewController.m in Sources */,
+				1929033EB6602BDB54A125FC /* CollectionsViewModel.m in Sources */,
+				192902EB674333D27A4F555E /* CollectionServiceImpl.m in Sources */,
+				1929013B7441B938EE4F243D /* GetCollectionParams.m in Sources */,
+				192908606C140C4DD6591D77 /* FloCollection.m in Sources */,
+				19290B9E89EE54C81F41C927 /* CollectionApiImpl.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -32,7 +32,7 @@ static const DDLogLevel ddLogLevel = DDLogLevelDebug | DDLogLevelVerbose;
     __weak AuthorizeViewModel *weakSelf = self;
     [_userService signIn:params complete:^(FloUser *user, NSError *error) {
         if (error != nil) {
-            weakSelf.onError != nil ? weakSelf.onError(@"") : nil;
+            weakSelf.onError != nil ? weakSelf.onError(error.localizedDescription) : nil;
         } else {
             DDLogVerbose(@"User %@", user);
         }
@@ -45,6 +45,8 @@ static const DDLogLevel ddLogLevel = DDLogLevelDebug | DDLogLevelVerbose;
     self = [super init];
     if (self) {
         self.userService = userService;
+        _username = @"ios@123flo.com";
+        _password = @"111111";
     }
 
     return self;

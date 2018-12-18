@@ -4,7 +4,6 @@
 //
 
 #import "BootstrapViewModel.h"
-#import "BroadcastService.h"
 
 @interface BootstrapViewModel ()
 
