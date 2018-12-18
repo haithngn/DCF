@@ -7,10 +7,10 @@
 #import "UserService.h"
 
 @protocol AuthorizationApi;
+@protocol SessionRepository;
 
 @interface UserServiceImpl : NSObject <UserService>
 
-- (instancetype)initWithAuthorizeApi:(NSObject <AuthorizationApi> *)authorizeApi;
-+ (instancetype)serviceWithAuthorizeApi:(NSObject <AuthorizationApi> *)authorizeApi;
+- (instancetype)initWithAuthorizeApi:(NSObject <AuthorizationApi> *)authorizeApi sessionRepository:(NSObject <SessionRepository> *) sessionRepository;
 
 @end

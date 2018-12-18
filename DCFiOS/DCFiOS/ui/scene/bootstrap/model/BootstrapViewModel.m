@@ -4,10 +4,12 @@
 //
 
 #import "BootstrapViewModel.h"
+#import "UserService.h"
 
 @interface BootstrapViewModel ()
 
 @property (nonatomic, weak) NSObject <BroadcastService> * broadcastService;
+@property (nonatomic, weak) NSObject <UserService> * userService;
 
 @end
 
@@ -15,16 +17,20 @@
 
 }
 
-- (instancetype)initWithBroadcastService:(NSObject <BroadcastService> *)broadcastService {
+- (instancetype)initWithBroadcastService:(NSObject <BroadcastService> *)broadcastService userService:(NSObject <UserService> *)userService{
     self = [super init];
     if (self) {
         self.broadcastService = broadcastService;
+        self.userService = userService;
         [_broadcastService subscribeOnAuthentication:self];
     }
 
     return self;
 }
 
+- (void)autoLogin {
+    [_userService autoLogin];
+}
 
 #pragma mark - BroadcastService Methods
 - (void)onChange:(User *)user {

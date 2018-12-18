@@ -5,6 +5,7 @@
 
 #import <FloRest/FloRest.h>
 #import <FloObjC/FloObjC.h>
+#import <AVFoundation/AVFoundation.h>
 #import "Dependences.h"
 #import "UserService.h"
 #import "UserServiceImpl.h"
@@ -83,7 +84,7 @@
 #pragma mark - Instance Properties
 - (NSObject <UserService> *)userService {
     if (_userService == nil) {
-        _userService = [[UserServiceImpl alloc] initWithAuthorizeApi:self.authorizationApi];
+        _userService = [[UserServiceImpl alloc] initWithAuthorizeApi:self.authorizationApi sessionRepository:[[FloSessionRepository alloc] init]];
     }
 
     return _userService;

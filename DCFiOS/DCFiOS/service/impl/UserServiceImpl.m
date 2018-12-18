@@ -3,13 +3,22 @@
 // Copyright (c) 2018 Hai Nguyen. All rights reserved.
 //
 
+#import <FloRest/FloRest.h>
+#import <CoreFlo/CoreFlo.h>
+#import <CocoaLumberjack/CocoaLumberjack.h>
+#import <FloObjC/FloObjC.h>
 #import "UserServiceImpl.h"
 #import "AuthorizationApi.h"
 #import "BroadcastService.h"
+#import "FloUser.h"
+#import "LoginParameter.h"
+
+static const DDLogLevel ddLogLevel = DDLogLevelDebug | DDLogLevelVerbose;
 
 @interface UserServiceImpl ()
 
 @property (nonatomic) NSObject <AuthorizationApi> * authorizeApi;
+@property (nonatomic) NSObject <SessionRepository> * sessionRepository;
 @property (nonatomic, strong) NSMutableArray <NSObject <AuthenticationObserver> *> * authenticationSubscribers;
 
 @end
@@ -19,32 +28,60 @@
     NSMutableArray<NSObject <AuthenticationObserver> *> *_authenticationSubscribers;
 }
 
-- (instancetype)initWithAuthorizeApi:(NSObject <AuthorizationApi> *)authorizeApi {
+- (instancetype)initWithAuthorizeApi:(NSObject <AuthorizationApi> *)authorizeApi sessionRepository:(NSObject <SessionRepository> *) sessionRepository {
     self = [super init];
     if (self) {
         self.authorizeApi = authorizeApi;
+        self.sessionRepository = sessionRepository;
     }
 
     return self;
 }
 
-+ (instancetype)serviceWithAuthorizeApi:(NSObject <AuthorizationApi> *)authorizeApi {
-    return [[self alloc] initWithAuthorizeApi:authorizeApi];
+- (void)autoLogin {
+    if (_sessionRepository.keyapi != nil) {
+        [self announceAuthenticationChanged:[[FloUser alloc] initWithUserId:_sessionRepository.userId
+                                                                      email:_sessionRepository.email
+                                                                updatedDate:0
+                                                                   fullname:@""
+                                                             secondaryEmail:@""
+                                                                   birthday:0
+                                                                     gender:0
+                                                                    country:@""
+                                                                phoneNumber:@""
+                                                                countryCode:@""
+                                                                   question:@""
+                                                                     answer:@""
+                                                             activeSECEmail:0
+                                                                     maxUid:0
+                                                              activatedPush:0
+                                                            quotaLimitBytes:0
+                                                                   disabled:0]];
+    }
 }
-
 
 - (void)signIn:(LoginParameter *)params complete:(void (^)(FloUser *user, NSError *error))handler {
     [_authorizeApi signIn: params complete:^(FloUser * user, Credentials * credentials, NSError * error){
         if (user != nil) {
-            [self announceAuthenticationChanged:user];
+            [self.sessionRepository storeWithParams:[[StoreSessionParams alloc] initWithKeyApi:credentials.token
+                                                                                        userId:user.userId
+                                                                                      password:params.password
+                                                                                         email:user.email
+                                                                                    expireTime:[NSString stringWithFormat:@"%f", credentials.expireAtInSecond] ]
+                                            handler:^(NSError *error) {
+                DDLogDebug(@"%@ %@ Error: %@ keyApi %@", THIS_FILE, THIS_METHOD, error, self.sessionRepository.keyapi);
+                                                [self announceAuthenticationChanged:user];
+            }];
         }
-        NSLog(@"%@, %@", user, error);
         handler != nil ? handler(user, error) : 0;
     }];
 }
 
 - (void)logOut {
-    [self announceAuthenticationChanged:nil];
+    [_sessionRepository clear:^(NSError *error) {
+        DDLogError(@"%@ error %@", THIS_METHOD, error);
+        [self announceAuthenticationChanged:nil];
+    }];
 }
 
 

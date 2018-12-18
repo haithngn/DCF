@@ -25,9 +25,10 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
 
-    _model = [[BootstrapViewModel alloc] initWithBroadcastService:[Dependences broadcastService]];
+    _model = [[BootstrapViewModel alloc] initWithBroadcastService:[Dependences broadcastService] userService:[Dependences userService]];
 
     [self bindData];
+    [_model autoLogin];
 }
 
 - (void)bindData {

@@ -8,12 +8,13 @@
 #import "BroadcastService.h"
 
 @protocol BroadcastService;
-
+@protocol UserService;
 
 @interface BootstrapViewModel : BaseViewModel <AuthenticationObserver>
 @property(nonatomic, copy) void (^onSignedIn)();
 @property(nonatomic, copy) void (^onSignedOut)();
 
-- (instancetype)initWithBroadcastService:(NSObject <BroadcastService> *)broadcastService;
+- (instancetype)initWithBroadcastService:(NSObject <BroadcastService> *)broadcastService userService:(NSObject <UserService> *)userService;
+- (void)autoLogin;
 
 @end

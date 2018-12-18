@@ -13,9 +13,11 @@
 @protocol UserService <NSObject>
 @required
 
+- (void)autoLogin;
 - (void)signIn:(LoginParameter*) params complete:(void(^)(FloUser * user, NSError * error))handler;
 
 - (void)subscribeOnAuthentication:(NSObject <AuthenticationObserver> *)subscriber;
 
 - (void)logOut;
+
 @end
