@@ -7,8 +7,8 @@
 
 
 @interface GetCollectionParams : NSObject
-@property (nonatomic, readonly) double lastModified;
+@property (nonatomic, readonly) NSNumber * lastModified;
 
-- (instancetype)initWithLastModified:(double)lastModified;
+- (instancetype)initWithLastModified:(NSNumber * )lastModified;
 
 @end

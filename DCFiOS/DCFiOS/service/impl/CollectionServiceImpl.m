@@ -3,10 +3,13 @@
 // Copyright (c) 2018 Hai Nguyen. All rights reserved.
 //
 
+#import <CocoaLumberjack/CocoaLumberjack.h>
 #import "CollectionServiceImpl.h"
 #import "CollectionApi.h"
 #import "GetCollectionParams.h"
 #import "FloCollection.h"
+
+static const DDLogLevel ddLogLevel = DDLogLevelDebug | DDLogLevelVerbose;
 
 @interface CollectionServiceImpl ()
 
@@ -27,7 +30,7 @@
 }
 
 - (void)findAll:(void (^)(NSArray<FloCollection *> * collections, NSError * error))handler {
-    GetCollectionParams * params = [[GetCollectionParams alloc] initWithLastModified:[NSDate date].timeIntervalSince1970];
+    GetCollectionParams * params = [[GetCollectionParams alloc] initWithLastModified:nil];
     [_collectionApi getCollections:params handler:^(NSArray<FloCollection *> *collections, NSError *error) {
         handler != nil ? handler(collections, error) : nil;
     }];

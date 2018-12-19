@@ -11,7 +11,7 @@
 
 }
 
-- (instancetype)initWithLastModified:(double)lastModified {
+- (instancetype)initWithLastModified:(NSNumber*)lastModified {
     self = [super init];
     if (self) {
         _lastModified = lastModified;
