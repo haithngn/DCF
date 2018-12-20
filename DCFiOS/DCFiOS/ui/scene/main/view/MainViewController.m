@@ -7,8 +7,9 @@
 #import "HomeViewController.h"
 #import "Storyboards.h"
 #import "NavigationsViewController.h"
-#import "CollectionsViewController.h"
 
+
+@class CollectionViewController;
 
 @implementation MainViewController {
 
@@ -16,7 +17,7 @@
 
 - (instancetype)init {
     if (self = [super init]) {
-        CollectionsViewController * home = [[Storyboards main] instantiateViewControllerWithIdentifier:@"CollectionsViewController"];
+        CollectionViewController * home = [[Storyboards main] instantiateViewControllerWithIdentifier:@"CollectionViewController"];
         self.rootViewController = [[UINavigationController alloc] initWithRootViewController:home];
 
         NavigationsViewController * left = [[Storyboards main] instantiateViewControllerWithIdentifier:@"NavigationsViewController"];

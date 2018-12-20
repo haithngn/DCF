@@ -175,5 +175,41 @@
             </objects>
             <point key="canvasLocation" x="3052" y="69"/>
         </scene>
+        <!--Collection View Controller-->
+        <scene sceneID="rKc-Ra-z7E">
+            <objects>
+                <viewController storyboardIdentifier="CollectionViewController" id="BXw-Y1-9hQ" customClass="CollectionViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="D9e-ah-m58"/>
+                        <viewControllerLayoutGuide type="bottom" id="VN1-QT-XuM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="g6n-Kw-Vp0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yvd-Xw-Xpy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4021" y="54"/>
+        </scene>
+        <!--Kanban View Controller-->
+        <scene sceneID="ZsP-Bp-xbu">
+            <objects>
+                <viewController storyboardIdentifier="KanbanViewController" id="ASU-E0-0Xs" customClass="KanbanViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YuC-Ww-kaQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="lcg-Gd-GHp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="YuG-Js-mn3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TUl-8R-HdB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4918" y="54"/>
+        </scene>
     </scenes>
 </document>

@@ -1,12 +1,10 @@
 //
-// Created by Hai Nguyen on 2018-12-17.
+// Created by Hai Nguyen on 2018-12-20.
 // Copyright (c) 2018 Hai Nguyen. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 #import "BaseViewController.h"
-#import <PageMenu/PageMenu.h>
 
-@interface HomeViewController : BaseViewController
-
+@interface KanbanViewController : BaseViewController
 @end

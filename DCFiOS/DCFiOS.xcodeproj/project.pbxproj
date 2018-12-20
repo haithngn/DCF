@@ -18,11 +18,13 @@
 		192903A548AAE5F4686C80CE /* NavigationsViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1929012709CA9329FAE97A4F /* NavigationsViewModel.m */; };
 		192904D832E27321F5841F23 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19290BA286E7C481ECD87B18 /* BaseViewController.m */; };
 		19290594FFD14CF5E4CD6628 /* CollectionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19290CCB009A4BEA3B8F183B /* CollectionsViewController.m */; };
+		192905A8CF39431D1F5AB910 /* KanbanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19290E386EC3FA04E21655F2 /* KanbanViewController.m */; };
 		192905FC91ACEA6F0DAA98DA /* AuthorizationApiImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 192906676042109A23B629A1 /* AuthorizationApiImpl.m */; };
 		19290685C3BBF9A21031D876 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 192906D2A36632976E27F7B0 /* HomeViewController.m */; };
 		1929069AC172E74B6C5940D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19290EB1C47F136DC62E39B6 /* LaunchScreen.storyboard */; };
 		19290755646258267AE3D56A /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19290B85C3FC5CCE3FCACF19 /* MainViewController.m */; };
 		1929076161602B6E5EE4EC90 /* LoginParameter.m in Sources */ = {isa = PBXBuildFile; fileRef = 192909191B5A628A14CCC6F8 /* LoginParameter.m */; };
+		19290794214829EFD25F4E6C /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19290303F744B629C049C6A1 /* CollectionViewController.swift */; };
 		192908606C140C4DD6591D77 /* FloCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 19290FCF6F736A2614A35CEF /* FloCollection.m */; };
 		192908717A208E7A09E856AB /* AuthorizeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19290852D551E316C96F4FB9 /* AuthorizeViewController.m */; };
 		192908B1E6C88579DB2D4EA7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1929043FCBB54463F393FE9A /* AppDelegate.m */; };
@@ -35,9 +37,10 @@
 		19290D14E4A3BEBE41108330 /* AuthorizeViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 192909F28EAD57D1B30ED394 /* AuthorizeViewModel.m */; };
 		19290F114F957C551D099E5F /* BroadcastServiceImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 192901FF68819C3EAD92511B /* BroadcastServiceImpl.m */; };
 		19290FBA8F50A133694786DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1929019C928AB3E629798E87 /* Assets.xcassets */; };
+		2700B4B821CB6AA4003D039F /* KeychainAccess.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 27B30B5F21C90134009C27CA /* KeychainAccess.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2700B4BA21CB6AA8003D039F /* PageMenu.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2700B4B521CB6A6B003D039F /* PageMenu.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2708F94E21C35F3B001D7D90 /* FloObjC.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2708F94D21C35F3A001D7D90 /* FloObjC.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		276DC45E21C78D26008AD49D /* CocoaLumberjack.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 276DC45B21C78D21008AD49D /* CocoaLumberjack.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		27B30B6021C90135009C27CA /* KeychainAccess.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27B30B5F21C90134009C27CA /* KeychainAccess.framework */; };
 		27C16DEA21C0C69400E9ADA3 /* FileKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 27C16DE421C0C69200E9ADA3 /* FileKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		27C16DEC21C0C69400E9ADA3 /* FloRest.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 27C16DE521C0C69300E9ADA3 /* FloRest.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		27C16DEE21C0C69400E9ADA3 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 27C16DE621C0C69300E9ADA3 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -59,7 +62,9 @@
 				27D668BD21C7AA0B00E20109 /* LGSideMenuController.framework in Embed Frameworks */,
 				27C16DF021C0C69400E9ADA3 /* CoreFlo.framework in Embed Frameworks */,
 				27C16DF221C0C69400E9ADA3 /* SwiftyJSON.framework in Embed Frameworks */,
+				2700B4B821CB6AA4003D039F /* KeychainAccess.framework in Embed Frameworks */,
 				276DC45E21C78D26008AD49D /* CocoaLumberjack.framework in Embed Frameworks */,
+				2700B4BA21CB6AA8003D039F /* PageMenu.framework in Embed Frameworks */,
 				2708F94E21C35F3B001D7D90 /* FloObjC.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -76,12 +81,14 @@
 		19290213A5B2E508DAEA7B3B /* Storyboards.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Storyboards.h; sourceTree = "<group>"; };
 		192902C68348F1FAE14876FF /* Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
 		192902C9D4E32EFC61588E3E /* BootstrapViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BootstrapViewModel.h; sourceTree = "<group>"; };
+		19290303F744B629C049C6A1 /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		1929035CEF4DF27DDD33BC74 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1929036EE4CD901191311020 /* CollectionApiImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionApiImpl.m; sourceTree = "<group>"; };
 		1929043B44BF10AD04F6C773 /* GetCollectionParams.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetCollectionParams.m; sourceTree = "<group>"; };
 		1929043E9E24EDEA379B46D8 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		1929043FCBB54463F393FE9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		192904D6CC936190361C4899 /* BootstrapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BootstrapViewController.m; sourceTree = "<group>"; };
+		19290509A1BC31F151E31C6E /* KanbanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KanbanViewController.h; sourceTree = "<group>"; };
 		1929059F72DFCFB0822CC5E2 /* FloUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FloUser.h; sourceTree = "<group>"; };
 		1929064252C73070CE6D5AB3 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		192906676042109A23B629A1 /* AuthorizationApiImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuthorizationApiImpl.m; sourceTree = "<group>"; };
@@ -119,6 +126,7 @@
 		19290D59ED5BA6084956CC56 /* FloUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FloUser.m; sourceTree = "<group>"; };
 		19290D7CE6CE2B858A675151 /* Configurations.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Configurations.plist; sourceTree = "<group>"; };
 		19290DFB8C17445C4BA325E2 /* Dependences.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dependences.m; sourceTree = "<group>"; };
+		19290E386EC3FA04E21655F2 /* KanbanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KanbanViewController.m; sourceTree = "<group>"; };
 		19290E3E79EC4CF567FDC2D0 /* Storyboards.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Storyboards.m; sourceTree = "<group>"; };
 		19290EA3CEA86E9687AF9AA2 /* Dependences.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dependences.h; sourceTree = "<group>"; };
 		19290EB1C47F136DC62E39B6 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -130,6 +138,7 @@
 		19290FCF6F736A2614A35CEF /* FloCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FloCollection.m; sourceTree = "<group>"; };
 		19290FE4331E660C19DE20F4 /* AuthorizeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthorizeViewController.h; sourceTree = "<group>"; };
 		19290FED0D1016CEE8981AC0 /* AuthorizationApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthorizationApi.h; sourceTree = "<group>"; };
+		2700B4B521CB6A6B003D039F /* PageMenu.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PageMenu.framework; path = Carthage/Build/iOS/PageMenu.framework; sourceTree = "<group>"; };
 		2708F94D21C35F3A001D7D90 /* FloObjC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FloObjC.framework; path = Carthage/Build/iOS/FloObjC.framework; sourceTree = "<group>"; };
 		276DC45B21C78D21008AD49D /* CocoaLumberjack.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaLumberjack.framework; path = Carthage/Build/iOS/CocoaLumberjack.framework; sourceTree = "<group>"; };
 		276F084321C0F1B400C65405 /* sync_periods.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = sync_periods.plist; sourceTree = "<group>"; };
@@ -158,7 +167,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				27B30B6021C90135009C27CA /* KeychainAccess.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,6 +217,14 @@
 				19290F15BB9C3D8C3C107642 /* common */,
 			);
 			path = ui;
+			sourceTree = "<group>";
+		};
+		192904BF0F2A092A11E8FFF3 /* kanban */ = {
+			isa = PBXGroup;
+			children = (
+				19290BA9B04B3671C1326035 /* view */,
+			);
+			path = kanban;
 			sourceTree = "<group>";
 		};
 		192904F35012957DDC2E2D46 /* Debug */ = {
@@ -371,6 +387,15 @@
 			path = application;
 			sourceTree = "<group>";
 		};
+		19290BA9B04B3671C1326035 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				19290E386EC3FA04E21655F2 /* KanbanViewController.m */,
+				19290509A1BC31F151E31C6E /* KanbanViewController.h */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
 		19290BCCA2842EE0D6668A39 /* service */ = {
 			isa = PBXGroup;
 			children = (
@@ -386,6 +411,7 @@
 			children = (
 				19290CCB009A4BEA3B8F183B /* CollectionsViewController.m */,
 				19290EBA92119ABCCA3CE660 /* CollectionsViewController.h */,
+				19290303F744B629C049C6A1 /* CollectionViewController.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -491,6 +517,7 @@
 				192908E94588E417634A04A7 /* home */,
 				1929078FEDD5A9233684CE38 /* navigations */,
 				19290AD3F891A914A5A2944A /* collection */,
+				192904BF0F2A092A11E8FFF3 /* kanban */,
 			);
 			path = scene;
 			sourceTree = "<group>";
@@ -536,6 +563,7 @@
 				27C16DE821C0C69300E9ADA3 /* SwiftyJSON.framework */,
 				2708F94D21C35F3A001D7D90 /* FloObjC.framework */,
 				27D668BA21C7A9F400E20109 /* LGSideMenuController.framework */,
+				2700B4B521CB6A6B003D039F /* PageMenu.framework */,
 				27B30B5F21C90134009C27CA /* KeychainAccess.framework */,
 				276DC45B21C78D21008AD49D /* CocoaLumberjack.framework */,
 			);
@@ -627,6 +655,7 @@
 				"$(SRCROOT)/Carthage/Build/iOS/CocoaLumberjack.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/LGSideMenuController.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/KeychainAccess.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/PageMenu.framework",
 			);
 			outputPaths = (
 			);
@@ -679,6 +708,8 @@
 				1929013B7441B938EE4F243D /* GetCollectionParams.m in Sources */,
 				192908606C140C4DD6591D77 /* FloCollection.m in Sources */,
 				19290B9E89EE54C81F41C927 /* CollectionApiImpl.m in Sources */,
+				192905A8CF39431D1F5AB910 /* KanbanViewController.m in Sources */,
+				19290794214829EFD25F4E6C /* CollectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
