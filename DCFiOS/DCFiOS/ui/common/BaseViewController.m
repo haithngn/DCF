@@ -6,6 +6,7 @@
 #import <CocoaLumberjack/CocoaLumberjack.h>
 #import "BaseViewController.h"
 #import "Navigator.h"
+#import "KanbanNavigations.h"
 #import <SVProgressHUD/SVProgressHUD.h>
 
 static const DDLogLevel ddLogLevel = DDLogLevelDebug | DDLogLevelVerbose;

@@ -84,6 +84,10 @@ static const DDLogLevel ddLogLevel = DDLogLevelDebug | DDLogLevelVerbose;
     }];
 }
 
+- (NSString *)currentUserId {
+    return _sessionRepository.userId;
+}
+
 
 - (void)announceAuthenticationChanged:(FloUser *)user {
     [_authenticationSubscribers enumerateObjectsUsingBlock:^(NSObject <AuthenticationObserver> *subcribers, NSUInteger idx, BOOL *stop) {

@@ -6,5 +6,15 @@
 #import <Foundation/Foundation.h>
 #import "BaseViewController.h"
 
-@interface NavigationsViewController : BaseViewController
+@protocol KanbanNavigations;
+
+@protocol NavigationsDelegate <NSObject>
+@required
+- (void)didSelectKanbanWithId:(NSString * _Nonnull) kanbanId;
+
+@end
+
+@interface NavigationsViewController : BaseViewController <KanbanNavigations>
+@property (nonatomic, weak) NSObject <NavigationsDelegate> *delegate;
+
 @end

@@ -8,11 +8,18 @@
 #import "BroadcastService.h"
 
 @protocol UserService;
+@protocol KanbanService;
+@protocol FloItemViewModel;
 
 
 @interface NavigationsViewModel : BaseViewModel
-- (instancetype)initWithUserService:(NSObject <UserService> *) userService;
+@property(nonatomic, copy) NSString *collectionId;
+@property(nonatomic, copy) void (^onKanbans)(NSArray<NSObject <FloItemViewModel> *> * items);
+@property(nonatomic, copy) void (^onSelectKanban)(NSString * kanbanId);
 
+- (instancetype)initWithKanbanService:(NSObject <KanbanService> *)kanbanService
+                          userService:(NSObject <UserService> *) userService;
 - (void)signOut;
+- (void)select:(NSObject <FloItemViewModel> *)kanbanId;
 
 @end

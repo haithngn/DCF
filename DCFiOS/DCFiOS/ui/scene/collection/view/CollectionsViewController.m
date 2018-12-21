@@ -9,6 +9,7 @@
 #import "CollectionsViewDataSource.h"
 #import "BaseTableViewDataSource.h"
 #import "CollectionsItemViewCell.h"
+#import "KanbanNavigations.h"
 
 @interface CollectionsViewController () <FloTableViewDataSource>
 
@@ -35,17 +36,22 @@
 }
 
 - (void)bindData {
+    __weak typeof(self) weakSelf = self;
     _model.onProjects = ^(NSArray <ProjectItemViewModel>* items){
-        [self.datasource load:items];
-        [self.tableView reloadData];
+        [weakSelf.datasource load:items];
+        [weakSelf.tableView reloadData];
     };
 
     _model.onSelect = ^(NSString * collectionId){
-        [self.navigator navigateToCollectionWithId: collectionId];
+        [weakSelf.kanbanNavigations loadCollectionWithId:collectionId];
     };
 
     _model.onPreventInteractions = ^(BOOL prevent){
-        [self showLoading:@"loading..."];
+        if (prevent == YES){
+            [weakSelf showLoading:@"loading..."];
+        } else {
+            [weakSelf hideLoading];
+        }
     };
 }
 

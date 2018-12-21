@@ -39,7 +39,8 @@
 }
 
 - (void)load{
-    GetKanbanParameter * parameter = [[GetKanbanParameter alloc] initWithUserId:@"ios" pItem:nil
+    NSString * userId = _userService.currentUserId;
+    GetKanbanParameter * parameter = [[GetKanbanParameter alloc] initWithUserId:userId pItem:nil
             minId:nil hasDelete:false modifiedGTEInSecond:nil];
     [_kanbanService getKanbans:parameter handler:^(NSArray<FloKanban *> *kanbans, NSError *error) {
         if (error != nil ) {

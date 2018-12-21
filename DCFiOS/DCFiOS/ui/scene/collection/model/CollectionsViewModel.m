@@ -59,7 +59,7 @@ static const DDLogLevel ddLogLevel = DDLogLevelDebug | DDLogLevelVerbose | DDLog
 
 @implementation NSArray (FloCollection)
 
-+ (NSArray <NSObject <ProjectItemViewModel> *>*)transformFrom:(NSArray<FloCollection *>*)collections {
++ (NSArray <ProjectItemViewModel*> *)transformFrom:(NSArray<FloCollection *>*)collections {
     NSMutableArray <ProjectItemViewModel*> * result = [[NSMutableArray <ProjectItemViewModel *> alloc] init];
     for ( FloCollection* c in collections ) {
         [result addObject:[[ProjectItemViewModel alloc] initWithProjectId:c.collectionId projectName:c.collectionName]];
