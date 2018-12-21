@@ -160,6 +160,16 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="8Dk-j9-ZG4">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CollectionsItemViewCell" id="Gbp-FE-BVN" customClass="CollectionsItemViewCell">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Gbp-FE-BVN" id="uKe-UE-ahi">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -170,10 +180,29 @@
                             <constraint firstAttribute="bottom" secondItem="8Dk-j9-ZG4" secondAttribute="bottom" id="oGx-Rc-ZY4"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="8Dk-j9-ZG4" id="jP0-Ut-OFJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Vk-Pk-8Y4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3052" y="69"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="5Ir-jv-w3c">
+            <objects>
+                <navigationController id="paO-X7-9NE" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="kzP-vN-WLK">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BXw-Y1-9hQ" kind="relationship" relationship="rootViewController" id="DF1-0y-i5A"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TwZ-3F-az8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2953" y="-764"/>
         </scene>
         <!--Collection View Controller-->
         <scene sceneID="rKc-Ra-z7E">
@@ -186,12 +215,39 @@
                     <view key="view" contentMode="scaleToFill" id="g6n-Kw-Vp0">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="znn-i5-glb">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="znn-i5-glb" firstAttribute="top" secondItem="g6n-Kw-Vp0" secondAttribute="top" id="NJI-Ki-5ib"/>
+                            <constraint firstAttribute="bottom" secondItem="znn-i5-glb" secondAttribute="bottom" id="fEZ-OM-AMi"/>
+                            <constraint firstItem="znn-i5-glb" firstAttribute="leading" secondItem="g6n-Kw-Vp0" secondAttribute="leading" id="rJ0-A2-2RF"/>
+                            <constraint firstAttribute="trailing" secondItem="znn-i5-glb" secondAttribute="trailing" id="vBO-fB-gNJ"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="hmo-5q-0wS">
+                        <nil key="title"/>
+                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="GbB-e8-Xwb">
+                            <rect key="frame" x="96.5" y="7.5" width="182" height="29"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <segments>
+                                <segment title="First"/>
+                                <segment title="Second"/>
+                                <segment title=""/>
+                            </segments>
+                        </segmentedControl>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="znn-i5-glb" id="c7U-VO-heQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yvd-Xw-Xpy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4021" y="54"/>
+            <point key="canvasLocation" x="3966" y="-764"/>
         </scene>
         <!--Kanban View Controller-->
         <scene sceneID="ZsP-Bp-xbu">

@@ -5,7 +5,6 @@
 
 #import <Foundation/Foundation.h>
 #import "BaseViewController.h"
-#import <PageMenu/PageMenu.h>
 
 @interface HomeViewController : BaseViewController
 

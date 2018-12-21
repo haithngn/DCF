@@ -5,7 +5,6 @@
 
 #import <FloRest/FloRest.h>
 #import <FloObjC/FloObjC.h>
-#import <AVFoundation/AVFoundation.h>
 #import "Dependences.h"
 #import "UserService.h"
 #import "UserServiceImpl.h"
@@ -15,6 +14,12 @@
 #import "CollectionService.h"
 #import "CollectionServiceImpl.h"
 #import "CollectionApiImpl.h"
+#import "KanbanService.h"
+#import "KanbanApi.h"
+#import "KanbanServiceImpl.h"
+#import "KanbanApiImpl.h"
+
+@class FloKanbanApi;
 
 @interface Dependences ()
 
@@ -24,6 +29,8 @@
 @property (nonatomic, strong) NSObject <BroadcastService> * broadcastService;
 @property (nonatomic, strong) NSObject <CollectionService> * collectionService;
 @property (nonatomic, strong) NSObject <CollectionApi> * collectionApi;
+@property (nonatomic, strong) NSObject <KanbanApi> * kanbanApi;
+@property (nonatomic, strong) NSObject <KanbanService> * kanbanService;
 
 @end
 
@@ -35,6 +42,7 @@
     NSObject <BroadcastService> *_broadcastService;
     NSObject <CollectionService> *_collectionService;
     NSObject <CollectionApi> *_collectionApi;
+    NSObject <KanbanService> *_kanbanService;
 }
 
 @synthesize userService = _userService;
@@ -45,6 +53,8 @@
 @synthesize collectionService = _collectionService;
 
 @synthesize collectionApi = _collectionApi;
+
+@synthesize kanbanService = _kanbanService;
 
 + (instancetype)sharedInstance {
     static Dependences *sharedInstance = nil;
@@ -81,7 +91,12 @@
     return [Dependences sharedInstance].collectionService;
 }
 
++ (NSObject <KanbanService> *)kanbanService {
+    return [Dependences sharedInstance].kanbanService;;
+}
+
 #pragma mark - Instance Properties
+
 - (NSObject <UserService> *)userService {
     if (_userService == nil) {
         _userService = [[UserServiceImpl alloc] initWithAuthorizeApi:self.authorizationApi sessionRepository:[[FloSessionRepository alloc] init]];
@@ -118,6 +133,22 @@
     }
 
     return _collectionService;
+}
+
+- (NSObject <KanbanApi> *)kanbanApi {
+    if (_kanbanApi == nil) {
+        _kanbanApi = [[KanbanApiImpl alloc] initWithApi:[[FloKanbanApi alloc] init] ];
+    }
+
+    return _kanbanApi;
+}
+
+- (NSObject <KanbanService> *)kanbanService {
+    if (_kanbanService == nil) {
+        _kanbanService = [[KanbanServiceImpl alloc] initWithCollectionApi:self.kanbanApi];
+    }
+
+    return _kanbanService;
 }
 
 @end

@@ -7,11 +7,16 @@
 #import "BaseViewModel.h"
 
 @protocol CollectionService;
-
+@protocol ProjectItemViewModel;
+@protocol FloItemViewModel;
 
 @interface CollectionsViewModel : BaseViewModel
-- (instancetype)initWithCollectionService:(NSObject <CollectionService> *)collectionService;
+@property(nonatomic, copy) void (^onProjects)(NSArray <ProjectItemViewModel> * projectViewModels);
+@property(nonatomic, copy) void (^onSelect)(NSString * pcollectionId);
+@property(nonatomic, copy) void (^onPreventInteractions)(BOOL prevent);
 
+- (instancetype)initWithCollectionService:(NSObject <CollectionService> *)collectionService;
 - (void)load;
+- (void)select:(NSObject <FloItemViewModel> *)collection;
 
 @end

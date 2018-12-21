@@ -7,40 +7,53 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1929002EFF70FF92B7660163 /* GetKanbanParameter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1929060FB9F3FDE9AD4CC3C9 /* GetKanbanParameter.m */; };
+		1929005CCD47AA5322468A11 /* KanbanServiceImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 192904009C17B4D22F0A9FB6 /* KanbanServiceImpl.m */; };
 		192900BF5A31B913C85A1D3D /* NavigationsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1929072574C0F371E91C830D /* NavigationsViewController.m */; };
 		192900DC83919B6037E07302 /* Dependences.m in Sources */ = {isa = PBXBuildFile; fileRef = 19290DFB8C17445C4BA325E2 /* Dependences.m */; };
 		1929013B7441B938EE4F243D /* GetCollectionParams.m in Sources */ = {isa = PBXBuildFile; fileRef = 1929043B44BF10AD04F6C773 /* GetCollectionParams.m */; };
+		1929013D4C82EF18E63718ED /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19290BC38648B7B9F846FDE8 /* CollectionViewController.m */; };
 		1929017635BADDB3867A9161 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1929035CEF4DF27DDD33BC74 /* main.m */; };
 		19290293F4078F0F6384C4A8 /* UserServiceImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 19290FADBBF7CC43C3A8F2E1 /* UserServiceImpl.m */; };
 		192902EB674333D27A4F555E /* CollectionServiceImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 19290D2AD8B003C1D91CF283 /* CollectionServiceImpl.m */; };
 		1929033B36342A4C1EE60776 /* BaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 192906CB89D1E0C5CD9BA0C2 /* BaseViewModel.m */; };
 		1929033EB6602BDB54A125FC /* CollectionsViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 192908DF4349F4AA043765C6 /* CollectionsViewModel.m */; };
 		192903A548AAE5F4686C80CE /* NavigationsViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1929012709CA9329FAE97A4F /* NavigationsViewModel.m */; };
+		1929045E66345B0BBB1536FD /* FloKanban.m in Sources */ = {isa = PBXBuildFile; fileRef = 19290E37AFCF33A18430CBA9 /* FloKanban.m */; };
 		192904D832E27321F5841F23 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19290BA286E7C481ECD87B18 /* BaseViewController.m */; };
 		19290594FFD14CF5E4CD6628 /* CollectionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19290CCB009A4BEA3B8F183B /* CollectionsViewController.m */; };
 		192905A8CF39431D1F5AB910 /* KanbanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19290E386EC3FA04E21655F2 /* KanbanViewController.m */; };
 		192905FC91ACEA6F0DAA98DA /* AuthorizationApiImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 192906676042109A23B629A1 /* AuthorizationApiImpl.m */; };
+		1929062F360E01D5B5B67888 /* ProjectItemViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1929030934EFACD68CE6A4C7 /* ProjectItemViewModel.m */; };
 		19290685C3BBF9A21031D876 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 192906D2A36632976E27F7B0 /* HomeViewController.m */; };
 		1929069AC172E74B6C5940D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19290EB1C47F136DC62E39B6 /* LaunchScreen.storyboard */; };
+		1929069E4E23EEA10CC02E38 /* NavigatorImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 192907B36904C3BBA2D7F11E /* NavigatorImpl.m */; };
 		19290755646258267AE3D56A /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19290B85C3FC5CCE3FCACF19 /* MainViewController.m */; };
 		1929076161602B6E5EE4EC90 /* LoginParameter.m in Sources */ = {isa = PBXBuildFile; fileRef = 192909191B5A628A14CCC6F8 /* LoginParameter.m */; };
-		19290794214829EFD25F4E6C /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19290303F744B629C049C6A1 /* CollectionViewController.swift */; };
+		1929078D6CCDBDBD78A95543 /* BaseTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 19290E7A64FE3636E8FF9669 /* BaseTableViewDataSource.m */; };
+		192907B62F6C4714339B38A6 /* BaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1929097ECF7682ECCDF593E4 /* BaseTableViewCell.m */; };
 		192908606C140C4DD6591D77 /* FloCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 19290FCF6F736A2614A35CEF /* FloCollection.m */; };
 		192908717A208E7A09E856AB /* AuthorizeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19290852D551E316C96F4FB9 /* AuthorizeViewController.m */; };
 		192908B1E6C88579DB2D4EA7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1929043FCBB54463F393FE9A /* AppDelegate.m */; };
+		192908EB61CCBDA7DC1E6B83 /* KanbanApiImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 19290E91EA37572D98DD98EA /* KanbanApiImpl.m */; };
 		19290948A8BEC10175086B52 /* BootstrapViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 19290B1EF4BA5DE614CB85D1 /* BootstrapViewModel.m */; };
+		1929095E0CE437702A66FD03 /* CollectionItemViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1929046433717B36848067A3 /* CollectionItemViewModel.m */; };
 		192909F5C592B4A28B2DD0CF /* Storyboards.m in Sources */ = {isa = PBXBuildFile; fileRef = 19290E3E79EC4CF567FDC2D0 /* Storyboards.m */; };
 		19290B985A65E3DD8D3EBCA1 /* FloUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 19290D59ED5BA6084956CC56 /* FloUser.m */; };
 		19290B9E89EE54C81F41C927 /* CollectionApiImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 1929036EE4CD901191311020 /* CollectionApiImpl.m */; };
+		19290C35004BD303BE4D47DE /* CollectionsViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 1929082E73535DFF1BC8D946 /* CollectionsViewDataSource.m */; };
 		19290C5F476558826A7397AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 192906805A0AE62B14A3D850 /* Main.storyboard */; };
 		19290C8C974CB63F22ECB67B /* BootstrapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 192904D6CC936190361C4899 /* BootstrapViewController.m */; };
 		19290D14E4A3BEBE41108330 /* AuthorizeViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 192909F28EAD57D1B30ED394 /* AuthorizeViewModel.m */; };
+		19290EE33CB939721C220D72 /* CollectionViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 192902536FADDDD19754CE1D /* CollectionViewModel.m */; };
 		19290F114F957C551D099E5F /* BroadcastServiceImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 192901FF68819C3EAD92511B /* BroadcastServiceImpl.m */; };
+		19290F15C7970D5BE7FA0F39 /* CollectionViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 19290B19C7CD0A504EC4F74C /* CollectionViewDataSource.m */; };
+		19290F631C25E87D7A7326AE /* CollectionsItemViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1929031ACE2D911357CA66A9 /* CollectionsItemViewCell.m */; };
 		19290FBA8F50A133694786DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1929019C928AB3E629798E87 /* Assets.xcassets */; };
 		2700B4B821CB6AA4003D039F /* KeychainAccess.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 27B30B5F21C90134009C27CA /* KeychainAccess.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		2700B4BA21CB6AA8003D039F /* PageMenu.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2700B4B521CB6A6B003D039F /* PageMenu.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2708F94E21C35F3B001D7D90 /* FloObjC.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2708F94D21C35F3A001D7D90 /* FloObjC.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		276DC45E21C78D26008AD49D /* CocoaLumberjack.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 276DC45B21C78D21008AD49D /* CocoaLumberjack.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		27872AED21CCD4B100D7AA7D /* SVProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27872AEB21CCD4B100D7AA7D /* SVProgressHUD.framework */; };
 		27C16DEA21C0C69400E9ADA3 /* FileKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 27C16DE421C0C69200E9ADA3 /* FileKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		27C16DEC21C0C69400E9ADA3 /* FloRest.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 27C16DE521C0C69300E9ADA3 /* FloRest.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		27C16DEE21C0C69400E9ADA3 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 27C16DE621C0C69300E9ADA3 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -64,7 +77,6 @@
 				27C16DF221C0C69400E9ADA3 /* SwiftyJSON.framework in Embed Frameworks */,
 				2700B4B821CB6AA4003D039F /* KeychainAccess.framework in Embed Frameworks */,
 				276DC45E21C78D26008AD49D /* CocoaLumberjack.framework in Embed Frameworks */,
-				2700B4BA21CB6AA8003D039F /* PageMenu.framework in Embed Frameworks */,
 				2708F94E21C35F3B001D7D90 /* FloObjC.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -77,29 +89,43 @@
 		1929012709CA9329FAE97A4F /* NavigationsViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationsViewModel.m; sourceTree = "<group>"; };
 		1929019C928AB3E629798E87 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		192901C01B4D8E928C793768 /* UserServiceImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserServiceImpl.h; sourceTree = "<group>"; };
+		192901E84CBEBF84504AD69C /* BaseTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableViewCell.h; sourceTree = "<group>"; };
 		192901FF68819C3EAD92511B /* BroadcastServiceImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BroadcastServiceImpl.m; sourceTree = "<group>"; };
 		19290213A5B2E508DAEA7B3B /* Storyboards.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Storyboards.h; sourceTree = "<group>"; };
+		192902536FADDDD19754CE1D /* CollectionViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewModel.m; sourceTree = "<group>"; };
 		192902C68348F1FAE14876FF /* Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
 		192902C9D4E32EFC61588E3E /* BootstrapViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BootstrapViewModel.h; sourceTree = "<group>"; };
-		19290303F744B629C049C6A1 /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		1929030934EFACD68CE6A4C7 /* ProjectItemViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectItemViewModel.m; sourceTree = "<group>"; };
+		1929031ACE2D911357CA66A9 /* CollectionsItemViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionsItemViewCell.m; sourceTree = "<group>"; };
 		1929035CEF4DF27DDD33BC74 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1929036EE4CD901191311020 /* CollectionApiImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionApiImpl.m; sourceTree = "<group>"; };
+		192903E426B8AA996D1EBC53 /* CollectionViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewDataSource.h; sourceTree = "<group>"; };
+		192904009C17B4D22F0A9FB6 /* KanbanServiceImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KanbanServiceImpl.m; sourceTree = "<group>"; };
+		19290433749EF7EC5DD5BCF2 /* KanbanApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KanbanApi.h; sourceTree = "<group>"; };
 		1929043B44BF10AD04F6C773 /* GetCollectionParams.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetCollectionParams.m; sourceTree = "<group>"; };
 		1929043E9E24EDEA379B46D8 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		1929043FCBB54463F393FE9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1929046433717B36848067A3 /* CollectionItemViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionItemViewModel.m; sourceTree = "<group>"; };
 		192904D6CC936190361C4899 /* BootstrapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BootstrapViewController.m; sourceTree = "<group>"; };
 		19290509A1BC31F151E31C6E /* KanbanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KanbanViewController.h; sourceTree = "<group>"; };
 		1929059F72DFCFB0822CC5E2 /* FloUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FloUser.h; sourceTree = "<group>"; };
+		192905FC654FFC846F2A25EE /* Navigator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Navigator.h; sourceTree = "<group>"; };
+		1929060FB9F3FDE9AD4CC3C9 /* GetKanbanParameter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetKanbanParameter.m; sourceTree = "<group>"; };
 		1929064252C73070CE6D5AB3 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		192906676042109A23B629A1 /* AuthorizationApiImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuthorizationApiImpl.m; sourceTree = "<group>"; };
 		19290677072AF6507938CEAB /* AuthorizeViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthorizeViewModel.h; sourceTree = "<group>"; };
 		192906805A0AE62B14A3D850 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		192906CB89D1E0C5CD9BA0C2 /* BaseViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewModel.m; sourceTree = "<group>"; };
 		192906D2A36632976E27F7B0 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		192906DB3E351E621E454597 /* FloKanban.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FloKanban.h; sourceTree = "<group>"; };
+		192906F11FF24CED424F9E0F /* FloItemViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FloItemViewModel.h; sourceTree = "<group>"; };
 		192906F8D84DC5F24BE65812 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		1929072574C0F371E91C830D /* NavigationsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationsViewController.m; sourceTree = "<group>"; };
 		19290730F17FA4FC791C50C1 /* FloCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FloCollection.h; sourceTree = "<group>"; };
 		192907605448ED698C33612A /* GetCollectionParams.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetCollectionParams.h; sourceTree = "<group>"; };
+		192907B36904C3BBA2D7F11E /* NavigatorImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigatorImpl.m; sourceTree = "<group>"; };
+		192907C6A56FA2EC59366D15 /* CollectionsViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionsViewDataSource.h; sourceTree = "<group>"; };
+		1929082E73535DFF1BC8D946 /* CollectionsViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionsViewDataSource.m; sourceTree = "<group>"; };
 		19290852D551E316C96F4FB9 /* AuthorizeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuthorizeViewController.m; sourceTree = "<group>"; };
 		1929085A7A9CA2241F04121E /* BroadcastServiceImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BroadcastServiceImpl.h; sourceTree = "<group>"; };
 		192908669F03D2A026B4A874 /* CollectionApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionApi.h; sourceTree = "<group>"; };
@@ -110,35 +136,51 @@
 		192909097E1C3EE4D7DD4AA4 /* UserService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserService.h; sourceTree = "<group>"; };
 		192909125D2135DAC65CFEB0 /* AuthorizationApiImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthorizationApiImpl.h; sourceTree = "<group>"; };
 		192909191B5A628A14CCC6F8 /* LoginParameter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginParameter.m; sourceTree = "<group>"; };
+		1929097ECF7682ECCDF593E4 /* BaseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewCell.m; sourceTree = "<group>"; };
 		192909F28EAD57D1B30ED394 /* AuthorizeViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuthorizeViewModel.m; sourceTree = "<group>"; };
 		19290A10D475BE49794ACAA7 /* BroadcastService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BroadcastService.h; sourceTree = "<group>"; };
+		19290A2FC7A61EFF75F61480 /* NavigatorImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigatorImpl.h; sourceTree = "<group>"; };
 		19290A43B6464D0E9C16DECA /* NavigationsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationsViewController.h; sourceTree = "<group>"; };
 		19290A470AA7A684E32CF0B1 /* Configurations.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Configurations.plist; sourceTree = "<group>"; };
 		19290A70505C9E3AE813FE4D /* NavigationsViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationsViewModel.h; sourceTree = "<group>"; };
+		19290AB34A1EFCA5391F5363 /* CollectionViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewModel.h; sourceTree = "<group>"; };
+		19290B19C7CD0A504EC4F74C /* CollectionViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewDataSource.m; sourceTree = "<group>"; };
 		19290B1EF4BA5DE614CB85D1 /* BootstrapViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BootstrapViewModel.m; sourceTree = "<group>"; };
 		19290B85C3FC5CCE3FCACF19 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		19290BA286E7C481ECD87B18 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		19290BC38648B7B9F846FDE8 /* CollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewController.m; sourceTree = "<group>"; };
 		19290C1567A3A64441114001 /* LoginParameter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginParameter.h; sourceTree = "<group>"; };
 		19290C2BDBED06E50D0A884E /* CollectionApiImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionApiImpl.h; sourceTree = "<group>"; };
 		19290CCB009A4BEA3B8F183B /* CollectionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionsViewController.m; sourceTree = "<group>"; };
+		19290CF447FDD7D8F04F1EFE /* CollectionsItemViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionsItemViewCell.h; sourceTree = "<group>"; };
 		19290D11FA69CD7D122C7C0C /* CollectionServiceImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionServiceImpl.h; sourceTree = "<group>"; };
 		19290D2AD8B003C1D91CF283 /* CollectionServiceImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionServiceImpl.m; sourceTree = "<group>"; };
+		19290D2D9C538B410136055A /* KanbanService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KanbanService.h; sourceTree = "<group>"; };
 		19290D59ED5BA6084956CC56 /* FloUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FloUser.m; sourceTree = "<group>"; };
 		19290D7CE6CE2B858A675151 /* Configurations.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Configurations.plist; sourceTree = "<group>"; };
+		19290D7F4D0E42271066410F /* KanbanServiceImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KanbanServiceImpl.h; sourceTree = "<group>"; };
 		19290DFB8C17445C4BA325E2 /* Dependences.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dependences.m; sourceTree = "<group>"; };
+		19290E05959FBD55418E1DB9 /* KanbanApiImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KanbanApiImpl.h; sourceTree = "<group>"; };
+		19290E37AFCF33A18430CBA9 /* FloKanban.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FloKanban.m; sourceTree = "<group>"; };
 		19290E386EC3FA04E21655F2 /* KanbanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KanbanViewController.m; sourceTree = "<group>"; };
 		19290E3E79EC4CF567FDC2D0 /* Storyboards.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Storyboards.m; sourceTree = "<group>"; };
+		19290E5E8A2CA5F9D35AE3FF /* ProjectItemViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectItemViewModel.h; sourceTree = "<group>"; };
+		19290E613AE47A201E4664BC /* BaseTableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableViewDataSource.h; sourceTree = "<group>"; };
+		19290E7A64FE3636E8FF9669 /* BaseTableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewDataSource.m; sourceTree = "<group>"; };
+		19290E91EA37572D98DD98EA /* KanbanApiImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KanbanApiImpl.m; sourceTree = "<group>"; };
 		19290EA3CEA86E9687AF9AA2 /* Dependences.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dependences.h; sourceTree = "<group>"; };
 		19290EB1C47F136DC62E39B6 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		19290EB735D536544434AC55 /* BaseViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewModel.h; sourceTree = "<group>"; };
 		19290EBA92119ABCCA3CE660 /* CollectionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionsViewController.h; sourceTree = "<group>"; };
 		19290EF1BD2654BE00D003A9 /* Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
 		19290F041D0A0DC3F8ECD45C /* CollectionsViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionsViewModel.h; sourceTree = "<group>"; };
+		19290F676082CB572A31AEAC /* CollectionItemViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionItemViewModel.h; sourceTree = "<group>"; };
+		19290F946207D8793D2DADA7 /* GetKanbanParameter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetKanbanParameter.h; sourceTree = "<group>"; };
+		19290F9EA605A1038FBFC188 /* CollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewController.h; sourceTree = "<group>"; };
 		19290FADBBF7CC43C3A8F2E1 /* UserServiceImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserServiceImpl.m; sourceTree = "<group>"; };
 		19290FCF6F736A2614A35CEF /* FloCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FloCollection.m; sourceTree = "<group>"; };
 		19290FE4331E660C19DE20F4 /* AuthorizeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthorizeViewController.h; sourceTree = "<group>"; };
 		19290FED0D1016CEE8981AC0 /* AuthorizationApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthorizationApi.h; sourceTree = "<group>"; };
-		2700B4B521CB6A6B003D039F /* PageMenu.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PageMenu.framework; path = Carthage/Build/iOS/PageMenu.framework; sourceTree = "<group>"; };
 		2708F94D21C35F3A001D7D90 /* FloObjC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FloObjC.framework; path = Carthage/Build/iOS/FloObjC.framework; sourceTree = "<group>"; };
 		276DC45B21C78D21008AD49D /* CocoaLumberjack.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaLumberjack.framework; path = Carthage/Build/iOS/CocoaLumberjack.framework; sourceTree = "<group>"; };
 		276F084321C0F1B400C65405 /* sync_periods.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = sync_periods.plist; sourceTree = "<group>"; };
@@ -152,6 +194,7 @@
 		276F084B21C0F1BD00C65405 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		276F084C21C0F1BD00C65405 /* sync_periods.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = sync_periods.plist; sourceTree = "<group>"; };
 		277AB1B421C0B99E0008DABE /* DCFiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DCFiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		27872AEB21CCD4B100D7AA7D /* SVProgressHUD.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SVProgressHUD.framework; path = Carthage/Build/iOS/SVProgressHUD.framework; sourceTree = "<group>"; };
 		27A7577A21C0E09D003CDF43 /* DCFiOS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DCFiOS-Bridging-Header.h"; sourceTree = "<group>"; };
 		27B30B5F21C90134009C27CA /* KeychainAccess.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KeychainAccess.framework; path = Carthage/Build/iOS/KeychainAccess.framework; sourceTree = "<group>"; };
 		27C16DE421C0C69200E9ADA3 /* FileKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FileKit.framework; path = Carthage/Build/iOS/FileKit.framework; sourceTree = "<group>"; };
@@ -167,6 +210,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27872AED21CCD4B100D7AA7D /* SVProgressHUD.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,6 +240,12 @@
 			children = (
 				192908DF4349F4AA043765C6 /* CollectionsViewModel.m */,
 				19290F041D0A0DC3F8ECD45C /* CollectionsViewModel.h */,
+				1929046433717B36848067A3 /* CollectionItemViewModel.m */,
+				19290F676082CB572A31AEAC /* CollectionItemViewModel.h */,
+				192902536FADDDD19754CE1D /* CollectionViewModel.m */,
+				19290AB34A1EFCA5391F5363 /* CollectionViewModel.h */,
+				1929030934EFACD68CE6A4C7 /* ProjectItemViewModel.m */,
+				19290E5E8A2CA5F9D35AE3FF /* ProjectItemViewModel.h */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -209,12 +259,22 @@
 			path = model;
 			sourceTree = "<group>";
 		};
+		1929042B386903A8C10F6453 /* impl */ = {
+			isa = PBXGroup;
+			children = (
+				192907B36904C3BBA2D7F11E /* NavigatorImpl.m */,
+				19290A2FC7A61EFF75F61480 /* NavigatorImpl.h */,
+			);
+			path = impl;
+			sourceTree = "<group>";
+		};
 		1929047DEEC5C0201C6EE5A4 /* ui */ = {
 			isa = PBXGroup;
 			children = (
 				1929079318C512CC7820FC19 /* storyboard */,
 				19290FC936D904E7D733F0D5 /* scene */,
 				19290F15BB9C3D8C3C107642 /* common */,
+				19290DB9E4BF8E5B4D091120 /* navigator */,
 			);
 			path = ui;
 			sourceTree = "<group>";
@@ -256,6 +316,14 @@
 				192906F8D84DC5F24BE65812 /* MainViewController.h */,
 			);
 			path = view;
+			sourceTree = "<group>";
+		};
+		19290659517618C937410031 /* interface */ = {
+			isa = PBXGroup;
+			children = (
+				192905FC654FFC846F2A25EE /* Navigator.h */,
+			);
+			path = interface;
 			sourceTree = "<group>";
 		};
 		19290688FD0809171150CC69 /* view */ = {
@@ -350,6 +418,7 @@
 			children = (
 				19290C23079BCD9A618A2B92 /* view */,
 				19290047D99AC85F4DF18CBD /* model */,
+				19290EA8F7F5D7D00FDA7BCF /* datasource */,
 			);
 			path = collection;
 			sourceTree = "<group>";
@@ -360,6 +429,7 @@
 				192909097E1C3EE4D7DD4AA4 /* UserService.h */,
 				19290A10D475BE49794ACAA7 /* BroadcastService.h */,
 				192900320C610E8E5A00E32F /* CollectionService.h */,
+				19290D2D9C538B410136055A /* KanbanService.h */,
 			);
 			path = interface;
 			sourceTree = "<group>";
@@ -411,7 +481,10 @@
 			children = (
 				19290CCB009A4BEA3B8F183B /* CollectionsViewController.m */,
 				19290EBA92119ABCCA3CE660 /* CollectionsViewController.h */,
-				19290303F744B629C049C6A1 /* CollectionViewController.swift */,
+				19290BC38648B7B9F846FDE8 /* CollectionViewController.m */,
+				19290F9EA605A1038FBFC188 /* CollectionViewController.h */,
+				1929031ACE2D911357CA66A9 /* CollectionsItemViewCell.m */,
+				19290CF447FDD7D8F04F1EFE /* CollectionsItemViewCell.h */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -423,8 +496,19 @@
 				19290C1567A3A64441114001 /* LoginParameter.h */,
 				1929043B44BF10AD04F6C773 /* GetCollectionParams.m */,
 				192907605448ED698C33612A /* GetCollectionParams.h */,
+				1929060FB9F3FDE9AD4CC3C9 /* GetKanbanParameter.m */,
+				19290F946207D8793D2DADA7 /* GetKanbanParameter.h */,
 			);
 			path = params;
+			sourceTree = "<group>";
+		};
+		19290DB9E4BF8E5B4D091120 /* navigator */ = {
+			isa = PBXGroup;
+			children = (
+				19290659517618C937410031 /* interface */,
+				1929042B386903A8C10F6453 /* impl */,
+			);
+			path = navigator;
 			sourceTree = "<group>";
 		};
 		19290DD1AFC80AD0617E7851 /* impl */ = {
@@ -434,6 +518,8 @@
 				192909125D2135DAC65CFEB0 /* AuthorizationApiImpl.h */,
 				1929036EE4CD901191311020 /* CollectionApiImpl.m */,
 				19290C2BDBED06E50D0A884E /* CollectionApiImpl.h */,
+				19290E91EA37572D98DD98EA /* KanbanApiImpl.m */,
+				19290E05959FBD55418E1DB9 /* KanbanApiImpl.h */,
 			);
 			path = impl;
 			sourceTree = "<group>";
@@ -443,6 +529,7 @@
 			children = (
 				19290FED0D1016CEE8981AC0 /* AuthorizationApi.h */,
 				192908669F03D2A026B4A874 /* CollectionApi.h */,
+				19290433749EF7EC5DD5BCF2 /* KanbanApi.h */,
 			);
 			path = interface;
 			sourceTree = "<group>";
@@ -456,6 +543,17 @@
 			path = view;
 			sourceTree = "<group>";
 		};
+		19290EA8F7F5D7D00FDA7BCF /* datasource */ = {
+			isa = PBXGroup;
+			children = (
+				19290B19C7CD0A504EC4F74C /* CollectionViewDataSource.m */,
+				192903E426B8AA996D1EBC53 /* CollectionViewDataSource.h */,
+				1929082E73535DFF1BC8D946 /* CollectionsViewDataSource.m */,
+				192907C6A56FA2EC59366D15 /* CollectionsViewDataSource.h */,
+			);
+			path = datasource;
+			sourceTree = "<group>";
+		};
 		19290EC7504FBB2335CDBF64 /* model */ = {
 			isa = PBXGroup;
 			children = (
@@ -463,6 +561,8 @@
 				1929059F72DFCFB0822CC5E2 /* FloUser.h */,
 				19290FCF6F736A2614A35CEF /* FloCollection.m */,
 				19290730F17FA4FC791C50C1 /* FloCollection.h */,
+				19290E37AFCF33A18430CBA9 /* FloKanban.m */,
+				192906DB3E351E621E454597 /* FloKanban.h */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -482,6 +582,11 @@
 				1929043E9E24EDEA379B46D8 /* BaseViewController.h */,
 				192906CB89D1E0C5CD9BA0C2 /* BaseViewModel.m */,
 				19290EB735D536544434AC55 /* BaseViewModel.h */,
+				19290E7A64FE3636E8FF9669 /* BaseTableViewDataSource.m */,
+				19290E613AE47A201E4664BC /* BaseTableViewDataSource.h */,
+				1929097ECF7682ECCDF593E4 /* BaseTableViewCell.m */,
+				192901E84CBEBF84504AD69C /* BaseTableViewCell.h */,
+				192906F11FF24CED424F9E0F /* FloItemViewModel.h */,
 			);
 			path = common;
 			sourceTree = "<group>";
@@ -495,6 +600,8 @@
 				1929085A7A9CA2241F04121E /* BroadcastServiceImpl.h */,
 				19290D2AD8B003C1D91CF283 /* CollectionServiceImpl.m */,
 				19290D11FA69CD7D122C7C0C /* CollectionServiceImpl.h */,
+				192904009C17B4D22F0A9FB6 /* KanbanServiceImpl.m */,
+				19290D7F4D0E42271066410F /* KanbanServiceImpl.h */,
 			);
 			path = impl;
 			sourceTree = "<group>";
@@ -563,8 +670,8 @@
 				27C16DE821C0C69300E9ADA3 /* SwiftyJSON.framework */,
 				2708F94D21C35F3A001D7D90 /* FloObjC.framework */,
 				27D668BA21C7A9F400E20109 /* LGSideMenuController.framework */,
-				2700B4B521CB6A6B003D039F /* PageMenu.framework */,
 				27B30B5F21C90134009C27CA /* KeychainAccess.framework */,
+				27872AEB21CCD4B100D7AA7D /* SVProgressHUD.framework */,
 				276DC45B21C78D21008AD49D /* CocoaLumberjack.framework */,
 			);
 			name = Frameworks;
@@ -655,7 +762,7 @@
 				"$(SRCROOT)/Carthage/Build/iOS/CocoaLumberjack.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/LGSideMenuController.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/KeychainAccess.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/PageMenu.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SVProgressHUD.framework",
 			);
 			outputPaths = (
 			);
@@ -709,7 +816,20 @@
 				192908606C140C4DD6591D77 /* FloCollection.m in Sources */,
 				19290B9E89EE54C81F41C927 /* CollectionApiImpl.m in Sources */,
 				192905A8CF39431D1F5AB910 /* KanbanViewController.m in Sources */,
-				19290794214829EFD25F4E6C /* CollectionViewController.swift in Sources */,
+				1929013D4C82EF18E63718ED /* CollectionViewController.m in Sources */,
+				19290F15C7970D5BE7FA0F39 /* CollectionViewDataSource.m in Sources */,
+				1929095E0CE437702A66FD03 /* CollectionItemViewModel.m in Sources */,
+				19290EE33CB939721C220D72 /* CollectionViewModel.m in Sources */,
+				1929005CCD47AA5322468A11 /* KanbanServiceImpl.m in Sources */,
+				192908EB61CCBDA7DC1E6B83 /* KanbanApiImpl.m in Sources */,
+				1929002EFF70FF92B7660163 /* GetKanbanParameter.m in Sources */,
+				1929045E66345B0BBB1536FD /* FloKanban.m in Sources */,
+				19290C35004BD303BE4D47DE /* CollectionsViewDataSource.m in Sources */,
+				1929078D6CCDBDBD78A95543 /* BaseTableViewDataSource.m in Sources */,
+				19290F631C25E87D7A7326AE /* CollectionsItemViewCell.m in Sources */,
+				192907B62F6C4714339B38A6 /* BaseTableViewCell.m in Sources */,
+				1929062F360E01D5B5B67888 /* ProjectItemViewModel.m in Sources */,
+				1929069E4E23EEA10CC02E38 /* NavigatorImpl.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

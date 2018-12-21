@@ -4,9 +4,10 @@
 //
 
 #import "MainViewController.h"
-#import "HomeViewController.h"
 #import "Storyboards.h"
 #import "NavigationsViewController.h"
+#import "CollectionsViewController.h"
+#import "NavigatorImpl.h"
 
 
 @class CollectionViewController;
@@ -17,8 +18,10 @@
 
 - (instancetype)init {
     if (self = [super init]) {
-        CollectionViewController * home = [[Storyboards main] instantiateViewControllerWithIdentifier:@"CollectionViewController"];
-        self.rootViewController = [[UINavigationController alloc] initWithRootViewController:home];
+        CollectionsViewController * home = [[Storyboards main] instantiateViewControllerWithIdentifier:@"CollectionsViewController"];
+        UINavigationController * homeNavVC = [[UINavigationController alloc] initWithRootViewController:home];
+        self.rootViewController = homeNavVC;
+        home.navigator = [[NavigatorImpl alloc] initWithNavigationController:homeNavVC storyboard:[Storyboards main]];
 
         NavigationsViewController * left = [[Storyboards main] instantiateViewControllerWithIdentifier:@"NavigationsViewController"];
         self.leftViewController = [[UINavigationController alloc] initWithRootViewController:left];

@@ -7,4 +7,9 @@
 
 
 @interface FloCollection : NSObject
+@property (nonatomic, copy) NSString * collectionId;
+@property (nonatomic, copy) NSString * collectionName;
+
+- (instancetype)initWithCollectionId:(NSString *)collectionId collectionName:(NSString *)collectionName;
+
 @end

@@ -5,6 +5,8 @@
 
 #import <CocoaLumberjack/CocoaLumberjack.h>
 #import "BaseViewController.h"
+#import "Navigator.h"
+#import <SVProgressHUD/SVProgressHUD.h>
 
 static const DDLogLevel ddLogLevel = DDLogLevelDebug | DDLogLevelVerbose;
 
@@ -14,6 +16,12 @@ static const DDLogLevel ddLogLevel = DDLogLevelDebug | DDLogLevelVerbose;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self setupProgressUI];
+}
+
+- (void)setupProgressUI {
+    [SVProgressHUD setDefaultStyle:SVProgressHUDStyleDark];
+    [SVProgressHUD setDefaultMaskType:SVProgressHUDMaskTypeGradient];
 }
 
 - (void)showMessage:(NSString *)message confirmButtonTitle:(NSString *) title onConfirmed:(void(^)())confirmed {
@@ -29,5 +37,21 @@ static const DDLogLevel ddLogLevel = DDLogLevelDebug | DDLogLevelVerbose;
 - (void)dealloc {
     DDLogDebug(@"%@ dealocing....", THIS_FILE);
 }
+
+- (void)showLoading:(NSString *)message {
+    [SVProgressHUD showWithStatus:message];
+}
+
+- (void)hideLoading {
+    [SVProgressHUD dismissWithDelay:.35f];
+}
+
+- (void)showError:(NSString *)message {
+    UIAlertController * alertController = [UIAlertController alertControllerWithTitle:nil message:message
+            preferredStyle:UIAlertControllerStyleAlert];
+    [alertController addAction:[UIAlertAction actionWithTitle:@"Close" style:UIAlertActionStyleDestructive
+                                                      handler:nil]];
+}
+
 
 @end

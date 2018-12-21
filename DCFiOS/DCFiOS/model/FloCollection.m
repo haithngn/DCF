@@ -5,8 +5,17 @@
 
 #import "FloCollection.h"
 
-
 @implementation FloCollection {
 
 }
+- (instancetype)initWithCollectionId:(NSString *)collectionId collectionName:(NSString *)collectionName {
+    self = [super init];
+    if (self) {
+        self.collectionId = collectionId;
+        self.collectionName = collectionName;
+    }
+
+    return self;
+}
+
 @end

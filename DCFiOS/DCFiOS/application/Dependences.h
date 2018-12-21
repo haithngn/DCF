@@ -10,6 +10,7 @@
 @protocol UserService;
 @protocol BroadcastService;
 @protocol CollectionService;
+@protocol KanbanService;
 
 @interface Dependences : NSObject
 
@@ -17,5 +18,6 @@
 + (NSObject <UserService>*) userService;
 + (NSObject <BroadcastService> *)broadcastService;
 + (NSObject <CollectionService> *)collectionService;
++ (NSObject <KanbanService> *)kanbanService;
 
 @end
