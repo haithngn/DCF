@@ -5,5 +5,11 @@
 
 #import <Foundation/Foundation.h>
 
+@class GetBookmarksParameter;
+@class FloBookmark;
+
 @protocol BookmarkApi <NSObject>
+@required
+- (void)getBookmarks:(GetBookmarksParameter *)params handler:(void (^)(NSArray <FloBookmark *> *bookmarks, NSError *error))handler;
+
 @end

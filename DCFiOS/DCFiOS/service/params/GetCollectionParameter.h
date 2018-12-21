@@ -6,7 +6,7 @@
 #import <Foundation/Foundation.h>
 
 
-@interface GetCollectionParams : NSObject
+@interface GetCollectionParameter : NSObject
 @property (nonatomic, readonly) NSNumber * lastModified;
 
 - (instancetype)initWithLastModified:(NSNumber * )lastModified;

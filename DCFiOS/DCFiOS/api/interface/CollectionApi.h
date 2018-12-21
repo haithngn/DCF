@@ -5,9 +5,9 @@
 
 #import <Foundation/Foundation.h>
 
-@class GetCollectionParams;
+@class GetCollectionParameter;
 @class FloCollection;
 
 @protocol CollectionApi <NSObject>
-- (void)getCollections:(GetCollectionParams *)params handler:(void (^)(NSArray<FloCollection *> * collections, NSError * error))handler;
+- (void)getCollections:(GetCollectionParameter *)params handler:(void (^)(NSArray<FloCollection *> * collections, NSError * error))handler;
 @end

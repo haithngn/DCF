@@ -3,11 +3,11 @@
 // Copyright (c) 2018 Hai Nguyen. All rights reserved.
 //
 
-#import "GetCollectionParams.h"
+#import "GetCollectionParameter.h"
 #import "FloCollection.h"
 
 
-@implementation GetCollectionParams {
+@implementation GetCollectionParameter {
 
 }
 

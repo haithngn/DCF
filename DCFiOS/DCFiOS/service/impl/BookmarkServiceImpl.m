@@ -25,4 +25,9 @@
     return self;
 }
 
+- (void)getBookmarks:(GetBookmarksParameter *)params handler:(void (^)(NSArray <FloBookmark *> *bookmarks, NSError *error))handler {
+    [_api getBookmarks:params handler: handler];
+}
+
+
 @end

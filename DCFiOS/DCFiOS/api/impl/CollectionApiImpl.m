@@ -7,7 +7,7 @@
 #import <CoreFlo/CoreFlo.h>
 #import <CocoaLumberjack/CocoaLumberjack.h>
 #import "CollectionApiImpl.h"
-#import "GetCollectionParams.h"
+#import "GetCollectionParameter.h"
 #import "FloCollection.h"
 
 static const DDLogLevel ddLogLevel = DDLogLevelDebug | DDLogLevelVerbose;
@@ -33,7 +33,7 @@ static const DDLogLevel ddLogLevel = DDLogLevelDebug | DDLogLevelVerbose;
     return self;
 }
 
-- (void)getCollections:(GetCollectionParams *)params handler:(void (^)(NSArray<FloCollection *> *collections, NSError *error))handler {
+- (void)getCollections:(GetCollectionParameter *)params handler:(void (^)(NSArray<FloCollection *> *collections, NSError *error))handler {
     GetCollectionsParams *getCollectionsParams = [[GetCollectionsParams alloc] initWithLastModified: params.lastModified];
     [_api getCollectionsWithParams:getCollectionsParams handler:^(NSArray <Project *> * projects, NSError *error) {
         DDLogDebug(@"%@ Projects : %@", THIS_FILE, projects);

@@ -6,6 +6,7 @@
 #import "BookmarksViewModel.h"
 #import "UserService.h"
 #import "BookmarkService.h"
+#import "GetBookmarksParameter.h"
 
 @interface BookmarksViewModel ()
 
@@ -31,7 +32,11 @@
 }
 
 - (void)load {
+    GetBookmarksParameter * parameter = [[GetBookmarksParameter alloc] initWithUserId:_userService.currentUserId
+            pItem:5 minId:nil modifiedGTE:nil ids:@[] hasDel:false];
+    [_bookmarkService getBookmarks:parameter handler:^(NSArray<FloBookmark *> *bookmarks, NSError *error) {
 
+    }];
 }
 
 @end
