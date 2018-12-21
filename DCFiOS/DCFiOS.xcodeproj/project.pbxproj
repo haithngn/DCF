@@ -14,7 +14,9 @@
 		1929013B7441B938EE4F243D /* GetCollectionParams.m in Sources */ = {isa = PBXBuildFile; fileRef = 1929043B44BF10AD04F6C773 /* GetCollectionParams.m */; };
 		1929013D4C82EF18E63718ED /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19290BC38648B7B9F846FDE8 /* CollectionViewController.m */; };
 		1929017635BADDB3867A9161 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1929035CEF4DF27DDD33BC74 /* main.m */; };
+		1929026AB4A1B22BB629B65D /* BookmarkServiceImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 19290998172D3CA8F9D76384 /* BookmarkServiceImpl.m */; };
 		19290293F4078F0F6384C4A8 /* UserServiceImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 19290FADBBF7CC43C3A8F2E1 /* UserServiceImpl.m */; };
+		192902BCE6D2215152C09305 /* BookmarksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19290B9F49466727F39DA774 /* BookmarksViewController.m */; };
 		192902EB674333D27A4F555E /* CollectionServiceImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 19290D2AD8B003C1D91CF283 /* CollectionServiceImpl.m */; };
 		1929033B36342A4C1EE60776 /* BaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 192906CB89D1E0C5CD9BA0C2 /* BaseViewModel.m */; };
 		1929033EB6602BDB54A125FC /* CollectionsViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 192908DF4349F4AA043765C6 /* CollectionsViewModel.m */; };
@@ -25,6 +27,7 @@
 		192905A8CF39431D1F5AB910 /* KanbanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19290E386EC3FA04E21655F2 /* KanbanViewController.m */; };
 		192905FC91ACEA6F0DAA98DA /* AuthorizationApiImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 192906676042109A23B629A1 /* AuthorizationApiImpl.m */; };
 		1929062F360E01D5B5B67888 /* ProjectItemViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1929030934EFACD68CE6A4C7 /* ProjectItemViewModel.m */; };
+		19290680F56C357FCBA95086 /* BookmarksViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 19290597F27DDF36C06FE24C /* BookmarksViewModel.m */; };
 		19290685C3BBF9A21031D876 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 192906D2A36632976E27F7B0 /* HomeViewController.m */; };
 		1929069AC172E74B6C5940D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19290EB1C47F136DC62E39B6 /* LaunchScreen.storyboard */; };
 		1929069E4E23EEA10CC02E38 /* NavigatorImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 192907B36904C3BBA2D7F11E /* NavigatorImpl.m */; };
@@ -32,6 +35,7 @@
 		1929076161602B6E5EE4EC90 /* LoginParameter.m in Sources */ = {isa = PBXBuildFile; fileRef = 192909191B5A628A14CCC6F8 /* LoginParameter.m */; };
 		1929078D6CCDBDBD78A95543 /* BaseTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 19290E7A64FE3636E8FF9669 /* BaseTableViewDataSource.m */; };
 		192907B62F6C4714339B38A6 /* BaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1929097ECF7682ECCDF593E4 /* BaseTableViewCell.m */; };
+		192907FD698F636AF8D3313B /* BookmarkApiImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 19290C1E5C94E8FBB3983B9F /* BookmarkApiImpl.m */; };
 		192908606C140C4DD6591D77 /* FloCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 19290FCF6F736A2614A35CEF /* FloCollection.m */; };
 		192908717A208E7A09E856AB /* AuthorizeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19290852D551E316C96F4FB9 /* AuthorizeViewController.m */; };
 		192908B1E6C88579DB2D4EA7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1929043FCBB54463F393FE9A /* AppDelegate.m */; };
@@ -42,6 +46,7 @@
 		192909F5C592B4A28B2DD0CF /* Storyboards.m in Sources */ = {isa = PBXBuildFile; fileRef = 19290E3E79EC4CF567FDC2D0 /* Storyboards.m */; };
 		19290B985A65E3DD8D3EBCA1 /* FloUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 19290D59ED5BA6084956CC56 /* FloUser.m */; };
 		19290B9E89EE54C81F41C927 /* CollectionApiImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 1929036EE4CD901191311020 /* CollectionApiImpl.m */; };
+		19290C33A92A949D21FB9543 /* BookmarksViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1929072BDC56423EB893409F /* BookmarksViewCell.m */; };
 		19290C35004BD303BE4D47DE /* CollectionsViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 1929082E73535DFF1BC8D946 /* CollectionsViewDataSource.m */; };
 		19290C5F476558826A7397AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 192906805A0AE62B14A3D850 /* Main.storyboard */; };
 		19290C8C974CB63F22ECB67B /* BootstrapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 192904D6CC936190361C4899 /* BootstrapViewController.m */; };
@@ -90,6 +95,7 @@
 		192900320C610E8E5A00E32F /* CollectionService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionService.h; sourceTree = "<group>"; };
 		192901252370127BEEF76B0A /* KanbanNavigations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KanbanNavigations.h; sourceTree = "<group>"; };
 		1929012709CA9329FAE97A4F /* NavigationsViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationsViewModel.m; sourceTree = "<group>"; };
+		1929017F833702C49634A818 /* BookmarkApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookmarkApi.h; sourceTree = "<group>"; };
 		1929019C928AB3E629798E87 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		192901C01B4D8E928C793768 /* UserServiceImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserServiceImpl.h; sourceTree = "<group>"; };
 		192901E84CBEBF84504AD69C /* BaseTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableViewCell.h; sourceTree = "<group>"; };
@@ -101,6 +107,7 @@
 		192902C9D4E32EFC61588E3E /* BootstrapViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BootstrapViewModel.h; sourceTree = "<group>"; };
 		1929030934EFACD68CE6A4C7 /* ProjectItemViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectItemViewModel.m; sourceTree = "<group>"; };
 		1929031ACE2D911357CA66A9 /* CollectionsItemViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionsItemViewCell.m; sourceTree = "<group>"; };
+		19290335F178D69FFF95C380 /* BookmarksViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookmarksViewController.h; sourceTree = "<group>"; };
 		1929035CEF4DF27DDD33BC74 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1929036EE4CD901191311020 /* CollectionApiImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionApiImpl.m; sourceTree = "<group>"; };
 		192903E426B8AA996D1EBC53 /* CollectionViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewDataSource.h; sourceTree = "<group>"; };
@@ -112,7 +119,10 @@
 		1929046433717B36848067A3 /* CollectionItemViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionItemViewModel.m; sourceTree = "<group>"; };
 		192904D6CC936190361C4899 /* BootstrapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BootstrapViewController.m; sourceTree = "<group>"; };
 		19290509A1BC31F151E31C6E /* KanbanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KanbanViewController.h; sourceTree = "<group>"; };
+		1929052A4187B026DE56FDCA /* BookmarkService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookmarkService.h; sourceTree = "<group>"; };
+		19290597F27DDF36C06FE24C /* BookmarksViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookmarksViewModel.m; sourceTree = "<group>"; };
 		1929059F72DFCFB0822CC5E2 /* FloUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FloUser.h; sourceTree = "<group>"; };
+		192905D06AF92E9E7F91C7FF /* BookmarksViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookmarksViewCell.h; sourceTree = "<group>"; };
 		192905FC654FFC846F2A25EE /* Navigator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Navigator.h; sourceTree = "<group>"; };
 		1929060FB9F3FDE9AD4CC3C9 /* GetKanbanParameter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetKanbanParameter.m; sourceTree = "<group>"; };
 		1929064252C73070CE6D5AB3 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
@@ -127,6 +137,7 @@
 		192906F8D84DC5F24BE65812 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		192906FB4AE8BE5EEE1161DC /* KanbanItemViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KanbanItemViewModel.h; sourceTree = "<group>"; };
 		1929072574C0F371E91C830D /* NavigationsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationsViewController.m; sourceTree = "<group>"; };
+		1929072BDC56423EB893409F /* BookmarksViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookmarksViewCell.m; sourceTree = "<group>"; };
 		19290730F17FA4FC791C50C1 /* FloCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FloCollection.h; sourceTree = "<group>"; };
 		192907605448ED698C33612A /* GetCollectionParams.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetCollectionParams.h; sourceTree = "<group>"; };
 		192907B36904C3BBA2D7F11E /* NavigatorImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigatorImpl.m; sourceTree = "<group>"; };
@@ -143,6 +154,7 @@
 		192909125D2135DAC65CFEB0 /* AuthorizationApiImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthorizationApiImpl.h; sourceTree = "<group>"; };
 		192909191B5A628A14CCC6F8 /* LoginParameter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginParameter.m; sourceTree = "<group>"; };
 		1929097ECF7682ECCDF593E4 /* BaseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewCell.m; sourceTree = "<group>"; };
+		19290998172D3CA8F9D76384 /* BookmarkServiceImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookmarkServiceImpl.m; sourceTree = "<group>"; };
 		192909F28EAD57D1B30ED394 /* AuthorizeViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuthorizeViewModel.m; sourceTree = "<group>"; };
 		19290A10D475BE49794ACAA7 /* BroadcastService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BroadcastService.h; sourceTree = "<group>"; };
 		19290A2FC7A61EFF75F61480 /* NavigatorImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigatorImpl.h; sourceTree = "<group>"; };
@@ -152,11 +164,15 @@
 		19290AB34A1EFCA5391F5363 /* CollectionViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewModel.h; sourceTree = "<group>"; };
 		19290B19C7CD0A504EC4F74C /* CollectionViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewDataSource.m; sourceTree = "<group>"; };
 		19290B1EF4BA5DE614CB85D1 /* BootstrapViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BootstrapViewModel.m; sourceTree = "<group>"; };
+		19290B78DF43F244EE611532 /* BookmarksViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookmarksViewModel.h; sourceTree = "<group>"; };
 		19290B85C3FC5CCE3FCACF19 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		19290B9F49466727F39DA774 /* BookmarksViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookmarksViewController.m; sourceTree = "<group>"; };
 		19290BA286E7C481ECD87B18 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		19290BC38648B7B9F846FDE8 /* CollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewController.m; sourceTree = "<group>"; };
 		19290BFFE7789FFBFB1CB70B /* KanbanItemViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KanbanItemViewModel.m; sourceTree = "<group>"; };
+		19290C0BDDC686D8CE3BED70 /* BookmarkServiceImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookmarkServiceImpl.h; sourceTree = "<group>"; };
 		19290C1567A3A64441114001 /* LoginParameter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginParameter.h; sourceTree = "<group>"; };
+		19290C1E5C94E8FBB3983B9F /* BookmarkApiImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookmarkApiImpl.m; sourceTree = "<group>"; };
 		19290C2BDBED06E50D0A884E /* CollectionApiImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionApiImpl.h; sourceTree = "<group>"; };
 		19290CCB009A4BEA3B8F183B /* CollectionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionsViewController.m; sourceTree = "<group>"; };
 		19290CF447FDD7D8F04F1EFE /* CollectionsItemViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionsItemViewCell.h; sourceTree = "<group>"; };
@@ -177,6 +193,7 @@
 		19290E91EA37572D98DD98EA /* KanbanApiImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KanbanApiImpl.m; sourceTree = "<group>"; };
 		19290EA3CEA86E9687AF9AA2 /* Dependences.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dependences.h; sourceTree = "<group>"; };
 		19290EB1C47F136DC62E39B6 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		19290EB52A02F2C9964118FC /* BookmarkApiImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookmarkApiImpl.h; sourceTree = "<group>"; };
 		19290EB735D536544434AC55 /* BaseViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewModel.h; sourceTree = "<group>"; };
 		19290EBA92119ABCCA3CE660 /* CollectionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionsViewController.h; sourceTree = "<group>"; };
 		19290EF1BD2654BE00D003A9 /* Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
@@ -440,6 +457,7 @@
 				19290A10D475BE49794ACAA7 /* BroadcastService.h */,
 				192900320C610E8E5A00E32F /* CollectionService.h */,
 				19290D2D9C538B410136055A /* KanbanService.h */,
+				1929052A4187B026DE56FDCA /* BookmarkService.h */,
 			);
 			path = interface;
 			sourceTree = "<group>";
@@ -512,6 +530,24 @@
 			path = params;
 			sourceTree = "<group>";
 		};
+		19290CA604D0AA2618D2F537 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				19290597F27DDF36C06FE24C /* BookmarksViewModel.m */,
+				19290B78DF43F244EE611532 /* BookmarksViewModel.h */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		19290D76F91396E83EC0A1F6 /* bookmarks */ = {
+			isa = PBXGroup;
+			children = (
+				19290EA5692D38863E9F79A4 /* view */,
+				19290CA604D0AA2618D2F537 /* model */,
+			);
+			path = bookmarks;
+			sourceTree = "<group>";
+		};
 		19290DB9E4BF8E5B4D091120 /* navigator */ = {
 			isa = PBXGroup;
 			children = (
@@ -530,6 +566,8 @@
 				19290C2BDBED06E50D0A884E /* CollectionApiImpl.h */,
 				19290E91EA37572D98DD98EA /* KanbanApiImpl.m */,
 				19290E05959FBD55418E1DB9 /* KanbanApiImpl.h */,
+				19290C1E5C94E8FBB3983B9F /* BookmarkApiImpl.m */,
+				19290EB52A02F2C9964118FC /* BookmarkApiImpl.h */,
 			);
 			path = impl;
 			sourceTree = "<group>";
@@ -540,6 +578,7 @@
 				19290FED0D1016CEE8981AC0 /* AuthorizationApi.h */,
 				192908669F03D2A026B4A874 /* CollectionApi.h */,
 				19290433749EF7EC5DD5BCF2 /* KanbanApi.h */,
+				1929017F833702C49634A818 /* BookmarkApi.h */,
 			);
 			path = interface;
 			sourceTree = "<group>";
@@ -551,6 +590,17 @@
 				19290A43B6464D0E9C16DECA /* NavigationsViewController.h */,
 				192902B0853B9588EB8107C7 /* KanbanViewCell.m */,
 				1929067A011251192D3DE697 /* KanbanViewCell.h */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		19290EA5692D38863E9F79A4 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				19290B9F49466727F39DA774 /* BookmarksViewController.m */,
+				19290335F178D69FFF95C380 /* BookmarksViewController.h */,
+				1929072BDC56423EB893409F /* BookmarksViewCell.m */,
+				192905D06AF92E9E7F91C7FF /* BookmarksViewCell.h */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -614,6 +664,8 @@
 				19290D11FA69CD7D122C7C0C /* CollectionServiceImpl.h */,
 				192904009C17B4D22F0A9FB6 /* KanbanServiceImpl.m */,
 				19290D7F4D0E42271066410F /* KanbanServiceImpl.h */,
+				19290998172D3CA8F9D76384 /* BookmarkServiceImpl.m */,
+				19290C0BDDC686D8CE3BED70 /* BookmarkServiceImpl.h */,
 			);
 			path = impl;
 			sourceTree = "<group>";
@@ -637,6 +689,7 @@
 				1929078FEDD5A9233684CE38 /* navigations */,
 				19290AD3F891A914A5A2944A /* collection */,
 				192904BF0F2A092A11E8FFF3 /* kanban */,
+				19290D76F91396E83EC0A1F6 /* bookmarks */,
 			);
 			path = scene;
 			sourceTree = "<group>";
@@ -844,6 +897,11 @@
 				1929069E4E23EEA10CC02E38 /* NavigatorImpl.m in Sources */,
 				192908CD5ED132C70D13FA2A /* KanbanViewCell.m in Sources */,
 				19290D5AF6806E23D2D9B804 /* KanbanItemViewModel.m in Sources */,
+				192902BCE6D2215152C09305 /* BookmarksViewController.m in Sources */,
+				19290680F56C357FCBA95086 /* BookmarksViewModel.m in Sources */,
+				19290C33A92A949D21FB9543 /* BookmarksViewCell.m in Sources */,
+				1929026AB4A1B22BB629B65D /* BookmarkServiceImpl.m in Sources */,
+				192907FD698F636AF8D3313B /* BookmarkApiImpl.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

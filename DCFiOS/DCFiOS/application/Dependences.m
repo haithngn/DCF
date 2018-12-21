@@ -18,8 +18,13 @@
 #import "KanbanApi.h"
 #import "KanbanServiceImpl.h"
 #import "KanbanApiImpl.h"
+#import "BookmarkService.h"
+#import "BookmarkApi.h"
+#import "BookmarkApiImpl.h"
+#import "BookmarkServiceImpl.h"
 
 @class FloKanbanApi;
+@class FloBookmarkApi;
 
 @interface Dependences ()
 
@@ -31,6 +36,8 @@
 @property (nonatomic, strong) NSObject <CollectionApi> * collectionApi;
 @property (nonatomic, strong) NSObject <KanbanApi> * kanbanApi;
 @property (nonatomic, strong) NSObject <KanbanService> * kanbanService;
+@property (nonatomic, strong) NSObject <BookmarkApi> * bookmarkApi;
+@property (nonatomic, strong) NSObject <BookmarkService> * bookmarkService;
 
 @end
 
@@ -43,18 +50,19 @@
     NSObject <CollectionService> *_collectionService;
     NSObject <CollectionApi> *_collectionApi;
     NSObject <KanbanService> *_kanbanService;
+    NSObject <BookmarkApi> *_bookmarkApi;
+    NSObject <BookmarkService> *_bookmarkService;
 }
 
 @synthesize userService = _userService;
 @synthesize authorizationApi = _authorizationApi;
 @synthesize config = _config;
 @synthesize broadcastService = _broadcastService;
-
 @synthesize collectionService = _collectionService;
-
 @synthesize collectionApi = _collectionApi;
-
 @synthesize kanbanService = _kanbanService;
+@synthesize bookmarkApi = _bookmarkApi;
+@synthesize bookmarkService = _bookmarkService;
 
 + (instancetype)sharedInstance {
     static Dependences *sharedInstance = nil;
@@ -96,6 +104,10 @@
 }
 
 #pragma mark - Instance Properties
+
++ (NSObject <BookmarkService>*)bookmarkService {
+    return [Dependences sharedInstance].bookmarkService;
+}
 
 - (NSObject <UserService> *)userService {
     if (_userService == nil) {
@@ -149,6 +161,22 @@
     }
 
     return _kanbanService;
+}
+
+- (NSObject <BookmarkApi> *)bookmarkApi {
+    if (_bookmarkApi == nil) {
+        _bookmarkApi = [[BookmarkApiImpl alloc] initWithApi:[[FloBookmarkApi alloc] init] ];
+    }
+
+    return _bookmarkApi;
+}
+
+- (NSObject <BookmarkService> *)bookmarkService {
+    if (_bookmarkService == nil) {
+        _bookmarkService = [[BookmarkServiceImpl alloc] initWithBookmarkApi:self.bookmarkApi];
+    }
+
+    return _bookmarkService;
 }
 
 @end

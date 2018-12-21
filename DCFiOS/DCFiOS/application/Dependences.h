@@ -11,6 +11,7 @@
 @protocol BroadcastService;
 @protocol CollectionService;
 @protocol KanbanService;
+@protocol BookmarkService;
 
 @interface Dependences : NSObject
 
@@ -19,5 +20,5 @@
 + (NSObject <BroadcastService> *)broadcastService;
 + (NSObject <CollectionService> *)collectionService;
 + (NSObject <KanbanService> *)kanbanService;
-
++ (NSObject <BookmarkService>*)bookmarkService;
 @end
