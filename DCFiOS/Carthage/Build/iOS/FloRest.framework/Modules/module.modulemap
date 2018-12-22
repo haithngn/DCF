@@ -1,0 +1,11 @@
+framework module FloRest {
+  umbrella header "FloRest.h"
+
+  export *
+  module * { export * }
+}
+
+module FloRest.Swift {
+    header "FloRest-Swift.h"
+    requires objc
+}

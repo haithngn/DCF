@@ -1,0 +1,11 @@
+framework module FloObjC {
+  umbrella header "FloObjC.h"
+
+  export *
+  module * { export * }
+}
+
+module FloObjC.Swift {
+    header "FloObjC-Swift.h"
+    requires objc
+}
