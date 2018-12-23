@@ -20,6 +20,7 @@
 		192902EB674333D27A4F555E /* CollectionServiceImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 19290D2AD8B003C1D91CF283 /* CollectionServiceImpl.m */; };
 		1929033B36342A4C1EE60776 /* BaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 192906CB89D1E0C5CD9BA0C2 /* BaseViewModel.m */; };
 		1929033EB6602BDB54A125FC /* CollectionsViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 192908DF4349F4AA043765C6 /* CollectionsViewModel.m */; };
+		1929034058AFE34760C430FD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 192900DDE0F5CCBFE3644E27 /* AppDelegate.m */; };
 		192903A548AAE5F4686C80CE /* NavigationsViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1929012709CA9329FAE97A4F /* NavigationsViewModel.m */; };
 		1929045E66345B0BBB1536FD /* FloKanban.m in Sources */ = {isa = PBXBuildFile; fileRef = 19290E37AFCF33A18430CBA9 /* FloKanban.m */; };
 		192904D832E27321F5841F23 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19290BA286E7C481ECD87B18 /* BaseViewController.m */; };
@@ -31,6 +32,7 @@
 		19290685C3BBF9A21031D876 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 192906D2A36632976E27F7B0 /* HomeViewController.m */; };
 		1929069AC172E74B6C5940D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19290EB1C47F136DC62E39B6 /* LaunchScreen.storyboard */; };
 		1929069E4E23EEA10CC02E38 /* NavigatorImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 192907B36904C3BBA2D7F11E /* NavigatorImpl.m */; };
+		192906F40B8A4A2DDC101BBE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 19290F4F21B7CCA2F961D569 /* main.m */; };
 		19290755646258267AE3D56A /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19290B85C3FC5CCE3FCACF19 /* MainViewController.m */; };
 		192907594BEB8DA7C26E15DF /* FloBookmark.m in Sources */ = {isa = PBXBuildFile; fileRef = 19290A090A7C2A5D4F85FCF1 /* FloBookmark.m */; };
 		1929076161602B6E5EE4EC90 /* LoginParameter.m in Sources */ = {isa = PBXBuildFile; fileRef = 192909191B5A628A14CCC6F8 /* LoginParameter.m */; };
@@ -39,6 +41,7 @@
 		192907FD698F636AF8D3313B /* BookmarkApiImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 19290C1E5C94E8FBB3983B9F /* BookmarkApiImpl.m */; };
 		192908606C140C4DD6591D77 /* FloCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 19290FCF6F736A2614A35CEF /* FloCollection.m */; };
 		192908717A208E7A09E856AB /* AuthorizeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19290852D551E316C96F4FB9 /* AuthorizeViewController.m */; };
+		192908AB2FD0513384E84E3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19290DE85287B5B67B39AD77 /* Assets.xcassets */; };
 		192908B1E6C88579DB2D4EA7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1929043FCBB54463F393FE9A /* AppDelegate.m */; };
 		192908CD5ED132C70D13FA2A /* KanbanViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 192902B0853B9588EB8107C7 /* KanbanViewCell.m */; };
 		192908EB61CCBDA7DC1E6B83 /* KanbanApiImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 19290E91EA37572D98DD98EA /* KanbanApiImpl.m */; };
@@ -58,12 +61,9 @@
 		19290F114F957C551D099E5F /* BroadcastServiceImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 192901FF68819C3EAD92511B /* BroadcastServiceImpl.m */; };
 		19290F15C7970D5BE7FA0F39 /* CollectionViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 19290B19C7CD0A504EC4F74C /* CollectionViewDataSource.m */; };
 		19290F631C25E87D7A7326AE /* CollectionsItemViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1929031ACE2D911357CA66A9 /* CollectionsItemViewCell.m */; };
+		19290F8950F10929E3DA2951 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19290B0F3E7CF9AED52F72B4 /* Main.storyboard */; };
 		19290FBA8F50A133694786DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1929019C928AB3E629798E87 /* Assets.xcassets */; };
-		27BFA45821CF9088007C524B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 27BFA45721CF9088007C524B /* AppDelegate.m */; };
 		27BFA45B21CF9088007C524B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27BFA45A21CF9088007C524B /* ViewController.m */; };
-		27BFA45D21CF908A007C524B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27BFA45C21CF908A007C524B /* Assets.xcassets */; };
-		27BFA46021CF908A007C524B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27BFA45E21CF908A007C524B /* Main.storyboard */; };
-		27BFA46321CF908A007C524B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 27BFA46221CF908A007C524B /* main.m */; };
 		27BFA47021CF930D007C524B /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 27BFA46921CF9302007C524B /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		27BFA47221CF930D007C524B /* CoreFlo.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 27BFA46D21CF9303007C524B /* CoreFlo.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		27BFA47421CF930E007C524B /* FloObjC.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 27BFA46E21CF9303007C524B /* FloObjC.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -115,6 +115,7 @@
 
 /* Begin PBXFileReference section */
 		192900320C610E8E5A00E32F /* CollectionService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionService.h; sourceTree = "<group>"; };
+		192900DDE0F5CCBFE3644E27 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		192901252370127BEEF76B0A /* KanbanNavigations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KanbanNavigations.h; sourceTree = "<group>"; };
 		1929012709CA9329FAE97A4F /* NavigationsViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationsViewModel.m; sourceTree = "<group>"; };
 		1929017F833702C49634A818 /* BookmarkApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookmarkApi.h; sourceTree = "<group>"; };
@@ -129,6 +130,7 @@
 		192902C9D4E32EFC61588E3E /* BootstrapViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BootstrapViewModel.h; sourceTree = "<group>"; };
 		1929030934EFACD68CE6A4C7 /* ProjectItemViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectItemViewModel.m; sourceTree = "<group>"; };
 		1929031ACE2D911357CA66A9 /* CollectionsItemViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionsItemViewCell.m; sourceTree = "<group>"; };
+		192903237A3AC9279130ABF1 /* DCFOSX-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DCFOSX-Bridging-Header.h"; sourceTree = "<group>"; };
 		19290335F178D69FFF95C380 /* BookmarksViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookmarksViewController.h; sourceTree = "<group>"; };
 		1929035CEF4DF27DDD33BC74 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1929036EE4CD901191311020 /* CollectionApiImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionApiImpl.m; sourceTree = "<group>"; };
@@ -154,12 +156,14 @@
 		19290677072AF6507938CEAB /* AuthorizeViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthorizeViewModel.h; sourceTree = "<group>"; };
 		1929067A011251192D3DE697 /* KanbanViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KanbanViewCell.h; sourceTree = "<group>"; };
 		192906805A0AE62B14A3D850 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		192906C214ACA084DFBE12CD /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		192906CB89D1E0C5CD9BA0C2 /* BaseViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewModel.m; sourceTree = "<group>"; };
 		192906D2A36632976E27F7B0 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		192906DB3E351E621E454597 /* FloKanban.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FloKanban.h; sourceTree = "<group>"; };
 		192906F11FF24CED424F9E0F /* FloItemViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FloItemViewModel.h; sourceTree = "<group>"; };
 		192906F8D84DC5F24BE65812 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		192906FB4AE8BE5EEE1161DC /* KanbanItemViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KanbanItemViewModel.h; sourceTree = "<group>"; };
+		19290713ED73AD36407C8845 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		1929072574C0F371E91C830D /* NavigationsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationsViewController.m; sourceTree = "<group>"; };
 		1929072BDC56423EB893409F /* BookmarksViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookmarksViewCell.m; sourceTree = "<group>"; };
 		19290730F17FA4FC791C50C1 /* FloCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FloCollection.h; sourceTree = "<group>"; };
@@ -186,7 +190,9 @@
 		19290A43B6464D0E9C16DECA /* NavigationsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationsViewController.h; sourceTree = "<group>"; };
 		19290A470AA7A684E32CF0B1 /* Configurations.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Configurations.plist; sourceTree = "<group>"; };
 		19290A70505C9E3AE813FE4D /* NavigationsViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationsViewModel.h; sourceTree = "<group>"; };
+		19290A883AD21E4DC7FCA829 /* DCFOSX.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = DCFOSX.entitlements; sourceTree = "<group>"; };
 		19290AB34A1EFCA5391F5363 /* CollectionViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewModel.h; sourceTree = "<group>"; };
+		19290B0F3E7CF9AED52F72B4 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		19290B19C7CD0A504EC4F74C /* CollectionViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewDataSource.m; sourceTree = "<group>"; };
 		19290B1EF4BA5DE614CB85D1 /* BootstrapViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BootstrapViewModel.m; sourceTree = "<group>"; };
 		19290B78DF43F244EE611532 /* BookmarksViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookmarksViewModel.h; sourceTree = "<group>"; };
@@ -208,6 +214,7 @@
 		19290D59ED5BA6084956CC56 /* FloUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FloUser.m; sourceTree = "<group>"; };
 		19290D7CE6CE2B858A675151 /* Configurations.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Configurations.plist; sourceTree = "<group>"; };
 		19290D7F4D0E42271066410F /* KanbanServiceImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KanbanServiceImpl.h; sourceTree = "<group>"; };
+		19290DE85287B5B67B39AD77 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		19290DFB8C17445C4BA325E2 /* Dependences.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dependences.m; sourceTree = "<group>"; };
 		19290E05959FBD55418E1DB9 /* KanbanApiImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KanbanApiImpl.h; sourceTree = "<group>"; };
 		19290E37AFCF33A18430CBA9 /* FloKanban.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FloKanban.m; sourceTree = "<group>"; };
@@ -224,6 +231,7 @@
 		19290EBA92119ABCCA3CE660 /* CollectionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionsViewController.h; sourceTree = "<group>"; };
 		19290EF1BD2654BE00D003A9 /* Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
 		19290F041D0A0DC3F8ECD45C /* CollectionsViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionsViewModel.h; sourceTree = "<group>"; };
+		19290F4F21B7CCA2F961D569 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		19290F676082CB572A31AEAC /* CollectionItemViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionItemViewModel.h; sourceTree = "<group>"; };
 		19290F946207D8793D2DADA7 /* GetKanbanParameter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetKanbanParameter.h; sourceTree = "<group>"; };
 		19290F9EA605A1038FBFC188 /* CollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewController.h; sourceTree = "<group>"; };
@@ -243,23 +251,30 @@
 		276F084C21C0F1BD00C65405 /* sync_periods.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = sync_periods.plist; sourceTree = "<group>"; };
 		277AB1B421C0B99E0008DABE /* DCFiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DCFiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27A7577A21C0E09D003CDF43 /* DCFiOS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DCFiOS-Bridging-Header.h"; sourceTree = "<group>"; };
+		27AB5B2D21CFEA0E006A9C9F /* sync_periods.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = sync_periods.plist; sourceTree = "<group>"; };
+		27AB5B2E21CFEA0E006A9C9F /* BearTrack.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = BearTrack.plist; sourceTree = "<group>"; };
+		27AB5B2F21CFEA0E006A9C9F /* Configurations.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Configurations.plist; sourceTree = "<group>"; };
+		27AB5B3021CFEA0E006A9C9F /* google_app_oauth.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = google_app_oauth.plist; sourceTree = "<group>"; };
+		27AB5B3121CFEA0E006A9C9F /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		27AB5B3221CFEA0E006A9C9F /* caldav_configurations.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = caldav_configurations.plist; sourceTree = "<group>"; };
+		27AB5B3321CFEA0E006A9C9F /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		27AB5B3421CFEA19006A9C9F /* Configurations.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Configurations.plist; sourceTree = "<group>"; };
+		27AB5B3521CFEA19006A9C9F /* DCFOSX.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DCFOSX.entitlements; sourceTree = "<group>"; };
+		27AB5B3621CFEA19006A9C9F /* caldav_configurations.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = caldav_configurations.plist; sourceTree = "<group>"; };
+		27AB5B3721CFEA19006A9C9F /* google_app_oauth.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = google_app_oauth.plist; sourceTree = "<group>"; };
+		27AB5B3821CFEA19006A9C9F /* BearTrack.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = BearTrack.plist; sourceTree = "<group>"; };
+		27AB5B3921CFEA1A006A9C9F /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		27AB5B3A21CFEA1A006A9C9F /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
+		27AB5B3B21CFEA1A006A9C9F /* sync_periods.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = sync_periods.plist; sourceTree = "<group>"; };
 		27BFA45421CF9088007C524B /* DCFOSX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DCFOSX.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		27BFA45621CF9088007C524B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		27BFA45721CF9088007C524B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		27BFA45921CF9088007C524B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		27BFA45A21CF9088007C524B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		27BFA45C21CF908A007C524B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		27BFA45F21CF908A007C524B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		27BFA46121CF908A007C524B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		27BFA46221CF908A007C524B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		27BFA46421CF908A007C524B /* DCFOSX.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DCFOSX.entitlements; sourceTree = "<group>"; };
 		27BFA46921CF9302007C524B /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/Mac/Alamofire.framework; sourceTree = "<group>"; };
 		27BFA46A21CF9302007C524B /* FloRest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FloRest.framework; path = Carthage/Build/Mac/FloRest.framework; sourceTree = "<group>"; };
 		27BFA46B21CF9303007C524B /* KeychainAccess.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KeychainAccess.framework; path = Carthage/Build/Mac/KeychainAccess.framework; sourceTree = "<group>"; };
 		27BFA46C21CF9303007C524B /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/Mac/SwiftyJSON.framework; sourceTree = "<group>"; };
 		27BFA46D21CF9303007C524B /* CoreFlo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFlo.framework; path = Carthage/Build/Mac/CoreFlo.framework; sourceTree = "<group>"; };
 		27BFA46E21CF9303007C524B /* FloObjC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FloObjC.framework; path = Carthage/Build/Mac/FloObjC.framework; sourceTree = "<group>"; };
-		27BFA47C21CF9361007C524B /* DCFOSX-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DCFOSX-Bridging-Header.h"; sourceTree = "<group>"; };
 		27BFA47D21CF9361007C524B /* Check.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Check.swift; sourceTree = "<group>"; };
 		27D4F6D121CE3F1D00F03BCD /* TestServices.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestServices.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		27D4F6D321CE3F1D00F03BCD /* TestServices.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestServices.m; sourceTree = "<group>"; };
@@ -335,6 +350,34 @@
 			path = model;
 			sourceTree = "<group>";
 		};
+		1929021B57245754CB1E1244 /* application */ = {
+			isa = PBXGroup;
+			children = (
+				19290F4F21B7CCA2F961D569 /* main.m */,
+				192900DDE0F5CCBFE3644E27 /* AppDelegate.m */,
+				192903237A3AC9279130ABF1 /* DCFOSX-Bridging-Header.h */,
+				192906C214ACA084DFBE12CD /* AppDelegate.h */,
+				19290713ED73AD36407C8845 /* Info.plist */,
+			);
+			path = application;
+			sourceTree = "<group>";
+		};
+		19290235AC8047584C6ADDAD /* storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				19290B0F3E7CF9AED52F72B4 /* Main.storyboard */,
+			);
+			path = storyboard;
+			sourceTree = "<group>";
+		};
+		1929026C973206FD8492A89F /* resource */ = {
+			isa = PBXGroup;
+			children = (
+				19290DE85287B5B67B39AD77 /* Assets.xcassets */,
+			);
+			path = resource;
+			sourceTree = "<group>";
+		};
 		1929042B386903A8C10F6453 /* impl */ = {
 			isa = PBXGroup;
 			children = (
@@ -353,6 +396,15 @@
 				19290DB9E4BF8E5B4D091120 /* navigator */,
 			);
 			path = ui;
+			sourceTree = "<group>";
+		};
+		1929049F663AC85E086BD6B7 /* configuration */ = {
+			isa = PBXGroup;
+			children = (
+				19290D694AEB0F73AC122CE1 /* Debug */,
+				19290EE877176D62708D5256 /* Release */,
+			);
+			path = configuration;
 			sourceTree = "<group>";
 		};
 		192904BF0F2A092A11E8FFF3 /* kanban */ = {
@@ -591,6 +643,21 @@
 			path = model;
 			sourceTree = "<group>";
 		};
+		19290D694AEB0F73AC122CE1 /* Debug */ = {
+			isa = PBXGroup;
+			children = (
+				19290A883AD21E4DC7FCA829 /* DCFOSX.entitlements */,
+				27AB5B2E21CFEA0E006A9C9F /* BearTrack.plist */,
+				27AB5B3221CFEA0E006A9C9F /* caldav_configurations.plist */,
+				27AB5B2F21CFEA0E006A9C9F /* Configurations.plist */,
+				27AB5B3321CFEA0E006A9C9F /* Debug.xcconfig */,
+				27AB5B3021CFEA0E006A9C9F /* google_app_oauth.plist */,
+				27AB5B3121CFEA0E006A9C9F /* GoogleService-Info.plist */,
+				27AB5B2D21CFEA0E006A9C9F /* sync_periods.plist */,
+			);
+			path = Debug;
+			sourceTree = "<group>";
+		};
 		19290D76F91396E83EC0A1F6 /* bookmarks */ = {
 			isa = PBXGroup;
 			children = (
@@ -646,6 +713,14 @@
 			path = view;
 			sourceTree = "<group>";
 		};
+		19290E4A44151FF91791EE44 /* ui */ = {
+			isa = PBXGroup;
+			children = (
+				19290235AC8047584C6ADDAD /* storyboard */,
+			);
+			path = ui;
+			sourceTree = "<group>";
+		};
 		19290EA5692D38863E9F79A4 /* view */ = {
 			isa = PBXGroup;
 			children = (
@@ -681,6 +756,21 @@
 				19290C07CF51B78C1EB0D530 /* FloBookmark.h */,
 			);
 			path = model;
+			sourceTree = "<group>";
+		};
+		19290EE877176D62708D5256 /* Release */ = {
+			isa = PBXGroup;
+			children = (
+				27AB5B3821CFEA19006A9C9F /* BearTrack.plist */,
+				27AB5B3621CFEA19006A9C9F /* caldav_configurations.plist */,
+				27AB5B3421CFEA19006A9C9F /* Configurations.plist */,
+				27AB5B3521CFEA19006A9C9F /* DCFOSX.entitlements */,
+				27AB5B3721CFEA19006A9C9F /* google_app_oauth.plist */,
+				27AB5B3921CFEA1A006A9C9F /* GoogleService-Info.plist */,
+				27AB5B3A21CFEA1A006A9C9F /* Release.xcconfig */,
+				27AB5B3B21CFEA1A006A9C9F /* sync_periods.plist */,
+			);
+			path = Release;
 			sourceTree = "<group>";
 		};
 		19290EEDFD3FC60CCABAD572 /* main */ = {
@@ -799,17 +889,13 @@
 		27BFA45521CF9088007C524B /* DCFOSX */ = {
 			isa = PBXGroup;
 			children = (
-				27BFA45621CF9088007C524B /* AppDelegate.h */,
-				27BFA45721CF9088007C524B /* AppDelegate.m */,
 				27BFA45921CF9088007C524B /* ViewController.h */,
 				27BFA45A21CF9088007C524B /* ViewController.m */,
-				27BFA45C21CF908A007C524B /* Assets.xcassets */,
-				27BFA45E21CF908A007C524B /* Main.storyboard */,
-				27BFA46121CF908A007C524B /* Info.plist */,
-				27BFA46221CF908A007C524B /* main.m */,
-				27BFA46421CF908A007C524B /* DCFOSX.entitlements */,
 				27BFA47D21CF9361007C524B /* Check.swift */,
-				27BFA47C21CF9361007C524B /* DCFOSX-Bridging-Header.h */,
+				1929021B57245754CB1E1244 /* application */,
+				1929026C973206FD8492A89F /* resource */,
+				19290E4A44151FF91791EE44 /* ui */,
+				1929049F663AC85E086BD6B7 /* configuration */,
 			);
 			path = DCFOSX;
 			sourceTree = "<group>";
@@ -941,8 +1027,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				27BFA45D21CF908A007C524B /* Assets.xcassets in Resources */,
-				27BFA46021CF908A007C524B /* Main.storyboard in Resources */,
+				192908AB2FD0513384E84E3A /* Assets.xcassets in Resources */,
+				19290F8950F10929E3DA2951 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1076,8 +1162,8 @@
 			files = (
 				27BFA47E21CF9361007C524B /* Check.swift in Sources */,
 				27BFA45B21CF9088007C524B /* ViewController.m in Sources */,
-				27BFA46321CF908A007C524B /* main.m in Sources */,
-				27BFA45821CF9088007C524B /* AppDelegate.m in Sources */,
+				192906F40B8A4A2DDC101BBE /* main.m in Sources */,
+				1929034058AFE34760C430FD /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1098,17 +1184,6 @@
 			targetProxy = 27D4F6D621CE3F1D00F03BCD /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		27BFA45E21CF908A007C524B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				27BFA45F21CF908A007C524B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		277AB1C821C0B99F0008DABE /* Debug */ = {
@@ -1277,27 +1352,29 @@
 		};
 		27BFA46521CF908A007C524B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 27AB5B3321CFEA0E006A9C9F /* Debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = DCFOSX/DCFOSX.entitlements;
+				CODE_SIGN_ENTITLEMENTS = DCFOSX/configuration/Debug/DCFOSX.entitlements;
 				CODE_SIGN_IDENTITY = "-";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
 				);
-				INFOPLIST_FILE = DCFOSX/Info.plist;
+				INFOPLIST_FILE = DCFOSX/application/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
-				PRODUCT_BUNDLE_IDENTIFIER = com.floware.universalflo.DCFOSX;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = macosx;
-				SWIFT_OBJC_BRIDGING_HEADER = "DCFOSX/DCFOSX-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "DCFOSX/application/DCFOSX-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
@@ -1305,28 +1382,30 @@
 		};
 		27BFA46621CF908A007C524B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 27AB5B3A21CFEA1A006A9C9F /* Release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = DCFOSX/DCFOSX.entitlements;
+				CODE_SIGN_ENTITLEMENTS = DCFOSX/configuration/Debug/DCFOSX.entitlements;
 				CODE_SIGN_IDENTITY = "-";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
 				);
-				INFOPLIST_FILE = DCFOSX/Info.plist;
+				INFOPLIST_FILE = DCFOSX/application/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
-				PRODUCT_BUNDLE_IDENTIFIER = com.floware.universalflo.DCFOSX;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = macosx;
-				SWIFT_OBJC_BRIDGING_HEADER = "DCFOSX/DCFOSX-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "DCFOSX/application/DCFOSX-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
