@@ -1,1 +1,4 @@
 git "/Users/hai/workspace/floware/FloUniversal" "cfe720810492a19235e70e1514a4b535e370a207"
+github "Alamofire/Alamofire" "4.8.0"
+github "SwiftyJSON/SwiftyJSON" "4.2.0"
+github "kishikawakatsumi/KeychainAccess" "v3.1.2"
