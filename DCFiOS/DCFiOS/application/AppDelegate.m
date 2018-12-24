@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 #import "Dependences.h"
-#import "DCFiOS-Bridging-Header.h"
+#import "DCF-Bridging-Header.h"
 
 @interface AppDelegate ()
 

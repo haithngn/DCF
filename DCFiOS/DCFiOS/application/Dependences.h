@@ -4,7 +4,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "DCFiOS-Bridging-Header.h"
+#import "DCF-Bridging-Header.h"
 
 @class FloConfigurations;
 @protocol UserService;

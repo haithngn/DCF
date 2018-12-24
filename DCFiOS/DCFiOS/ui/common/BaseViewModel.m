@@ -4,7 +4,7 @@
 //
 
 #import "BaseViewModel.h"
-#import "DCFiOS-Bridging-Header.h"
+#import "DCF-Bridging-Header.h"
 
 static const DDLogLevel ddLogLevel = DDLogLevelDebug | DDLogLevelVerbose;
 

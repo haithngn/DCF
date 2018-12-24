@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "DCFiOS-Bridging-Header.h"
+#import "DCF-Bridging-Header.h"
 #import "AppDelegate.h"
 
 int main(int argc, char * argv[]) {
