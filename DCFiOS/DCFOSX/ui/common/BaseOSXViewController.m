@@ -9,4 +9,8 @@
 @implementation BaseOSXViewController {
 
 }
+- (void)showMessage:(NSString *)message confirmButtonTitle:(NSString *)title onConfirmed:(void (^)())confirmed {
+    NSLog(@"showMessage: %@", message);
+}
+
 @end

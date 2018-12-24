@@ -4,9 +4,52 @@
 //
 
 #import "BootstrapWindowController.h"
+#import "BootstrapViewModel.h"
+#import "Dependences.h"
+#import "AuthorizeWindowController.h"
+#import "OSXStoryboards.h"
 
+@interface BootstrapWindowController ()
+
+@property (nonatomic, strong) BootstrapViewModel * model;
+
+@end
 
 @implementation BootstrapWindowController {
 
 }
+- (void)windowDidLoad {
+    [super windowDidLoad];
+
+    _model = [[BootstrapViewModel alloc] initWithBroadcastService:[Dependences broadcastService] userService:[Dependences userService]];
+
+    [self bindData];
+
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 5.0f * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
+        [_model autoLogin];
+    });
+}
+
+- (void)bindData {
+    _model.onSignedIn = ^(){
+        [self navigateToMainScreen];
+    };
+    _model.onSignedOut = ^(){
+        [self navigateToAuthorizeScreen];
+    };
+}
+
+- (void)navigateToAuthorizeScreen {
+    NSLog(@"navigateToAuthorizeScreen");
+    [self close];
+
+    AuthorizeWindowController * windowController = [[OSXStoryboards main] instantiateControllerWithIdentifier:@"AuthorizeWindowController"];
+    [windowController showWindow:nil];
+    [[windowController window] makeMainWindow];
+}
+
+- (void)navigateToMainScreen {
+    NSLog(@"navigateToMainScreen");
+}
+
 @end

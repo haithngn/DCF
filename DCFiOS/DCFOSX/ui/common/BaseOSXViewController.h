@@ -7,4 +7,6 @@
 #import <AppKit/AppKit.h>
 
 @interface BaseOSXViewController : NSViewController
+- (void)showMessage:(NSString *)message confirmButtonTitle:(NSString *)title onConfirmed:(void (^)())confirmed;
+
 @end

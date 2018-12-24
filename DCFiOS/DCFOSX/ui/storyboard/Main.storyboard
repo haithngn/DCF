@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="macosx"/>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14113"/>
+        <capability name="box content view" minToolsVersion="7.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -685,8 +686,8 @@
         <scene sceneID="R2V-B0-nI4">
             <objects>
                 <windowController storyboardIdentifier="BootstrapWindowController" id="B8D-0N-5wS" customClass="BootstrapWindowController" sceneMemberID="viewController">
-                    <window key="window" identifier="BootstrapWindow" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" titlebarAppearsTransparent="YES" id="IQv-IB-iLA">
-                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+                    <window key="window" identifier="BootstrapWindow" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" restorable="NO" oneShot="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" titlebarAppearsTransparent="YES" id="IQv-IB-iLA">
+                        <windowStyleMask key="styleMask" titled="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
                         <rect key="contentRect" x="196" y="240" width="480" height="270"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
@@ -706,7 +707,7 @@
         <scene sceneID="ULB-72-PWy">
             <objects>
                 <windowController storyboardIdentifier="AuthorizeWindowController" id="cJM-QJ-AXg" customClass="AuthorizeWindowController" sceneMemberID="viewController">
-                    <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="BHc-Eq-5oP">
+                    <window key="window" title="Authorize" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" titlebarAppearsTransparent="YES" id="BHc-Eq-5oP">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
                         <rect key="contentRect" x="294" y="314" width="480" height="270"/>
@@ -730,7 +731,71 @@
                     <view key="view" id="qZ3-CZ-S8S">
                         <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <box title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="obN-e5-qxJ">
+                                <rect key="frame" x="17" y="16" width="446" height="234"/>
+                                <view key="contentView" id="r3z-o9-s0O">
+                                    <rect key="frame" x="2" y="2" width="442" height="217"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="JHI-q5-4YZ">
+                                            <rect key="frame" x="121" y="151" width="200" height="22"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="200" id="apM-O1-AiR"/>
+                                                <constraint firstAttribute="height" constant="22" id="kmN-kA-Oxk"/>
+                                            </constraints>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="97g-Yc-zly">
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                        <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="fGT-yw-jiz">
+                                            <rect key="frame" x="121" y="113" width="200" height="22"/>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="LLm-4u-iaP">
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                        <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="bud-en-gCN">
+                                            <rect key="frame" x="115" y="40" width="212" height="33"/>
+                                            <buttonCell key="cell" type="push" title="Sign In" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="WIj-WF-BSk">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="signIn:" target="U7V-Wx-igT" id="T84-CX-Tgw"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="bud-en-gCN" firstAttribute="top" secondItem="fGT-yw-jiz" secondAttribute="bottom" constant="44" id="2P2-Lq-zdU"/>
+                                        <constraint firstItem="fGT-yw-jiz" firstAttribute="height" secondItem="JHI-q5-4YZ" secondAttribute="height" id="3Sy-km-OYO"/>
+                                        <constraint firstItem="bud-en-gCN" firstAttribute="height" secondItem="fGT-yw-jiz" secondAttribute="height" id="45U-nI-QIm"/>
+                                        <constraint firstItem="JHI-q5-4YZ" firstAttribute="centerX" secondItem="r3z-o9-s0O" secondAttribute="centerX" id="4Xv-tq-Jkb"/>
+                                        <constraint firstItem="bud-en-gCN" firstAttribute="width" secondItem="fGT-yw-jiz" secondAttribute="width" id="CTB-fM-KNW"/>
+                                        <constraint firstItem="bud-en-gCN" firstAttribute="centerX" secondItem="fGT-yw-jiz" secondAttribute="centerX" id="FTW-Mk-quz"/>
+                                        <constraint firstItem="fGT-yw-jiz" firstAttribute="centerX" secondItem="JHI-q5-4YZ" secondAttribute="centerX" id="QJo-bZ-G34"/>
+                                        <constraint firstItem="JHI-q5-4YZ" firstAttribute="top" secondItem="r3z-o9-s0O" secondAttribute="top" constant="44" id="pLn-9I-fEI"/>
+                                        <constraint firstItem="fGT-yw-jiz" firstAttribute="top" secondItem="JHI-q5-4YZ" secondAttribute="bottom" constant="16" id="pxb-8Y-niO"/>
+                                        <constraint firstItem="fGT-yw-jiz" firstAttribute="width" secondItem="JHI-q5-4YZ" secondAttribute="width" id="tOg-y2-dvE"/>
+                                    </constraints>
+                                </view>
+                            </box>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="obN-e5-qxJ" firstAttribute="leading" secondItem="qZ3-CZ-S8S" secondAttribute="leading" constant="20" id="HpM-Qb-Egm"/>
+                            <constraint firstAttribute="trailing" secondItem="obN-e5-qxJ" secondAttribute="trailing" constant="20" id="Jyw-U4-huU"/>
+                            <constraint firstItem="obN-e5-qxJ" firstAttribute="top" secondItem="qZ3-CZ-S8S" secondAttribute="top" constant="20" id="Ra8-Ic-XXe"/>
+                            <constraint firstAttribute="bottom" secondItem="obN-e5-qxJ" secondAttribute="bottom" constant="20" id="iEG-ua-ude"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="passwordTextField" destination="fGT-yw-jiz" id="jLd-06-JUP"/>
+                        <outlet property="submitButton" destination="bud-en-gCN" id="0Fs-Nj-SWa"/>
+                        <outlet property="usernameTextField" destination="JHI-q5-4YZ" id="LPB-4z-XDC"/>
+                    </connections>
                 </viewController>
                 <customObject id="Q2U-Bl-AdE" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
