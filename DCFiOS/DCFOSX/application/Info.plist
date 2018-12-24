@@ -28,5 +28,28 @@
 	<string>Main</string>
 	<key>NSPrincipalClass</key>
 	<string>NSApplication</string>
+	<key>Background Fetch Interval</key>
+	<string>$(BACKGROUND_FETCH_INTERVAL)</string>
+	<key>Logging</key>
+	<dict>
+		<key>AppID</key>
+		<string>$(SWIFTYBEAVER_APPID)</string>
+		<key>AppSecret</key>
+		<string>$(SWIFTYBEAVER_APPSECRET)</string>
+		<key>EncryptionKey</key>
+		<string>$(SWIFTYBEAVER_ENCRYPTIONKEY)</string>
+		<key>Level</key>
+		<real>0.0</real>
+	</dict>
+	<key>Networking Client Name</key>
+	<string>$(NETWORKING_CLIENT_NAME)</string>
+	<key>Report Device Token</key>
+	<string>$(REPORT_DEVICE_TOKEN)</string>
+	<key>Tracking App Kind</key>
+	<string>$(TRACKING_APP_KIND)</string>
+	<key>Tracking App Name</key>
+	<string>$(TRACKING_APP_NAME)</string>
+	<key>Main Scheme</key>
+	<string>$(URL_SCHEME)</string>
 </dict>
 </plist>

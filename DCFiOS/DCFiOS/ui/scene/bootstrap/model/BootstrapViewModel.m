@@ -29,7 +29,11 @@
 }
 
 - (void)autoLogin {
-    [_userService autoLogin];
+    if (_userService.currentUserId != nil){
+        [_userService autoLogin];
+    } else {
+        _onSignedOut ? _onSignedOut() : nil;
+    }
 }
 
 #pragma mark - BroadcastService Methods

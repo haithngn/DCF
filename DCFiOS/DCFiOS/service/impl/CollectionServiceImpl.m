@@ -3,13 +3,10 @@
 // Copyright (c) 2018 Hai Nguyen. All rights reserved.
 //
 
-#import <CocoaLumberjack/CocoaLumberjack.h>
 #import "CollectionServiceImpl.h"
 #import "CollectionApi.h"
 #import "GetCollectionParameter.h"
 #import "FloCollection.h"
-
-static const DDLogLevel ddLogLevel = DDLogLevelDebug | DDLogLevelVerbose;
 
 @interface CollectionServiceImpl ()
 

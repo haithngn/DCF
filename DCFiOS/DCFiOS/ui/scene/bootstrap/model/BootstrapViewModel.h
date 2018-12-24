@@ -11,8 +11,8 @@
 @protocol UserService;
 
 @interface BootstrapViewModel : BaseViewModel <AuthenticationObserver>
-@property(nonatomic, copy) void (^onSignedIn)();
-@property(nonatomic, copy) void (^onSignedOut)();
+@property(nonatomic, copy) void (^onSignedIn)(void);
+@property(nonatomic, copy) void (^onSignedOut)(void);
 
 - (instancetype)initWithBroadcastService:(NSObject <BroadcastService> *)broadcastService userService:(NSObject <UserService> *)userService;
 - (void)autoLogin;

@@ -71,6 +71,26 @@
 		273B9B9321D0C5F9006F4DB7 /* CocoaLumberjack.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 273B9B9121D0C5F1006F4DB7 /* CocoaLumberjack.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2794981F21D0D52F0075F136 /* BootstrapWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2794981B21D0D52F0075F136 /* BootstrapWindowController.m */; };
 		2794982021D0D52F0075F136 /* BootstrapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2794981D21D0D52F0075F136 /* BootstrapViewController.m */; };
+		2794982121D0D8E10075F136 /* Dependences.m in Sources */ = {isa = PBXBuildFile; fileRef = 19290DFB8C17445C4BA325E2 /* Dependences.m */; };
+		2794982221D0D8F20075F136 /* FloUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 19290D59ED5BA6084956CC56 /* FloUser.m */; };
+		2794982321D0D8F20075F136 /* FloCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 19290FCF6F736A2614A35CEF /* FloCollection.m */; };
+		2794982421D0D8F20075F136 /* FloKanban.m in Sources */ = {isa = PBXBuildFile; fileRef = 19290E37AFCF33A18430CBA9 /* FloKanban.m */; };
+		2794982521D0D8F20075F136 /* FloBookmark.m in Sources */ = {isa = PBXBuildFile; fileRef = 19290A090A7C2A5D4F85FCF1 /* FloBookmark.m */; };
+		2794982621D0D9010075F136 /* UserServiceImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 19290FADBBF7CC43C3A8F2E1 /* UserServiceImpl.m */; };
+		2794982721D0D9010075F136 /* BroadcastServiceImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 192901FF68819C3EAD92511B /* BroadcastServiceImpl.m */; };
+		2794982821D0D9010075F136 /* CollectionServiceImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 19290D2AD8B003C1D91CF283 /* CollectionServiceImpl.m */; };
+		2794982921D0D9010075F136 /* KanbanServiceImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 192904009C17B4D22F0A9FB6 /* KanbanServiceImpl.m */; };
+		2794982A21D0D9010075F136 /* BookmarkServiceImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 19290998172D3CA8F9D76384 /* BookmarkServiceImpl.m */; };
+		2794982B21D0D9070075F136 /* LoginParameter.m in Sources */ = {isa = PBXBuildFile; fileRef = 192909191B5A628A14CCC6F8 /* LoginParameter.m */; };
+		2794982C21D0D9070075F136 /* GetCollectionParameter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1929043B44BF10AD04F6C773 /* GetCollectionParameter.m */; };
+		2794982D21D0D9070075F136 /* GetKanbanParameter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1929060FB9F3FDE9AD4CC3C9 /* GetKanbanParameter.m */; };
+		2794982E21D0D9070075F136 /* GetBookmarksParameter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1929066AB6AB321A898889E0 /* GetBookmarksParameter.m */; };
+		2794982F21D0D9110075F136 /* AuthorizationApiImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 192906676042109A23B629A1 /* AuthorizationApiImpl.m */; };
+		2794983021D0D9110075F136 /* CollectionApiImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 1929036EE4CD901191311020 /* CollectionApiImpl.m */; };
+		2794983121D0D9110075F136 /* KanbanApiImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 19290E91EA37572D98DD98EA /* KanbanApiImpl.m */; };
+		2794983221D0D9110075F136 /* BookmarkApiImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 19290C1E5C94E8FBB3983B9F /* BookmarkApiImpl.m */; };
+		2794983321D0DAF60075F136 /* BootstrapViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 19290B1EF4BA5DE614CB85D1 /* BootstrapViewModel.m */; };
+		2794983421D0DB010075F136 /* BaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 192906CB89D1E0C5CD9BA0C2 /* BaseViewModel.m */; };
 		27BFA45B21CF9088007C524B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27BFA45A21CF9088007C524B /* ViewController.m */; };
 		27BFA47021CF930D007C524B /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 27BFA46921CF9302007C524B /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		27BFA47221CF930D007C524B /* CoreFlo.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 27BFA46D21CF9303007C524B /* CoreFlo.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -1216,15 +1236,35 @@
 			files = (
 				2794981F21D0D52F0075F136 /* BootstrapWindowController.m in Sources */,
 				27BFA47E21CF9361007C524B /* Check.swift in Sources */,
+				2794982121D0D8E10075F136 /* Dependences.m in Sources */,
+				2794982D21D0D9070075F136 /* GetKanbanParameter.m in Sources */,
 				27BFA45B21CF9088007C524B /* ViewController.m in Sources */,
 				192906F40B8A4A2DDC101BBE /* main.m in Sources */,
+				2794983221D0D9110075F136 /* BookmarkApiImpl.m in Sources */,
 				1929034058AFE34760C430FD /* AppDelegate.m in Sources */,
 				2794982021D0D52F0075F136 /* BootstrapViewController.m in Sources */,
+				2794983021D0D9110075F136 /* CollectionApiImpl.m in Sources */,
 				192909EE832895246F7B016E /* BaseOSXViewController.m in Sources */,
+				2794982E21D0D9070075F136 /* GetBookmarksParameter.m in Sources */,
 				1929031B67A5BCD9492B6C04 /* BaseWindow.m in Sources */,
+				2794982A21D0D9010075F136 /* BookmarkServiceImpl.m in Sources */,
+				2794983121D0D9110075F136 /* KanbanApiImpl.m in Sources */,
+				2794982321D0D8F20075F136 /* FloCollection.m in Sources */,
+				2794982621D0D9010075F136 /* UserServiceImpl.m in Sources */,
+				2794982F21D0D9110075F136 /* AuthorizationApiImpl.m in Sources */,
 				19290C38D538C6FEFA79C576 /* BaseWindowController.m in Sources */,
+				2794983321D0DAF60075F136 /* BootstrapViewModel.m in Sources */,
+				2794982921D0D9010075F136 /* KanbanServiceImpl.m in Sources */,
 				19290AF8871014AED94F5FA8 /* AuthorizeWindowController.m in Sources */,
+				2794982C21D0D9070075F136 /* GetCollectionParameter.m in Sources */,
+				2794983421D0DB010075F136 /* BaseViewModel.m in Sources */,
+				2794982B21D0D9070075F136 /* LoginParameter.m in Sources */,
+				2794982221D0D8F20075F136 /* FloUser.m in Sources */,
 				1929074587AA7E9B79090C28 /* AuthorizeViewController.m in Sources */,
+				2794982721D0D9010075F136 /* BroadcastServiceImpl.m in Sources */,
+				2794982421D0D8F20075F136 /* FloKanban.m in Sources */,
+				2794982821D0D9010075F136 /* CollectionServiceImpl.m in Sources */,
+				2794982521D0D8F20075F136 /* FloBookmark.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
