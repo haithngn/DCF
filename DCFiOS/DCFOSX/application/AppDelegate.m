@@ -7,12 +7,26 @@
 //
 
 #import "AppDelegate.h"
+#import "Router.h"
+#import "RouterImpl.h"
+#import "Dependences.h"
 
 @interface AppDelegate ()
 
+@property (nonatomic, strong) NSObject <Router> * router;
+
 @end
 
-@implementation AppDelegate
+@implementation AppDelegate {
+@private
+    NSObject <Router> *_router;
+}
+
+@synthesize router = _router;
+
+- (IBAction)signOut:(NSMenuItem *)sender {
+    [self.router signOut];
+}
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     // Insert code here to initialize your application
@@ -23,5 +37,24 @@
     // Insert code here to tear down your application
 }
 
+- (BOOL)applicationShouldHandleReopen:(NSApplication *)sender hasVisibleWindows:(BOOL)flag {
+    BOOL result = NO;
+    if (flag == NO) {
+        [self.router reopen];
+        result = YES;
+    }
+    return result;
+}
+
+#pragma mark -
+
+- (NSObject <Router>*)router {
+    if (_router == nil) {
+        _router = [[RouterImpl alloc] initWithBroadcastService:[Dependences broadcastService]
+                userService:[Dependences userService]];
+    }
+
+    return _router;
+}
 
 @end

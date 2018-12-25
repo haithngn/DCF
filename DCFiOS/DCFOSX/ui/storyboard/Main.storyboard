@@ -48,6 +48,13 @@
                                                 <action selector="unhideAllApplications:" target="Ady-hI-5gd" id="Dhg-Le-xox"/>
                                             </connections>
                                         </menuItem>
+                                        <menuItem isSeparatorItem="YES" id="Iss-tI-XFx"/>
+                                        <menuItem title="Sign Out" id="Qf8-Ae-Vm6">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="signOut:" target="Voe-Tx-rLC" id="S4W-kA-Z7a"/>
+                                            </connections>
+                                        </menuItem>
                                         <menuItem isSeparatorItem="YES" id="kCx-OE-vgT"/>
                                         <menuItem title="Quit DCFOSX" keyEquivalent="q" id="4sb-4s-VLi">
                                             <connections>
@@ -724,10 +731,44 @@
             </objects>
             <point key="canvasLocation" x="674" y="250"/>
         </scene>
-        <!--Authorize View Controller-->
+        <!--Window Controller-->
+        <scene sceneID="fUh-t7-WV8">
+            <objects>
+                <windowController storyboardIdentifier="MainWindowController" id="5ZW-TE-YR6" customClass="MainWindowController" sceneMemberID="viewController">
+                    <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="ZEQ-gF-TmA">
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+                        <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+                        <rect key="contentRect" x="137" y="314" width="987" height="530"/>
+                        <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1058"/>
+                        <connections>
+                            <outlet property="delegate" destination="5ZW-TE-YR6" id="VF9-4h-LLa"/>
+                        </connections>
+                    </window>
+                    <connections>
+                        <segue destination="1iE-sl-hKG" kind="relationship" relationship="window.shadowedContentViewController" id="zGI-ZF-Oqj"/>
+                    </connections>
+                </windowController>
+                <customObject id="7UU-Ha-W39" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1645.5" y="426"/>
+        </scene>
+        <!--Main View Controller-->
+        <scene sceneID="18N-w4-slE">
+            <objects>
+                <viewController storyboardIdentifier="MainViewController" id="1iE-sl-hKG" customClass="MainViewController" sceneMemberID="viewController">
+                    <view key="view" id="2XZ-hZ-Wby">
+                        <rect key="frame" x="0.0" y="0.0" width="987" height="561"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </view>
+                </viewController>
+                <customObject id="uEy-h0-QsT" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1645.5" y="1348.5"/>
+        </scene>
+        <!--AuthorizeOSX View Controller-->
         <scene sceneID="Hy2-5E-FZU">
             <objects>
-                <viewController storyboardIdentifier="AuthorizeViewController" id="U7V-Wx-igT" customClass="AuthorizeViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AuthorizeViewController" id="U7V-Wx-igT" customClass="AuthorizeOSXViewController" sceneMemberID="viewController">
                     <view key="view" id="qZ3-CZ-S8S">
                         <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -739,27 +780,15 @@
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="JHI-q5-4YZ">
-                                            <rect key="frame" x="121" y="151" width="200" height="22"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" constant="200" id="apM-O1-AiR"/>
-                                                <constraint firstAttribute="height" constant="22" id="kmN-kA-Oxk"/>
-                                            </constraints>
+                                            <rect key="frame" x="121" y="136" width="200" height="22"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="97g-Yc-zly">
                                                 <font key="font" metaFont="system"/>
                                                 <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
                                         </textField>
-                                        <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="fGT-yw-jiz">
-                                            <rect key="frame" x="121" y="113" width="200" height="22"/>
-                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="LLm-4u-iaP">
-                                                <font key="font" metaFont="system"/>
-                                                <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                            </textFieldCell>
-                                        </textField>
                                         <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="bud-en-gCN">
-                                            <rect key="frame" x="115" y="40" width="212" height="33"/>
+                                            <rect key="frame" x="115" y="37" width="212" height="33"/>
                                             <buttonCell key="cell" type="push" title="Sign In" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="WIj-WF-BSk">
                                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                 <font key="font" metaFont="system"/>
@@ -768,18 +797,33 @@
                                                 <action selector="signIn:" target="U7V-Wx-igT" id="T84-CX-Tgw"/>
                                             </connections>
                                         </button>
+                                        <secureTextField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="7Pz-7j-Cfh">
+                                            <rect key="frame" x="121" y="98" width="200" height="22"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="200" id="Y9F-qG-pWi"/>
+                                                <constraint firstAttribute="height" constant="22" id="mJr-U0-zUr"/>
+                                            </constraints>
+                                            <secureTextFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" usesSingleLineMode="YES" id="oEs-VN-xVy">
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                <allowedInputSourceLocales>
+                                                    <string>NSAllRomanInputSourcesLocaleIdentifier</string>
+                                                </allowedInputSourceLocales>
+                                            </secureTextFieldCell>
+                                        </secureTextField>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="bud-en-gCN" firstAttribute="top" secondItem="fGT-yw-jiz" secondAttribute="bottom" constant="44" id="2P2-Lq-zdU"/>
-                                        <constraint firstItem="fGT-yw-jiz" firstAttribute="height" secondItem="JHI-q5-4YZ" secondAttribute="height" id="3Sy-km-OYO"/>
-                                        <constraint firstItem="bud-en-gCN" firstAttribute="height" secondItem="fGT-yw-jiz" secondAttribute="height" id="45U-nI-QIm"/>
-                                        <constraint firstItem="JHI-q5-4YZ" firstAttribute="centerX" secondItem="r3z-o9-s0O" secondAttribute="centerX" id="4Xv-tq-Jkb"/>
-                                        <constraint firstItem="bud-en-gCN" firstAttribute="width" secondItem="fGT-yw-jiz" secondAttribute="width" id="CTB-fM-KNW"/>
-                                        <constraint firstItem="bud-en-gCN" firstAttribute="centerX" secondItem="fGT-yw-jiz" secondAttribute="centerX" id="FTW-Mk-quz"/>
-                                        <constraint firstItem="fGT-yw-jiz" firstAttribute="centerX" secondItem="JHI-q5-4YZ" secondAttribute="centerX" id="QJo-bZ-G34"/>
-                                        <constraint firstItem="JHI-q5-4YZ" firstAttribute="top" secondItem="r3z-o9-s0O" secondAttribute="top" constant="44" id="pLn-9I-fEI"/>
-                                        <constraint firstItem="fGT-yw-jiz" firstAttribute="top" secondItem="JHI-q5-4YZ" secondAttribute="bottom" constant="16" id="pxb-8Y-niO"/>
-                                        <constraint firstItem="fGT-yw-jiz" firstAttribute="width" secondItem="JHI-q5-4YZ" secondAttribute="width" id="tOg-y2-dvE"/>
+                                        <constraint firstItem="bud-en-gCN" firstAttribute="top" secondItem="7Pz-7j-Cfh" secondAttribute="bottom" constant="32" id="1GP-na-iac"/>
+                                        <constraint firstItem="JHI-q5-4YZ" firstAttribute="width" secondItem="7Pz-7j-Cfh" secondAttribute="width" id="5Wp-3a-lRX"/>
+                                        <constraint firstItem="bud-en-gCN" firstAttribute="centerX" secondItem="7Pz-7j-Cfh" secondAttribute="centerX" id="5fb-p5-j24"/>
+                                        <constraint firstItem="JHI-q5-4YZ" firstAttribute="height" secondItem="7Pz-7j-Cfh" secondAttribute="height" id="CYj-1C-Zgl"/>
+                                        <constraint firstItem="JHI-q5-4YZ" firstAttribute="centerX" secondItem="7Pz-7j-Cfh" secondAttribute="centerX" id="DwJ-Gm-jVP"/>
+                                        <constraint firstItem="bud-en-gCN" firstAttribute="width" secondItem="7Pz-7j-Cfh" secondAttribute="width" id="EQZ-cL-D8e"/>
+                                        <constraint firstItem="7Pz-7j-Cfh" firstAttribute="centerX" secondItem="r3z-o9-s0O" secondAttribute="centerX" id="Ec7-cz-S8y"/>
+                                        <constraint firstItem="bud-en-gCN" firstAttribute="height" secondItem="7Pz-7j-Cfh" secondAttribute="height" id="Swk-bR-L39"/>
+                                        <constraint firstItem="7Pz-7j-Cfh" firstAttribute="top" secondItem="JHI-q5-4YZ" secondAttribute="bottom" constant="16" id="da8-UI-MUB"/>
+                                        <constraint firstItem="7Pz-7j-Cfh" firstAttribute="centerY" secondItem="r3z-o9-s0O" secondAttribute="centerY" id="x3j-kh-d8f"/>
                                     </constraints>
                                 </view>
                             </box>
@@ -792,7 +836,8 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="passwordTextField" destination="fGT-yw-jiz" id="jLd-06-JUP"/>
+                        <outlet property="loginButton" destination="bud-en-gCN" id="YJx-I5-z0f"/>
+                        <outlet property="passwordTextField" destination="7Pz-7j-Cfh" id="5e8-tm-SYU"/>
                         <outlet property="submitButton" destination="bud-en-gCN" id="0Fs-Nj-SWa"/>
                         <outlet property="usernameTextField" destination="JHI-q5-4YZ" id="LPB-4z-XDC"/>
                     </connections>

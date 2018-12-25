@@ -10,7 +10,12 @@
 
 }
 - (void)showMessage:(NSString *)message confirmButtonTitle:(NSString *)title onConfirmed:(void (^)())confirmed {
-    NSLog(@"showMessage: %@", message);
+    NSAlert * alert = [[NSAlert alloc] init];
+    alert.messageText = message;
+    [alert addButtonWithTitle:title];
+    [alert beginSheetModalForWindow:self.view.window completionHandler:^(NSModalResponse returnCode) {
+        confirmed ? confirmed() : nil;
+    }];
 }
 
 @end

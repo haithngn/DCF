@@ -8,6 +8,7 @@
 #import "Dependences.h"
 #import "AuthorizeWindowController.h"
 #import "OSXStoryboards.h"
+#import "MainWindowController.h"
 
 @interface BootstrapWindowController ()
 
@@ -40,7 +41,6 @@
 }
 
 - (void)navigateToAuthorizeScreen {
-    NSLog(@"navigateToAuthorizeScreen");
     [self close];
 
     AuthorizeWindowController * windowController = [[OSXStoryboards main] instantiateControllerWithIdentifier:@"AuthorizeWindowController"];
@@ -49,7 +49,10 @@
 }
 
 - (void)navigateToMainScreen {
-    NSLog(@"navigateToMainScreen");
+    [self close];
+    MainWindowController * windowController = [[OSXStoryboards main] instantiateControllerWithIdentifier:@"MainWindowController"];
+    [windowController showWindow:nil];
+    [[windowController window] makeMainWindow];
 }
 
 @end
