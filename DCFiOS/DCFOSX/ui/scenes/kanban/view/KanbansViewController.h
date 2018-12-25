@@ -6,7 +6,7 @@
 #import <Foundation/Foundation.h>
 #import "BaseOSXViewController.h"
 
+@interface KanbansViewController : BaseOSXViewController
+@property (nonatomic, copy) NSString * collectionId;
 
-@interface CollectionsViewController : BaseOSXViewController
-- (void)bindData;
 @end

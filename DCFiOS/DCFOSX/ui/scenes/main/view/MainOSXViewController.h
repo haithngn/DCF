@@ -6,5 +6,5 @@
 #import <Foundation/Foundation.h>
 #import "BaseOSXViewController.h"
 
-@interface MainViewController : BaseOSXViewController
+@interface MainOSXViewController : BaseOSXViewController
 @end

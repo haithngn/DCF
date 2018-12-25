@@ -3,22 +3,25 @@
 // Copyright (c) 2018 Hai Nguyen. All rights reserved.
 //
 
-#import "CollectionsViewController.h"
+#import "CollectionsOSXViewController.h"
 #import "CollectionsViewModel.h"
 #import "Dependences.h"
 #import "BaseOSXTableViewDataSource.h"
 #import "CollectionsViewCell.h"
+#import "MainOSXViewController.h"
 #import "FloItemViewModel.h"
+#import "KanbansViewController.h"
+#import "OSXStoryboards.h"
 
-@interface CollectionsViewController () <FloOSXTableViewDataSource>
+@interface CollectionsOSXViewController () <FloOSXTableViewDataSource>
 
-@property (nonatomic, weak) NSTableView * tableView;
+@property (nonatomic, weak) IBOutlet NSTableView * tableView;
 @property (nonatomic, strong) CollectionsViewModel * model;
 @property (nonatomic, strong) BaseOSXTableViewDataSource * datasource;
 
 @end
 
-@implementation CollectionsViewController {
+@implementation CollectionsOSXViewController {
 
 }
 
@@ -52,7 +55,9 @@
 }
 
 - (void)didSelect:(NSObject <FloItemViewModel> *)item {
-    NSLog(@"Selected : %@", item.title);
+    if ([_delegate respondsToSelector:@selector(openCollection:)]) {
+        [_delegate openCollection:item.objectId];
+    }
 }
 
 - (NSInteger)selectedIndex {
