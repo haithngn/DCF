@@ -9,14 +9,18 @@
 /* Begin PBXBuildFile section */
 		1929002EFF70FF92B7660163 /* GetKanbanParameter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1929060FB9F3FDE9AD4CC3C9 /* GetKanbanParameter.m */; };
 		1929005CCD47AA5322468A11 /* KanbanServiceImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 192904009C17B4D22F0A9FB6 /* KanbanServiceImpl.m */; };
+		192900BE81BB26CB7312303B /* CollectionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19290267D84028CAA84CA029 /* CollectionsViewController.m */; };
 		192900BF5A31B913C85A1D3D /* NavigationsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1929072574C0F371E91C830D /* NavigationsViewController.m */; };
 		192900DC83919B6037E07302 /* Dependences.m in Sources */ = {isa = PBXBuildFile; fileRef = 19290DFB8C17445C4BA325E2 /* Dependences.m */; };
 		1929013B7441B938EE4F243D /* GetCollectionParameter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1929043B44BF10AD04F6C773 /* GetCollectionParameter.m */; };
 		1929013D4C82EF18E63718ED /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19290BC38648B7B9F846FDE8 /* CollectionViewController.m */; };
 		1929017635BADDB3867A9161 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1929035CEF4DF27DDD33BC74 /* main.m */; };
+		19290231E9857E0ADCE4AE02 /* CollectionsViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 192908B40B41726E3C60AC3C /* CollectionsViewCell.m */; };
 		1929026AB4A1B22BB629B65D /* BookmarkServiceImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 19290998172D3CA8F9D76384 /* BookmarkServiceImpl.m */; };
 		19290293F4078F0F6384C4A8 /* UserServiceImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 19290FADBBF7CC43C3A8F2E1 /* UserServiceImpl.m */; };
+		192902B71F75D84EB7C32DA5 /* CollectionsViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 192908DF4349F4AA043765C6 /* CollectionsViewModel.m */; };
 		192902BCE6D2215152C09305 /* BookmarksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19290B9F49466727F39DA774 /* BookmarksViewController.m */; };
+		192902C4BC6A6165B8AC10B2 /* BaseOSXTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 192908EEA216F074C3DBB090 /* BaseOSXTableViewDataSource.m */; };
 		192902EB674333D27A4F555E /* CollectionServiceImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 19290D2AD8B003C1D91CF283 /* CollectionServiceImpl.m */; };
 		1929031B67A5BCD9492B6C04 /* BaseWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 1929067EFBF18A452C33F412 /* BaseWindow.m */; };
 		1929033B36342A4C1EE60776 /* BaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 192906CB89D1E0C5CD9BA0C2 /* BaseViewModel.m */; };
@@ -42,6 +46,7 @@
 		192907594BEB8DA7C26E15DF /* FloBookmark.m in Sources */ = {isa = PBXBuildFile; fileRef = 19290A090A7C2A5D4F85FCF1 /* FloBookmark.m */; };
 		1929076161602B6E5EE4EC90 /* LoginParameter.m in Sources */ = {isa = PBXBuildFile; fileRef = 192909191B5A628A14CCC6F8 /* LoginParameter.m */; };
 		19290782DD028A2F2945EDDC /* RouterImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 1929008E4255C67A208FCDC1 /* RouterImpl.m */; };
+		1929078664D423574C58A6BE /* BaseOSXTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 192903CDD6D6F51B247D43E9 /* BaseOSXTableViewCell.m */; };
 		1929078D6CCDBDBD78A95543 /* BaseTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 19290E7A64FE3636E8FF9669 /* BaseTableViewDataSource.m */; };
 		192907B62F6C4714339B38A6 /* BaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1929097ECF7682ECCDF593E4 /* BaseTableViewCell.m */; };
 		192907FD698F636AF8D3313B /* BookmarkApiImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 19290C1E5C94E8FBB3983B9F /* BookmarkApiImpl.m */; };
@@ -69,13 +74,21 @@
 		19290C8C974CB63F22ECB67B /* BootstrapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 192904D6CC936190361C4899 /* BootstrapViewController.m */; };
 		19290D14E4A3BEBE41108330 /* AuthorizeViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 192909F28EAD57D1B30ED394 /* AuthorizeViewModel.m */; };
 		19290D5AF6806E23D2D9B804 /* KanbanItemViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 19290BFFE7789FFBFB1CB70B /* KanbanItemViewModel.m */; };
+		19290EC8708EB5E6368C3B04 /* ProjectItemViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1929030934EFACD68CE6A4C7 /* ProjectItemViewModel.m */; };
 		19290EE33CB939721C220D72 /* CollectionViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 192902536FADDDD19754CE1D /* CollectionViewModel.m */; };
 		19290F114F957C551D099E5F /* BroadcastServiceImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 192901FF68819C3EAD92511B /* BroadcastServiceImpl.m */; };
 		19290F15C7970D5BE7FA0F39 /* CollectionViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 19290B19C7CD0A504EC4F74C /* CollectionViewDataSource.m */; };
+		19290F60E0792F09FE4F45DA /* BaseOSXTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 192908EEA216F074C3DBB090 /* BaseOSXTableViewDataSource.m */; };
 		19290F631C25E87D7A7326AE /* CollectionsItemViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1929031ACE2D911357CA66A9 /* CollectionsItemViewCell.m */; };
 		19290F8950F10929E3DA2951 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19290B0F3E7CF9AED52F72B4 /* Main.storyboard */; };
 		19290FBA8F50A133694786DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1929019C928AB3E629798E87 /* Assets.xcassets */; };
-		273B9B9321D0C5F9006F4DB7 /* CocoaLumberjack.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 273B9B9121D0C5F1006F4DB7 /* CocoaLumberjack.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		271C5C0521D218EC00793CBA /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 27BFA46921CF9302007C524B /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		271C5C0721D218EC00793CBA /* CoreFlo.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 27BFA46D21CF9303007C524B /* CoreFlo.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		271C5C0921D218EC00793CBA /* FloObjC.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 27BFA46E21CF9303007C524B /* FloObjC.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		271C5C0B21D218EC00793CBA /* FloRest.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 27BFA46A21CF9302007C524B /* FloRest.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		271C5C0D21D218EC00793CBA /* KeychainAccess.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 27BFA46B21CF9303007C524B /* KeychainAccess.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		271C5C0F21D218EC00793CBA /* SwiftyJSON.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 27BFA46C21CF9303007C524B /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		271C5C1121D218EC00793CBA /* CocoaLumberjack.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 273B9B9121D0C5F1006F4DB7 /* CocoaLumberjack.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2794981F21D0D52F0075F136 /* BootstrapWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2794981B21D0D52F0075F136 /* BootstrapWindowController.m */; };
 		2794982021D0D52F0075F136 /* BootstrapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2794981D21D0D52F0075F136 /* BootstrapViewController.m */; };
 		2794982121D0D8E10075F136 /* Dependences.m in Sources */ = {isa = PBXBuildFile; fileRef = 19290DFB8C17445C4BA325E2 /* Dependences.m */; };
@@ -98,12 +111,6 @@
 		2794983221D0D9110075F136 /* BookmarkApiImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 19290C1E5C94E8FBB3983B9F /* BookmarkApiImpl.m */; };
 		2794983321D0DAF60075F136 /* BootstrapViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 19290B1EF4BA5DE614CB85D1 /* BootstrapViewModel.m */; };
 		2794983421D0DB010075F136 /* BaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 192906CB89D1E0C5CD9BA0C2 /* BaseViewModel.m */; };
-		27BFA47021CF930D007C524B /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 27BFA46921CF9302007C524B /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		27BFA47221CF930D007C524B /* CoreFlo.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 27BFA46D21CF9303007C524B /* CoreFlo.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		27BFA47421CF930E007C524B /* FloObjC.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 27BFA46E21CF9303007C524B /* FloObjC.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		27BFA47621CF930E007C524B /* FloRest.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 27BFA46A21CF9302007C524B /* FloRest.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		27BFA47821CF930E007C524B /* KeychainAccess.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 27BFA46B21CF9303007C524B /* KeychainAccess.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		27BFA47A21CF930E007C524B /* SwiftyJSON.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 27BFA46C21CF9303007C524B /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		27D4F6D421CE3F1D00F03BCD /* TestServices.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D4F6D321CE3F1D00F03BCD /* TestServices.m */; };
 /* End PBXBuildFile section */
 
@@ -118,19 +125,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		27BFA47B21CF930E007C524B /* Embed Frameworks */ = {
+		271C5C1221D218EC00793CBA /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				27BFA47621CF930E007C524B /* FloRest.framework in Embed Frameworks */,
-				27BFA47021CF930D007C524B /* Alamofire.framework in Embed Frameworks */,
-				27BFA47A21CF930E007C524B /* SwiftyJSON.framework in Embed Frameworks */,
-				27BFA47421CF930E007C524B /* FloObjC.framework in Embed Frameworks */,
-				27BFA47221CF930D007C524B /* CoreFlo.framework in Embed Frameworks */,
-				273B9B9321D0C5F9006F4DB7 /* CocoaLumberjack.framework in Embed Frameworks */,
-				27BFA47821CF930E007C524B /* KeychainAccess.framework in Embed Frameworks */,
+				271C5C0B21D218EC00793CBA /* FloRest.framework in Embed Frameworks */,
+				271C5C0521D218EC00793CBA /* Alamofire.framework in Embed Frameworks */,
+				271C5C0F21D218EC00793CBA /* SwiftyJSON.framework in Embed Frameworks */,
+				271C5C0921D218EC00793CBA /* FloObjC.framework in Embed Frameworks */,
+				271C5C0721D218EC00793CBA /* CoreFlo.framework in Embed Frameworks */,
+				271C5C1121D218EC00793CBA /* CocoaLumberjack.framework in Embed Frameworks */,
+				271C5C0D21D218EC00793CBA /* KeychainAccess.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -166,6 +173,8 @@
 		19290213A5B2E508DAEA7B3B /* Storyboards.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Storyboards.h; sourceTree = "<group>"; };
 		19290216A1031C783E4B80DF /* OSXStoryboards.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSXStoryboards.m; sourceTree = "<group>"; };
 		192902536FADDDD19754CE1D /* CollectionViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewModel.m; sourceTree = "<group>"; };
+		192902583E4914455481A5F9 /* CollectionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionsViewController.h; sourceTree = "<group>"; };
+		19290267D84028CAA84CA029 /* CollectionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionsViewController.m; sourceTree = "<group>"; };
 		192902B0853B9588EB8107C7 /* KanbanViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KanbanViewCell.m; sourceTree = "<group>"; };
 		192902C9D4E32EFC61588E3E /* BootstrapViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BootstrapViewModel.h; sourceTree = "<group>"; };
 		1929030934EFACD68CE6A4C7 /* ProjectItemViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectItemViewModel.m; sourceTree = "<group>"; };
@@ -174,7 +183,9 @@
 		1929034BE4D21283C744ABEA /* RouterImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RouterImpl.h; sourceTree = "<group>"; };
 		1929035CEF4DF27DDD33BC74 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1929036EE4CD901191311020 /* CollectionApiImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionApiImpl.m; sourceTree = "<group>"; };
+		19290377428E4E72D5262F2A /* BaseOSXTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseOSXTableViewCell.h; sourceTree = "<group>"; };
 		192903B824708917C7CE0C8C /* Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		192903CDD6D6F51B247D43E9 /* BaseOSXTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseOSXTableViewCell.m; sourceTree = "<group>"; };
 		192903E426B8AA996D1EBC53 /* CollectionViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewDataSource.h; sourceTree = "<group>"; };
 		192904009C17B4D22F0A9FB6 /* KanbanServiceImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KanbanServiceImpl.m; sourceTree = "<group>"; };
 		19290404F36998951DC67254 /* google_app_oauth.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = google_app_oauth.plist; sourceTree = "<group>"; };
@@ -228,11 +239,14 @@
 		19290852D551E316C96F4FB9 /* AuthorizeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuthorizeViewController.m; sourceTree = "<group>"; };
 		1929085A7A9CA2241F04121E /* BroadcastServiceImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BroadcastServiceImpl.h; sourceTree = "<group>"; };
 		192908669F03D2A026B4A874 /* CollectionApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionApi.h; sourceTree = "<group>"; };
+		19290868B5514FDA78401235 /* BaseOSXTableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseOSXTableViewDataSource.h; sourceTree = "<group>"; };
 		1929087DBDC2C5400A9A2A65 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		192908873410CA2EA5741F2B /* BaseWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseWindow.h; sourceTree = "<group>"; };
 		1929089C49695F2E4F3B11C4 /* BootstrapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BootstrapViewController.h; sourceTree = "<group>"; };
 		192908A46895AB82D010F8F9 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		192908B40B41726E3C60AC3C /* CollectionsViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionsViewCell.m; sourceTree = "<group>"; };
 		192908DF4349F4AA043765C6 /* CollectionsViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionsViewModel.m; sourceTree = "<group>"; };
+		192908EEA216F074C3DBB090 /* BaseOSXTableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseOSXTableViewDataSource.m; sourceTree = "<group>"; };
 		192909097E1C3EE4D7DD4AA4 /* UserService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserService.h; sourceTree = "<group>"; };
 		19290911650302A7DC843CC8 /* AuthorizeOSXViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuthorizeOSXViewModel.m; sourceTree = "<group>"; };
 		192909125D2135DAC65CFEB0 /* AuthorizationApiImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthorizationApiImpl.h; sourceTree = "<group>"; };
@@ -288,6 +302,7 @@
 		19290E613AE47A201E4664BC /* BaseTableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableViewDataSource.h; sourceTree = "<group>"; };
 		19290E7A64FE3636E8FF9669 /* BaseTableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewDataSource.m; sourceTree = "<group>"; };
 		19290E91EA37572D98DD98EA /* KanbanApiImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KanbanApiImpl.m; sourceTree = "<group>"; };
+		19290EA0D2D82BFBA29F45B2 /* CollectionsViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionsViewCell.h; sourceTree = "<group>"; };
 		19290EA3CEA86E9687AF9AA2 /* Dependences.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dependences.h; sourceTree = "<group>"; };
 		19290EB1C47F136DC62E39B6 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		19290EB52A02F2C9964118FC /* BookmarkApiImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookmarkApiImpl.h; sourceTree = "<group>"; };
@@ -389,6 +404,14 @@
 				1929058E29AE3EDFD0AE766F /* Release */,
 			);
 			path = configuration;
+			sourceTree = "<group>";
+		};
+		192900C42AEDEF14261F4C58 /* collection */ = {
+			isa = PBXGroup;
+			children = (
+				19290E7CF735D9E43936C456 /* view */,
+			);
+			path = collection;
 			sourceTree = "<group>";
 		};
 		1929012D916E81FA41609984 /* model */ = {
@@ -616,6 +639,10 @@
 				192908873410CA2EA5741F2B /* BaseWindow.h */,
 				192907A0ED1ABA406483E3A6 /* BaseWindowController.m */,
 				192900A86572CA14789389F2 /* BaseWindowController.h */,
+				192908EEA216F074C3DBB090 /* BaseOSXTableViewDataSource.m */,
+				19290868B5514FDA78401235 /* BaseOSXTableViewDataSource.h */,
+				192903CDD6D6F51B247D43E9 /* BaseOSXTableViewCell.m */,
+				19290377428E4E72D5262F2A /* BaseOSXTableViewCell.h */,
 			);
 			path = common;
 			sourceTree = "<group>";
@@ -796,6 +823,7 @@
 				19290A0AAF10BAA5CF42D1F7 /* authorize */,
 				19290BBEFFD9F4C30B6C1616 /* bootstrap */,
 				192907DF3AFE56B1E6DCDEA8 /* main */,
+				192900C42AEDEF14261F4C58 /* collection */,
 			);
 			path = scenes;
 			sourceTree = "<group>";
@@ -869,6 +897,17 @@
 				19290CF820AD0491E20EBDE2 /* router */,
 			);
 			path = ui;
+			sourceTree = "<group>";
+		};
+		19290E7CF735D9E43936C456 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				19290267D84028CAA84CA029 /* CollectionsViewController.m */,
+				192902583E4914455481A5F9 /* CollectionsViewController.h */,
+				192908B40B41726E3C60AC3C /* CollectionsViewCell.m */,
+				19290EA0D2D82BFBA29F45B2 /* CollectionsViewCell.h */,
+			);
+			path = view;
 			sourceTree = "<group>";
 		};
 		19290EA5692D38863E9F79A4 /* view */ = {
@@ -1071,7 +1110,7 @@
 				27BFA45021CF9088007C524B /* Sources */,
 				27BFA45121CF9088007C524B /* Frameworks */,
 				27BFA45221CF9088007C524B /* Resources */,
-				27BFA47B21CF930E007C524B /* Embed Frameworks */,
+				271C5C1221D218EC00793CBA /* Embed Frameworks */,
 				27BFA46821CF90F8007C524B /* ShellScript */,
 				273B9B9621D0CCCD006F4DB7 /* ShellScript */,
 			);
@@ -1300,6 +1339,7 @@
 				192907FD698F636AF8D3313B /* BookmarkApiImpl.m in Sources */,
 				192907594BEB8DA7C26E15DF /* FloBookmark.m in Sources */,
 				19290B5E905E3D42B8A011AF /* GetBookmarksParameter.m in Sources */,
+				192902C4BC6A6165B8AC10B2 /* BaseOSXTableViewDataSource.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1343,6 +1383,12 @@
 				192903868FE9BA8399C89364 /* MainViewController.m in Sources */,
 				192908FD4C8A327B4538F906 /* AuthorizeOSXViewModel.m in Sources */,
 				19290782DD028A2F2945EDDC /* RouterImpl.m in Sources */,
+				192900BE81BB26CB7312303B /* CollectionsViewController.m in Sources */,
+				192902B71F75D84EB7C32DA5 /* CollectionsViewModel.m in Sources */,
+				19290EC8708EB5E6368C3B04 /* ProjectItemViewModel.m in Sources */,
+				19290F60E0792F09FE4F45DA /* BaseOSXTableViewDataSource.m in Sources */,
+				1929078664D423574C58A6BE /* BaseOSXTableViewCell.m in Sources */,
+				19290231E9857E0ADCE4AE02 /* CollectionsViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1535,13 +1581,14 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 192903B824708917C7CE0C8C /* Debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = Shared/DCFOSX.entitlements;
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = TL9V27BMW8;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
@@ -1553,7 +1600,8 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE = "f5a7090c-a9a6-4c6d-b8ba-9e51416d4728";
+				PROVISIONING_PROFILE_SPECIFIER = "Flo Universal Debug Provisioning";
 				SDKROOT = macosx;
 				SWIFT_OBJC_BRIDGING_HEADER = "Shared/DCF-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
