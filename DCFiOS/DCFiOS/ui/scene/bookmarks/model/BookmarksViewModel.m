@@ -7,10 +7,19 @@
 #import "UserService.h"
 #import "BookmarkService.h"
 #import "GetBookmarksParameter.h"
+#import "FloItemViewModel.h"
+#import "BookmarkItemViewModel.h"
+#import "FloBookmark.h"
+
+@interface NSArray (Bookmarks)
+
++ (NSArray <NSObject <FloItemViewModel>*>*)transformFromBookmarks:(NSArray<FloBookmark *>*)bookmarks;
+
+@end
 
 @interface BookmarksViewModel ()
 
-@property (nonatomic, strong) NSString * collectionId;
+@property (nonatomic, strong) NSString * kanbanId;
 @property (nonatomic, strong) NSObject <UserService> * userService;
 @property (nonatomic, strong) NSObject <BookmarkService> * bookmarkService;
 
@@ -20,10 +29,10 @@
 
 }
 
-- (instancetype)initWithCollectionId:(NSString *)collectionId userService:(NSObject <UserService> *)userService bookmarkService:(NSObject <BookmarkService> *)bookmarkService {
+- (instancetype)initWithKanbanId:(NSString *)kanbanId userService:(NSObject <UserService> *)userService bookmarkService:(NSObject <BookmarkService> *)bookmarkService {
     self = [super init];
     if (self) {
-        self.collectionId = collectionId;
+        self.kanbanId = kanbanId;
         self.userService = userService;
         self.bookmarkService = bookmarkService;
     }
@@ -35,8 +44,27 @@
     GetBookmarksParameter * parameter = [[GetBookmarksParameter alloc] initWithUserId:_userService.currentUserId
             pItem:5 minId:nil modifiedGTE:nil ids:@[] hasDel:false];
     [_bookmarkService getBookmarks:parameter handler:^(NSArray<FloBookmark *> *bookmarks, NSError *error) {
-
+        if (error == nil) {
+            _onItems ? _onItems([NSArray transformFromBookmarks: bookmarks]) : nil;
+        } else {
+            _onError ? _onError : nil;
+        }
     }];
+}
+
+@end
+
+@implementation NSArray (FloCollection)
+
++ (NSArray <NSObject <FloItemViewModel>*>*)transformFromBookmarks:(NSArray<FloBookmark *>*)bookmarks {
+    NSMutableArray <NSObject<FloItemViewModel> *>* result = [[NSMutableArray <NSObject<FloItemViewModel> *> alloc] init];
+    for ( FloBookmark* bookmark in bookmarks ) {
+        [result addObject:[[BookmarkItemViewModel alloc] initWithBookmarkId:bookmark.bookmarkId
+                                                                       name:bookmark.name
+                                                                urlInString:bookmark.urlInString]];
+    }
+
+    return result;
 }
 
 @end

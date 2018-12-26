@@ -5,12 +5,9 @@
 
 #import <FloObjC/FloObjC.h>
 #import <CoreFlo/CoreFlo.h>
-#import <CocoaLumberjack/CocoaLumberjack.h>
 #import "CollectionApiImpl.h"
 #import "GetCollectionParameter.h"
 #import "FloCollection.h"
-
-static const DDLogLevel ddLogLevel = DDLogLevelDebug | DDLogLevelVerbose;
 
 @class GetCollectionsParams;
 
@@ -36,7 +33,6 @@ static const DDLogLevel ddLogLevel = DDLogLevelDebug | DDLogLevelVerbose;
 - (void)getCollections:(GetCollectionParameter *)params handler:(void (^)(NSArray<FloCollection *> *collections, NSError *error))handler {
     GetCollectionsParams *getCollectionsParams = [[GetCollectionsParams alloc] initWithLastModified: params.lastModified];
     [_api getCollectionsWithParams:getCollectionsParams handler:^(NSArray <Project *> * projects, NSError *error) {
-        DDLogDebug(@"%@ Projects : %@", THIS_FILE, projects);
         NSMutableArray<FloCollection *> * result = [[NSMutableArray<FloCollection *> alloc] init];
         for (Project * p in projects) {
             [result addObject:[[FloCollection alloc] initWithCollectionId:p.id collectionName:p.projName]];

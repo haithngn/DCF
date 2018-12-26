@@ -8,9 +8,13 @@
 
 @protocol BookmarkService;
 @protocol UserService;
+@protocol FloItemViewModel;
 
 @interface BookmarksViewModel : BaseViewModel
-- (instancetype)initWithCollectionId:(NSString *)collectionId userService:(NSObject <UserService> *)userService bookmarkService:(NSObject <BookmarkService> *)bookmarkService;
+@property(nonatomic, copy) void (^onItems)(NSArray<NSObject <FloItemViewModel> *> *);
+@property(nonatomic, copy) void (^onError)(NSString *);
+
+- (instancetype)initWithKanbanId:(NSString *)kanbanId userService:(NSObject <UserService> *)userService bookmarkService:(NSObject <BookmarkService> *)bookmarkService;
 
 - (void)load;
 

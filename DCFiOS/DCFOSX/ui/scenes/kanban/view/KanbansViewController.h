@@ -6,7 +6,16 @@
 #import <Foundation/Foundation.h>
 #import "BaseOSXViewController.h"
 
+@class MainOSXViewController;
+
+@protocol KanbansViewDelegate <NSObject>
+@optional
+- (void)openKanban:(NSString *) kanbanId;
+
+@end
+
 @interface KanbansViewController : BaseOSXViewController
 @property (nonatomic, copy) NSString * collectionId;
+@property(nonatomic, strong) NSObject <KanbansViewDelegate> * delegate;
 
 @end

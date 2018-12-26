@@ -24,8 +24,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    _model = [[BookmarksViewModel alloc] initWithCollectionId:_collectionId
-            userService:[Dependences userService] bookmarkService:[Dependences bookmarkService]];
+    _model = [[BookmarksViewModel alloc] initWithKanbanId:_collectionId
+                                              userService:[Dependences userService] bookmarkService:[Dependences bookmarkService]];
     _datasource = [[BaseTableViewDataSource alloc] initWithDelegate:self];
     _tableView.dataSource = _datasource;
     _tableView.delegate = _datasource;

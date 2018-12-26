@@ -11,6 +11,7 @@
 
 @interface KanbansViewModel : NSObject
 @property(nonatomic, copy) void (^onItems)(NSArray<NSObject <FloItemViewModel> *> *);
+@property(nonatomic, copy) void (^onError)(NSString *);
 
 - (id)initWithKanbanService:(NSObject <KanbanService> *)kanbanService userService:(NSObject <UserService> *)userService collectionId:(NSString *)collectionId;
 - (void)load;

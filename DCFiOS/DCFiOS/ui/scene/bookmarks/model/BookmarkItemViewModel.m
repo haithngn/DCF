@@ -1,13 +1,12 @@
 //
-// Created by Hai Nguyen Thanh on 2018-12-21.
+// Created by Hai Nguyen on 2018-12-26.
 // Copyright (c) 2018 Hai Nguyen. All rights reserved.
 //
 
-#import "FloBookmark.h"
-#import "GetBookmarksParameter.h"
+#import "BookmarkItemViewModel.h"
 
 
-@implementation FloBookmark {
+@implementation BookmarkItemViewModel {
 
 }
 - (instancetype)initWithBookmarkId:(NSString *)bookmarkId name:(NSString *)name urlInString:(NSString *)urlInString {
@@ -19,6 +18,14 @@
     }
 
     return self;
+}
+
+- (NSString *_Nonnull)objectId {
+    return _bookmarkId;
+}
+
+- (NSString *_Nonnull)title {
+    return _name;
 }
 
 @end

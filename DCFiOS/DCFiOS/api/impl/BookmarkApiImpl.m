@@ -6,6 +6,7 @@
 #import <FloObjC/FloObjC.h>
 #import "BookmarkApiImpl.h"
 #import "GetBookmarksParameter.h"
+#import "FloBookmark.h"
 #import <FloRest/FloRest.h>
 #import <CoreFlo/CoreFlo.h>
 
@@ -41,7 +42,11 @@
     GetBookmarksParams * getBookmarkParams = [[GetBookmarksParams alloc] initWithUserId:params.userId
             pItem:params.pItem minId:params.minId modifiedGTE:params.modifiedGTE ids:params.ids hasDel: params.hasDel];
     [_api getBookmarksWithParams:getBookmarkParams handler:^(NSArray <Bookmark*>* bookmarks, NSError *error) {
-
+        NSMutableArray<FloBookmark *> * result = [[NSMutableArray<FloBookmark *> alloc] init];
+        for (Bookmark * bookmark in bookmarks) {
+            [result addObject:[[FloBookmark alloc] initWithBookmarkId:bookmark.id name:bookmark.title urlInString:bookmark.url]];
+        }
+        handler != nil ? handler(result, error) : nil;
     }];
 }
 

@@ -9,6 +9,7 @@
 #import "CollectionsOSXViewController.h"
 #import "KanbansViewController.h"
 #import "MainViewModel.h"
+#import "BookmarksOSXViewController.h"
 
 FOUNDATION_EXPORT NSString *const kCollectionsSegueID;
 FOUNDATION_EXPORT NSString *const kKanbansSegueID;
@@ -16,12 +17,13 @@ FOUNDATION_EXPORT NSString *const kBookmarksSegueID;
 
 NSString *const kCollectionsSegueID = @"container.collections.view";
 NSString *const kKanbansSegueID = @"container.kanbans.view";
-NSString *const kBookmarksSegueID = @"kBookmarksSegueID";
+NSString *const kBookmarksSegueID = @"container.bookmarks.view";
 
-@interface MainOSXViewController () <CollectionsViewDelegate>
+@interface MainOSXViewController () <CollectionsViewDelegate, KanbansViewDelegate>
 
 @property (nonatomic, strong) AuthorizeOSXViewModel * authorizeModel;
 @property (nonatomic, strong) KanbansViewController * kanbansController;
+@property (nonatomic, strong) BookmarksOSXViewController * bookmarksController;
 @property (nonatomic, strong) MainViewModel * model;
 
 @end
@@ -48,12 +50,22 @@ NSString *const kBookmarksSegueID = @"kBookmarksSegueID";
     _model.onOpenCollection = ^(NSString * collectionId){
         weakSelf.kanbansController.collectionId = collectionId;
     };
+
+    _model.onOpenKanban = ^(NSString * kanbanId){
+        weakSelf.bookmarksController.kanbanId = kanbanId;
+    };
 }
 
 #pragma mark - Collections View Delegate
 
 - (void)openCollection:(NSString *)collectionId {
     [_model openCollection:collectionId];
+}
+
+#pragma mark - Kanbans View Delegate
+
+- (void)openKanban:(NSString *)kanbanId {
+    [_model openKanban:kanbanId];
 }
 
 
@@ -67,8 +79,9 @@ NSString *const kBookmarksSegueID = @"kBookmarksSegueID";
         controller.delegate = self;
     } else if ([segue.identifier isEqualToString:kKanbansSegueID]) {
         self.kanbansController = (KanbansViewController*)segue.destinationController;
+            self.kanbansController.delegate = self;
     } else if ([segue.identifier isEqualToString:kBookmarksSegueID]) {
-
+        self.bookmarksController = (BookmarksOSXViewController *)segue.destinationController;
     }
 }
 

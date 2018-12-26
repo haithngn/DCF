@@ -7,6 +7,15 @@
 #import "KanbanService.h"
 #import "UserService.h"
 #import "FloItemViewModel.h"
+#import "GetKanbanParameter.h"
+#import "KanbanItemViewModel.h"
+#import "FloKanban.h"
+
+@interface NSArray (FloKanban)
+
++ (NSArray <KanbanItemViewModel * > *)transformFromKanbans:(NSArray<FloKanban *>*)kanbans;
+
+@end
 
 @interface KanbansViewModel ()
 
@@ -32,7 +41,28 @@
 }
 
 - (void)load {
+    NSString * userId = _userService.currentUserId;
+    GetKanbanParameter * params = [[GetKanbanParameter alloc] initWithUserId:userId pItem:[NSNumber numberWithInt:5] minId:nil hasDelete:NO modifiedGTEInSecond:nil];
+    [_kanbanService getKanbans:params handler:^(NSArray<FloKanban *> * kanbans, NSError *error) {
+        if (error == nil) {
+            _onItems ? _onItems([NSArray transformFromKanbans:kanbans]) : nil;
+        } else {
+            _onError ? _onError(error.localizedDescription) : nil;
+        }
+    }];
+}
 
+@end
+
+@implementation NSArray (FloKanban)
+
++ (NSArray <KanbanItemViewModel * > *)transformFromKanbans:(NSArray<FloKanban *>*)kanbans {
+    NSMutableArray <KanbanItemViewModel*> * result = [[NSMutableArray <KanbanItemViewModel *> alloc] init];
+    for ( FloKanban* k in kanbans ) {
+        [result addObject:[[KanbanItemViewModel alloc] initWithKanbanId:k.id kanbanName:k.name]];
+    }
+
+    return result;
 }
 
 @end

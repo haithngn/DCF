@@ -8,6 +8,9 @@
 
 @interface MainViewModel : BaseViewModel
 @property(nonatomic, copy) void (^onOpenCollection)(NSString *);
+@property(nonatomic, copy) void (^onOpenKanban)(NSString *);
 
 - (void)openCollection:(NSString *)collectionId;
+- (void)openKanban:(NSString *)kanbanId;
+
 @end

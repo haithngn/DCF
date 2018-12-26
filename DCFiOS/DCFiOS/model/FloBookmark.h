@@ -7,4 +7,11 @@
 
 
 @interface FloBookmark : NSObject
+@property(nonatomic, copy) NSString *bookmarkId;
+@property(nonatomic, copy) NSString *name;
+@property(nonatomic, copy) NSString *urlInString;
+
+- (instancetype)initWithBookmarkId:(NSString *)bookmarkId name:(NSString *)name urlInString:(NSString *)urlInString;
+
+
 @end

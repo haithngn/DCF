@@ -14,4 +14,8 @@
     _onOpenCollection ? _onOpenCollection(collectionId) : nil;
 }
 
+- (void)openKanban:(NSString *)kanbanId {
+    _onOpenKanban ? _onOpenKanban(kanbanId) : nil;
+}
+
 @end

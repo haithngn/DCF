@@ -1,25 +1,24 @@
 //
-// Created by Hai Nguyen on 2018-12-25.
+// Created by Hai Nguyen on 2018-12-26.
 // Copyright (c) 2018 Hai Nguyen. All rights reserved.
 //
 
-#import "KanbansViewController.h"
+#import "BookmarksOSXViewController.h"
+#import "BookmarksViewModel.h"
 #import "BaseOSXTableViewDataSource.h"
-#import "KanbansViewModel.h"
-#import "KanbansViewCell.h"
 #import "Dependences.h"
+#import "BookmarksViewCell.h"
 #import "FloItemViewModel.h"
-#import "MainOSXViewController.h"
 
-@interface KanbansViewController () <FloOSXTableViewDataSource>
+@interface BookmarksOSXViewController () <FloOSXTableViewDataSource>
 
 @property (nonatomic, weak) IBOutlet NSTableView * tableView;
-@property (nonatomic, strong) KanbansViewModel * model;
+@property (nonatomic, strong) BookmarksViewModel * model;
 @property (nonatomic, strong) BaseOSXTableViewDataSource * datasource;
 
 @end
 
-@implementation KanbansViewController {
+@implementation BookmarksOSXViewController {
 
 }
 - (void)viewDidLoad {
@@ -32,10 +31,10 @@
 
 #pragma mark -
 
-- (void)setCollectionId:(NSString *)collectionId {
-    _collectionId = [collectionId mutableCopy];
-    _model = [[KanbansViewModel alloc] initWithKanbanService:[Dependences kanbanService] userService:[Dependences userService]
-            collectionId:_collectionId];
+- (void)setKanbanId:(NSString *)kanbanId {
+    _kanbanId = [kanbanId mutableCopy];
+    _model = [[BookmarksViewModel alloc] initWithKanbanId:kanbanId userService:[Dependences userService]
+            bookmarkService:[Dependences bookmarkService]];
     [self bindData];
     [_model load];
 }
@@ -56,19 +55,18 @@
 #pragma mark -
 
 - (nullable NSView *)tableView:(NSTableView *)tableView viewForTableColumn:(nullable NSTableColumn *)tableColumn row:(NSInteger)row forItem:(NSObject <FloItemViewModel> *)item {
-    KanbansViewCell * cell = [tableView makeViewWithIdentifier:@"KanbansViewCell" owner:nil];
+    BookmarksViewCell * cell = [tableView makeViewWithIdentifier:@"BookmarksViewCell" owner:nil];
     cell.model = item;
 
     return cell;
 }
 
 - (void)didSelect:(NSObject <FloItemViewModel> *)item {
-    if ([_delegate respondsToSelector:@selector(openKanban:)]) {
-        [_delegate openKanban:item.objectId];
-    }
+    NSLog(@"Selected : %@", item.title);
 }
 
 - (NSInteger)selectedIndex {
     return _tableView.selectedRow;
 }
+
 @end

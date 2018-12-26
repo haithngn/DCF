@@ -1029,7 +1029,7 @@
                             <scrollView autohidesScrollers="YES" horizontalLineScroll="19" horizontalPageScroll="10" verticalLineScroll="19" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5BF-0p-jDu">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="300"/>
                                 <clipView key="contentView" id="VOK-7r-D3W">
-                                    <rect key="frame" x="1" y="23" width="238" height="276"/>
+                                    <rect key="frame" x="1" y="0.0" width="238" height="299"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" rowSizeStyle="automatic" headerView="YzE-YQ-Ji0" viewBased="YES" id="MZu-a6-CMX">
@@ -1105,10 +1105,10 @@
             </objects>
             <point key="canvasLocation" x="1522.5" y="2092"/>
         </scene>
-        <!--View Controller-->
+        <!--BookmarksOSX View Controller-->
         <scene sceneID="Xej-FT-lbY">
             <objects>
-                <viewController id="XhO-rw-5kv" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="BookmarksOSXViewController" id="XhO-rw-5kv" customClass="BookmarksOSXViewController" sceneMemberID="viewController">
                     <view key="view" id="Ooh-8x-O3w">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -1116,7 +1116,7 @@
                             <scrollView autohidesScrollers="YES" horizontalLineScroll="19" horizontalPageScroll="10" verticalLineScroll="19" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VK7-7T-Rmk">
                                 <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                                 <clipView key="contentView" id="J3O-WY-9lN">
-                                    <rect key="frame" x="1" y="23" width="448" height="276"/>
+                                    <rect key="frame" x="1" y="0.0" width="448" height="299"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" rowSizeStyle="automatic" headerView="Xcs-F5-Uaa" viewBased="YES" id="lnz-LI-AKt">
@@ -1139,7 +1139,7 @@
                                                     </textFieldCell>
                                                     <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                     <prototypeCellViews>
-                                                        <tableCellView id="qoW-lY-5l6">
+                                                        <tableCellView identifier="BookmarksViewCell" id="qoW-lY-5l6" customClass="BookmarksViewCell">
                                                             <rect key="frame" x="1" y="1" width="116" height="17"/>
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                             <subviews>
@@ -1164,7 +1164,7 @@
                                     </subviews>
                                 </clipView>
                                 <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="ZhV-b8-LfK">
-                                    <rect key="frame" x="1" y="93.523191899061203" width="181.77532005310059" height="15"/>
+                                    <rect key="frame" x="1" y="93" width="181.77532005310059" height="15"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                                 <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="nnj-U3-4cu">
@@ -1184,6 +1184,9 @@
                             <constraint firstItem="VK7-7T-Rmk" firstAttribute="top" secondItem="Ooh-8x-O3w" secondAttribute="top" id="qFH-bO-dlw"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="lnz-LI-AKt" id="NNK-lF-FFn"/>
+                    </connections>
                 </viewController>
                 <customObject id="pRV-Yu-azc" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
