@@ -7,10 +7,11 @@
 #import "BookmarkService.h"
 
 @protocol BookmarkApi;
+@protocol BookmarkRepository;
 
 
 @interface BookmarkServiceImpl : NSObject <BookmarkService>
 
-- (instancetype)initWithBookmarkApi:(NSObject <BookmarkApi> *)api;
+- (instancetype)initWithBookmarkApi:(NSObject <BookmarkApi> *)api repository:(NSObject <BookmarkRepository> *) repository;
 
 @end

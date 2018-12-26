@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="macosx"/>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14113"/>
+        <plugIn identifier="com.apple.WebKit2IBPlugin" version="14113"/>
         <capability name="box content view" minToolsVersion="7.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -1191,6 +1192,37 @@
                 <customObject id="pRV-Yu-azc" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1914" y="2092"/>
+        </scene>
+        <!--BookmarkOSX View Controller-->
+        <scene sceneID="XyQ-7e-XLq">
+            <objects>
+                <viewController storyboardIdentifier="BookmarkOSXViewController" id="ANy-eM-bpb" customClass="BookmarkOSXViewController" sceneMemberID="viewController">
+                    <view key="view" id="WzI-UB-DLm">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <wkWebView wantsLayer="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JqK-V7-ETX">
+                                <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="JqK-V7-ETX" secondAttribute="trailing" id="78Z-LP-zkh"/>
+                            <constraint firstItem="JqK-V7-ETX" firstAttribute="top" secondItem="WzI-UB-DLm" secondAttribute="top" id="dfd-t6-5Vi"/>
+                            <constraint firstItem="JqK-V7-ETX" firstAttribute="leading" secondItem="WzI-UB-DLm" secondAttribute="leading" id="gPQ-Ps-Jg2"/>
+                            <constraint firstAttribute="bottom" secondItem="JqK-V7-ETX" secondAttribute="bottom" id="idR-vt-pLC"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="JqK-V7-ETX" id="2V3-jU-mjr"/>
+                    </connections>
+                </viewController>
+                <customObject id="ECm-n9-ztd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2494" y="2087"/>
         </scene>
     </scenes>
 </document>

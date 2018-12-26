@@ -22,6 +22,7 @@
 #import "BookmarkApi.h"
 #import "BookmarkApiImpl.h"
 #import "BookmarkServiceImpl.h"
+#import "BookmarkRepositoryImpl.h"
 
 @class FloKanbanApi;
 @class FloBookmarkApi;
@@ -38,6 +39,7 @@
 @property (nonatomic, strong) NSObject <KanbanService> * kanbanService;
 @property (nonatomic, strong) NSObject <BookmarkApi> * bookmarkApi;
 @property (nonatomic, strong) NSObject <BookmarkService> * bookmarkService;
+@property (nonatomic, strong) NSObject <BookmarkRepository> * bookmarkRepository;
 
 @end
 
@@ -171,9 +173,17 @@
     return _bookmarkApi;
 }
 
+- (NSObject <BookmarkRepository> *)bookmarkRepository {
+    if (_bookmarkRepository == nil) {
+        _bookmarkRepository = [[BookmarkRepositoryImpl alloc] init];
+    }
+
+    return _bookmarkRepository;
+}
+
 - (NSObject <BookmarkService> *)bookmarkService {
     if (_bookmarkService == nil) {
-        _bookmarkService = [[BookmarkServiceImpl alloc] initWithBookmarkApi:self.bookmarkApi];
+        _bookmarkService = [[BookmarkServiceImpl alloc] initWithBookmarkApi:self.bookmarkApi repository:self.bookmarkRepository];
     }
 
     return _bookmarkService;

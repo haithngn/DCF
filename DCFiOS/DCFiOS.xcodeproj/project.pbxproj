@@ -53,9 +53,13 @@
 		19290782DD028A2F2945EDDC /* RouterImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 1929008E4255C67A208FCDC1 /* RouterImpl.m */; };
 		1929078664D423574C58A6BE /* BaseOSXTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 192903CDD6D6F51B247D43E9 /* BaseOSXTableViewCell.m */; };
 		1929078D6CCDBDBD78A95543 /* BaseTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 19290E7A64FE3636E8FF9669 /* BaseTableViewDataSource.m */; };
+		1929079CB618ECC915BF5A75 /* BookmarkRepositoryImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 1929038478085A9BB71E45A2 /* BookmarkRepositoryImpl.m */; };
 		192907B62F6C4714339B38A6 /* BaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1929097ECF7682ECCDF593E4 /* BaseTableViewCell.m */; };
+		192907DB5B2B68A3478F28D8 /* BookmarkRepositoryImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 1929038478085A9BB71E45A2 /* BookmarkRepositoryImpl.m */; };
+		192907FA4003B4179887AC11 /* BookmarkViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 19290F66A67656D29AB5FA79 /* BookmarkViewModel.m */; };
 		192907FD698F636AF8D3313B /* BookmarkApiImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 19290C1E5C94E8FBB3983B9F /* BookmarkApiImpl.m */; };
 		1929081DBF344452632D382A /* KanbansViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1929071C469CC0D9127134C3 /* KanbansViewController.m */; };
+		1929083158ED542532AC8DE0 /* BookmarkOSXViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 192908D977CD55A916A370F2 /* BookmarkOSXViewController.m */; };
 		192908606C140C4DD6591D77 /* FloCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 19290FCF6F736A2614A35CEF /* FloCollection.m */; };
 		192908717A208E7A09E856AB /* AuthorizeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19290852D551E316C96F4FB9 /* AuthorizeViewController.m */; };
 		192908AB2FD0513384E84E3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19290DE85287B5B67B39AD77 /* Assets.xcassets */; };
@@ -199,6 +203,7 @@
 		1929035CEF4DF27DDD33BC74 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1929036EE4CD901191311020 /* CollectionApiImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionApiImpl.m; sourceTree = "<group>"; };
 		19290377428E4E72D5262F2A /* BaseOSXTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseOSXTableViewCell.h; sourceTree = "<group>"; };
+		1929038478085A9BB71E45A2 /* BookmarkRepositoryImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookmarkRepositoryImpl.m; sourceTree = "<group>"; };
 		192903B824708917C7CE0C8C /* Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
 		192903CDD6D6F51B247D43E9 /* BaseOSXTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseOSXTableViewCell.m; sourceTree = "<group>"; };
 		192903E426B8AA996D1EBC53 /* CollectionViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewDataSource.h; sourceTree = "<group>"; };
@@ -208,6 +213,7 @@
 		1929043B44BF10AD04F6C773 /* GetCollectionParameter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetCollectionParameter.m; sourceTree = "<group>"; };
 		1929043E9E24EDEA379B46D8 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		1929043FCBB54463F393FE9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1929044E4FC83230D9D3FBB9 /* BookmarkOSXViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookmarkOSXViewController.h; sourceTree = "<group>"; };
 		1929046433717B36848067A3 /* CollectionItemViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionItemViewModel.m; sourceTree = "<group>"; };
 		1929046E35D7D894A78BD97D /* AuthorizeOSXViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthorizeOSXViewController.h; sourceTree = "<group>"; };
 		192904D6CC936190361C4899 /* BootstrapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BootstrapViewController.m; sourceTree = "<group>"; };
@@ -264,6 +270,7 @@
 		1929089C49695F2E4F3B11C4 /* BootstrapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BootstrapViewController.h; sourceTree = "<group>"; };
 		192908A46895AB82D010F8F9 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		192908B40B41726E3C60AC3C /* CollectionsViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionsViewCell.m; sourceTree = "<group>"; };
+		192908D977CD55A916A370F2 /* BookmarkOSXViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookmarkOSXViewController.m; sourceTree = "<group>"; };
 		192908DF4349F4AA043765C6 /* CollectionsViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionsViewModel.m; sourceTree = "<group>"; };
 		192908EEA216F074C3DBB090 /* BaseOSXTableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseOSXTableViewDataSource.m; sourceTree = "<group>"; };
 		192909097E1C3EE4D7DD4AA4 /* UserService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserService.h; sourceTree = "<group>"; };
@@ -272,6 +279,7 @@
 		192909191B5A628A14CCC6F8 /* LoginParameter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginParameter.m; sourceTree = "<group>"; };
 		1929097ECF7682ECCDF593E4 /* BaseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewCell.m; sourceTree = "<group>"; };
 		19290998172D3CA8F9D76384 /* BookmarkServiceImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookmarkServiceImpl.m; sourceTree = "<group>"; };
+		192909B9D04F02CC20AE3939 /* BookmarkRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookmarkRepository.h; sourceTree = "<group>"; };
 		192909C93283E554D7B6168D /* KanbansViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KanbansViewCell.m; sourceTree = "<group>"; };
 		192909EE9BE39B6771FF3DCB /* AuthorizeOSXViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuthorizeOSXViewController.m; sourceTree = "<group>"; };
 		192909F28EAD57D1B30ED394 /* AuthorizeViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuthorizeViewModel.m; sourceTree = "<group>"; };
@@ -283,6 +291,7 @@
 		19290A70505C9E3AE813FE4D /* NavigationsViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationsViewModel.h; sourceTree = "<group>"; };
 		19290AB34A1EFCA5391F5363 /* CollectionViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewModel.h; sourceTree = "<group>"; };
 		19290AC060C62B3D1F9DC8ED /* DCF-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DCF-Bridging-Header.h"; sourceTree = "<group>"; };
+		19290B0DE1AC68064EA90062 /* BookmarkRepositoryImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookmarkRepositoryImpl.h; sourceTree = "<group>"; };
 		19290B0F3E7CF9AED52F72B4 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		19290B19C7CD0A504EC4F74C /* CollectionViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewDataSource.m; sourceTree = "<group>"; };
 		19290B1EF4BA5DE614CB85D1 /* BootstrapViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BootstrapViewModel.m; sourceTree = "<group>"; };
@@ -311,6 +320,7 @@
 		19290D2AD8B003C1D91CF283 /* CollectionServiceImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionServiceImpl.m; sourceTree = "<group>"; };
 		19290D2D9C538B410136055A /* KanbanService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KanbanService.h; sourceTree = "<group>"; };
 		19290D4D6CB5B15A5DB0B03A /* AuthorizeInputViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuthorizeInputViewModel.m; sourceTree = "<group>"; };
+		19290D526C67AF8697B0E5A8 /* BookmarkViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookmarkViewModel.h; sourceTree = "<group>"; };
 		19290D59ED5BA6084956CC56 /* FloUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FloUser.m; sourceTree = "<group>"; };
 		19290D7F4D0E42271066410F /* KanbanServiceImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KanbanServiceImpl.h; sourceTree = "<group>"; };
 		19290DE6A8DEA19BF129C63D /* caldav_configurations.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = caldav_configurations.plist; sourceTree = "<group>"; };
@@ -339,6 +349,7 @@
 		19290F4F21B7CCA2F961D569 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		19290F666226B5378A46D248 /* AuthorizeWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthorizeWindowController.h; sourceTree = "<group>"; };
 		19290F667285685CAFEAC4E1 /* google_app_oauth.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = google_app_oauth.plist; sourceTree = "<group>"; };
+		19290F66A67656D29AB5FA79 /* BookmarkViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookmarkViewModel.m; sourceTree = "<group>"; };
 		19290F676082CB572A31AEAC /* CollectionItemViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionItemViewModel.h; sourceTree = "<group>"; };
 		19290F86CF52BA2CEA9FD294 /* MainWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainWindowController.m; sourceTree = "<group>"; };
 		19290F946207D8793D2DADA7 /* GetKanbanParameter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetKanbanParameter.h; sourceTree = "<group>"; };
@@ -440,6 +451,14 @@
 			path = collection;
 			sourceTree = "<group>";
 		};
+		19290112CFE994ECD1C3E5A0 /* interface */ = {
+			isa = PBXGroup;
+			children = (
+				192909B9D04F02CC20AE3939 /* BookmarkRepository.h */,
+			);
+			path = interface;
+			sourceTree = "<group>";
+		};
 		1929012D916E81FA41609984 /* model */ = {
 			isa = PBXGroup;
 			children = (
@@ -489,6 +508,15 @@
 				19290DE85287B5B67B39AD77 /* Assets.xcassets */,
 			);
 			path = resource;
+			sourceTree = "<group>";
+		};
+		1929038537AAD705275E3578 /* impl */ = {
+			isa = PBXGroup;
+			children = (
+				19290B0DE1AC68064EA90062 /* BookmarkRepositoryImpl.h */,
+				1929038478085A9BB71E45A2 /* BookmarkRepositoryImpl.m */,
+			);
+			path = impl;
 			sourceTree = "<group>";
 		};
 		1929042399B2643FCF855719 /* model */ = {
@@ -545,6 +573,7 @@
 			isa = PBXGroup;
 			children = (
 				19290F20BB6C0664F0FBA469 /* view */,
+				19290DC02C5AFFE3FBC74021 /* model */,
 			);
 			path = bookmark;
 			sourceTree = "<group>";
@@ -828,6 +857,15 @@
 			path = service;
 			sourceTree = "<group>";
 		};
+		19290BDA5EC91953BE8F214D /* repository */ = {
+			isa = PBXGroup;
+			children = (
+				19290112CFE994ECD1C3E5A0 /* interface */,
+				1929038537AAD705275E3578 /* impl */,
+			);
+			path = repository;
+			sourceTree = "<group>";
+		};
 		19290BFDC13C0F79BAE3E90E /* kanban */ = {
 			isa = PBXGroup;
 			children = (
@@ -914,6 +952,15 @@
 				1929042B386903A8C10F6453 /* impl */,
 			);
 			path = navigator;
+			sourceTree = "<group>";
+		};
+		19290DC02C5AFFE3FBC74021 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				19290F66A67656D29AB5FA79 /* BookmarkViewModel.m */,
+				19290D526C67AF8697B0E5A8 /* BookmarkViewModel.h */,
+			);
+			path = model;
 			sourceTree = "<group>";
 		};
 		19290DD1AFC80AD0617E7851 /* impl */ = {
@@ -1057,6 +1104,8 @@
 				19290BD3551947BEB0D81B0E /* BookmarksOSXViewController.h */,
 				1929079216E29B55D9DE19D3 /* BookmarksViewCell.m */,
 				19290F282DA3E6A6104472FA /* BookmarksViewCell.h */,
+				192908D977CD55A916A370F2 /* BookmarkOSXViewController.m */,
+				1929044E4FC83230D9D3FBB9 /* BookmarkOSXViewController.h */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -1133,6 +1182,7 @@
 				19290EC7504FBB2335CDBF64 /* model */,
 				19290BCCA2842EE0D6668A39 /* service */,
 				19290F6B38C81EB25C60FFF5 /* api */,
+				19290BDA5EC91953BE8F214D /* repository */,
 			);
 			path = DCFiOS;
 			sourceTree = "<group>";
@@ -1431,6 +1481,7 @@
 				19290B5E905E3D42B8A011AF /* GetBookmarksParameter.m in Sources */,
 				192902C4BC6A6165B8AC10B2 /* BaseOSXTableViewDataSource.m in Sources */,
 				19290100A93BD71B21D962F3 /* BookmarkItemViewModel.m in Sources */,
+				192907DB5B2B68A3478F28D8 /* BookmarkRepositoryImpl.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1489,6 +1540,9 @@
 				192902B5841F376E25BB0D84 /* BookmarksViewCell.m in Sources */,
 				192906DCBB0918417E897392 /* BookmarksViewModel.m in Sources */,
 				192909D57CAE16315FFF232C /* BookmarkItemViewModel.m in Sources */,
+				1929083158ED542532AC8DE0 /* BookmarkOSXViewController.m in Sources */,
+				192907FA4003B4179887AC11 /* BookmarkViewModel.m in Sources */,
+				1929079CB618ECC915BF5A75 /* BookmarkRepositoryImpl.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1563,7 +1617,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -1616,7 +1670,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -1698,7 +1752,6 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "f5a7090c-a9a6-4c6d-b8ba-9e51416d4728";
 				PROVISIONING_PROFILE_SPECIFIER = "Flo Universal Debug Provisioning";
@@ -1730,7 +1783,6 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "faa9ca8c-a78d-4ed6-917a-b1bd3721da7c";
 				PROVISIONING_PROFILE_SPECIFIER = "Flo Universal DAV Debugger";

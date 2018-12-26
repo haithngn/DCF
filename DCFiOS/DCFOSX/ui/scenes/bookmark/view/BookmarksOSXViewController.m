@@ -9,6 +9,8 @@
 #import "Dependences.h"
 #import "BookmarksViewCell.h"
 #import "FloItemViewModel.h"
+#import "BookmarkOSXViewController.h"
+#import "OSXStoryboards.h"
 
 @interface BookmarksOSXViewController () <FloOSXTableViewDataSource>
 
@@ -62,7 +64,10 @@
 }
 
 - (void)didSelect:(NSObject <FloItemViewModel> *)item {
-    NSLog(@"Selected : %@", item.title);
+    BookmarkOSXViewController * bookmarkOSXViewController = [[OSXStoryboards main] instantiateControllerWithIdentifier:@"BookmarkOSXViewController"];
+    bookmarkOSXViewController.bookmarkId = item.objectId;
+
+    [self presentViewControllerAsModalWindow:bookmarkOSXViewController];
 }
 
 - (NSInteger)selectedIndex {
