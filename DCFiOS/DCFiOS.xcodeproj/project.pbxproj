@@ -72,6 +72,7 @@
 		192909EE832895246F7B016E /* BaseOSXViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19290002F68E45FA9F2720F3 /* BaseOSXViewController.m */; };
 		192909F5C592B4A28B2DD0CF /* Storyboards.m in Sources */ = {isa = PBXBuildFile; fileRef = 19290E3E79EC4CF567FDC2D0 /* Storyboards.m */; };
 		19290A251E14ACC56326703B /* KanbansViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 192909C93283E554D7B6168D /* KanbansViewCell.m */; };
+		19290A6B638FC9D4B5B1484E /* AuthorizeApiMock.m in Sources */ = {isa = PBXBuildFile; fileRef = 19290B8EE81B1835D0E6C67B /* AuthorizeApiMock.m */; };
 		19290AF8871014AED94F5FA8 /* AuthorizeWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1929063797C648BCEA5D8E83 /* AuthorizeWindowController.m */; };
 		19290B46DBF5E349D0B2CCD9 /* KanbansViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 19290EE19A7ECC69DB4F6A37 /* KanbansViewModel.m */; };
 		19290B5E905E3D42B8A011AF /* GetBookmarksParameter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1929066AB6AB321A898889E0 /* GetBookmarksParameter.m */; };
@@ -306,6 +307,7 @@
 		19290B78DF43F244EE611532 /* BookmarksViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookmarksViewModel.h; sourceTree = "<group>"; };
 		19290B85C3FC5CCE3FCACF19 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		19290B8991B3077284BB06F5 /* caldav_configurations.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = caldav_configurations.plist; sourceTree = "<group>"; };
+		19290B8EE81B1835D0E6C67B /* AuthorizeApiMock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuthorizeApiMock.m; sourceTree = "<group>"; };
 		19290B9F49466727F39DA774 /* BookmarksViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookmarksViewController.m; sourceTree = "<group>"; };
 		19290BA286E7C481ECD87B18 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		19290BBAA3D118E537B4BDFC /* Configurations.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Configurations.plist; sourceTree = "<group>"; };
@@ -341,6 +343,7 @@
 		19290E3E79EC4CF567FDC2D0 /* Storyboards.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Storyboards.m; sourceTree = "<group>"; };
 		19290E5E8A2CA5F9D35AE3FF /* ProjectItemViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectItemViewModel.h; sourceTree = "<group>"; };
 		19290E613AE47A201E4664BC /* BaseTableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableViewDataSource.h; sourceTree = "<group>"; };
+		19290E736DC67E57E7E6178D /* AuthorizeApiMock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthorizeApiMock.h; sourceTree = "<group>"; };
 		19290E7A64FE3636E8FF9669 /* BaseTableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewDataSource.m; sourceTree = "<group>"; };
 		19290E91EA37572D98DD98EA /* KanbanApiImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KanbanApiImpl.m; sourceTree = "<group>"; };
 		19290EA0D2D82BFBA29F45B2 /* CollectionsViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionsViewCell.h; sourceTree = "<group>"; };
@@ -430,6 +433,8 @@
 		192900383043F32D7C80BAA2 /* mock */ = {
 			isa = PBXGroup;
 			children = (
+				19290B8EE81B1835D0E6C67B /* AuthorizeApiMock.m */,
+				19290E736DC67E57E7E6178D /* AuthorizeApiMock.h */,
 			);
 			path = mock;
 			sourceTree = "<group>";
@@ -1585,6 +1590,7 @@
 			files = (
 				27D4F6D421CE3F1D00F03BCD /* TestServices.m in Sources */,
 				19290F7DE90A6EB64A6B0C08 /* UserServiceTests.m in Sources */,
+				19290A6B638FC9D4B5B1484E /* AuthorizeApiMock.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1792,7 +1798,7 @@
 					"@executable_path/../Frameworks",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "f5a7090c-a9a6-4c6d-b8ba-9e51416d4728";
+				PROVISIONING_PROFILE = "28abb27b-63eb-44ed-9a2a-e9995fe536d6";
 				PROVISIONING_PROFILE_SPECIFIER = "Flo Universal Debug Provisioning";
 				SDKROOT = macosx;
 				SWIFT_OBJC_BRIDGING_HEADER = "Shared/DCF-Bridging-Header.h";
@@ -1823,8 +1829,8 @@
 					"@executable_path/../Frameworks",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "faa9ca8c-a78d-4ed6-917a-b1bd3721da7c";
-				PROVISIONING_PROFILE_SPECIFIER = "Flo Universal DAV Debugger";
+				PROVISIONING_PROFILE = "fe7258e4-c6f9-4111-a3c8-1ef4f6f88b6c";
+				PROVISIONING_PROFILE_SPECIFIER = "Flo Universal Staging Provisioning";
 				SDKROOT = macosx;
 				SWIFT_OBJC_BRIDGING_HEADER = "Shared/DCF-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;

@@ -6,7 +6,7 @@
 //  Copyright © 2018 Hai Nguyen. All rights reserved.
 //
 
-PRODUCT_BUNDLE_IDENTIFIER = com.floware.universalflo.qc
+PRODUCT_BUNDLE_IDENTIFIER = com.floware.universalflo.osx
 PRODUCT_MODULE_NAME = DCFiOS
 PRODUCT_NAME = DCFiOS
 BUNDLE_DISPLAY_NAME = DCFiOS
@@ -19,7 +19,7 @@ SWIFTYBEAVER_APPID = k6POAG
 SWIFTYBEAVER_APPSECRET = 8Cq8sbizvnzmbYRax7d71izu6x8dnijq
 SWIFTYBEAVER_ENCRYPTIONKEY = eZmycnok69qak40ooGXeotrpWhkvorkU
 LOGGING_LEVEL = 4
-URL_SCHEME = com.floware.universalflo.qc
+URL_SCHEME = com.floware.universalflo.osx
 NETWORKING_CLIENT_NAME = Alamofire
 TRACKING_APP_NAME = DCFiOS
 TRACKING_APP_KIND = iPad

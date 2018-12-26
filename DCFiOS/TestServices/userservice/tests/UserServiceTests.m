@@ -5,10 +5,13 @@
 
 #import <XCTest/XCTest.h>
 #import "UserServiceImpl.h"
+#import "AuthorizeApiMock.h"
+#import "LoginParameter.h"
 
 @interface UserServiceTests : XCTestCase
 
 @property (nonatomic, strong) UserServiceImpl * userService;
+@property (nonatomic, strong) AuthorizeApiMock * authorizeApi;
 
 @end
 
@@ -19,7 +22,8 @@
 - (void)setUp {
     [super setUp];
 
-    _userService = [[UserServiceImpl alloc] initWithAuthorizeApi:nil sessionRepository:nil];
+    _authorizeApi = [[AuthorizeApiMock alloc] init];
+    _userService = [[UserServiceImpl alloc] initWithAuthorizeApi:_authorizeApi sessionRepository:nil];
 }
 
 - (void)tearDown {
@@ -29,7 +33,17 @@
 #pragma mark - Test Authorization
 
 - (void)testProtectInputs{
+    //Given
+    NSString * usr = @"vocungaodieu";
+    NSString * pwd = @"aodieuvocung";
+    LoginParameter * parameter = [[LoginParameter alloc] initWithUsername:usr password:pwd];
 
+    //When
+    [_userService signIn:parameter complete:nil];
+
+    //Then
+    XCTAssertEqual(usr, _authorizeApi.username, @"Parameter(username) must be keep during submit to the api");
+    XCTAssertEqual(pwd, _authorizeApi.password, @"Parameter(password) must be keep during submit to the api");
 }
 
 @end
