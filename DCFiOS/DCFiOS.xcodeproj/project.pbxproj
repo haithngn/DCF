@@ -23,7 +23,6 @@
 		192902B5841F376E25BB0D84 /* BookmarksViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1929079216E29B55D9DE19D3 /* BookmarksViewCell.m */; };
 		192902B71F75D84EB7C32DA5 /* CollectionsViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 192908DF4349F4AA043765C6 /* CollectionsViewModel.m */; };
 		192902BCE6D2215152C09305 /* BookmarksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19290B9F49466727F39DA774 /* BookmarksViewController.m */; };
-		192902C4BC6A6165B8AC10B2 /* BaseOSXTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 192908EEA216F074C3DBB090 /* BaseOSXTableViewDataSource.m */; };
 		192902EB674333D27A4F555E /* CollectionServiceImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 19290D2AD8B003C1D91CF283 /* CollectionServiceImpl.m */; };
 		1929031B67A5BCD9492B6C04 /* BaseWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 1929067EFBF18A452C33F412 /* BaseWindow.m */; };
 		1929033B36342A4C1EE60776 /* BaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 192906CB89D1E0C5CD9BA0C2 /* BaseViewModel.m */; };
@@ -94,6 +93,7 @@
 		19290F15C7970D5BE7FA0F39 /* CollectionViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 19290B19C7CD0A504EC4F74C /* CollectionViewDataSource.m */; };
 		19290F60E0792F09FE4F45DA /* BaseOSXTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 192908EEA216F074C3DBB090 /* BaseOSXTableViewDataSource.m */; };
 		19290F631C25E87D7A7326AE /* CollectionsItemViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1929031ACE2D911357CA66A9 /* CollectionsItemViewCell.m */; };
+		19290F7DE90A6EB64A6B0C08 /* UserServiceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 19290D4F97BDD4330B907F79 /* UserServiceTests.m */; };
 		19290F8950F10929E3DA2951 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19290B0F3E7CF9AED52F72B4 /* Main.storyboard */; };
 		19290FBA8F50A133694786DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1929019C928AB3E629798E87 /* Assets.xcassets */; };
 		271C5C0521D218EC00793CBA /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 27BFA46921CF9302007C524B /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -129,6 +129,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		272DC27421D374D5000010B6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 277AB1AC21C0B99E0008DABE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 27BFA45321CF9088007C524B;
+			remoteInfo = DCFOSX;
+		};
 		27D4F6D621CE3F1D00F03BCD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 277AB1AC21C0B99E0008DABE /* Project object */;
@@ -320,6 +327,7 @@
 		19290D2AD8B003C1D91CF283 /* CollectionServiceImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionServiceImpl.m; sourceTree = "<group>"; };
 		19290D2D9C538B410136055A /* KanbanService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KanbanService.h; sourceTree = "<group>"; };
 		19290D4D6CB5B15A5DB0B03A /* AuthorizeInputViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuthorizeInputViewModel.m; sourceTree = "<group>"; };
+		19290D4F97BDD4330B907F79 /* UserServiceTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserServiceTests.m; sourceTree = "<group>"; };
 		19290D526C67AF8697B0E5A8 /* BookmarkViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookmarkViewModel.h; sourceTree = "<group>"; };
 		19290D59ED5BA6084956CC56 /* FloUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FloUser.m; sourceTree = "<group>"; };
 		19290D7F4D0E42271066410F /* KanbanServiceImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KanbanServiceImpl.h; sourceTree = "<group>"; };
@@ -417,6 +425,13 @@
 				19290B441E12BEA163F4F063 /* model */,
 			);
 			path = authorize;
+			sourceTree = "<group>";
+		};
+		192900383043F32D7C80BAA2 /* mock */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = mock;
 			sourceTree = "<group>";
 		};
 		19290047D99AC85F4DF18CBD /* model */ = {
@@ -625,6 +640,23 @@
 				19290FE4331E660C19DE20F4 /* AuthorizeViewController.h */,
 			);
 			path = view;
+			sourceTree = "<group>";
+		};
+		192907314C9F71DB64D5D3DD /* userservice */ = {
+			isa = PBXGroup;
+			children = (
+				19290771C13A1A5164535863 /* tests */,
+				192900383043F32D7C80BAA2 /* mock */,
+			);
+			path = userservice;
+			sourceTree = "<group>";
+		};
+		19290771C13A1A5164535863 /* tests */ = {
+			isa = PBXGroup;
+			children = (
+				19290D4F97BDD4330B907F79 /* UserServiceTests.m */,
+			);
+			path = tests;
 			sourceTree = "<group>";
 		};
 		1929078FEDD5A9233684CE38 /* navigations */ = {
@@ -1216,6 +1248,7 @@
 			children = (
 				27D4F6D321CE3F1D00F03BCD /* TestServices.m */,
 				27D4F6D521CE3F1D00F03BCD /* Info.plist */,
+				192907314C9F71DB64D5D3DD /* userservice */,
 			);
 			path = TestServices;
 			sourceTree = "<group>";
@@ -1275,6 +1308,7 @@
 			);
 			dependencies = (
 				27D4F6D721CE3F1D00F03BCD /* PBXTargetDependency */,
+				272DC27521D374D5000010B6 /* PBXTargetDependency */,
 			);
 			name = TestServices;
 			productName = TestServices;
@@ -1479,7 +1513,6 @@
 				192907FD698F636AF8D3313B /* BookmarkApiImpl.m in Sources */,
 				192907594BEB8DA7C26E15DF /* FloBookmark.m in Sources */,
 				19290B5E905E3D42B8A011AF /* GetBookmarksParameter.m in Sources */,
-				192902C4BC6A6165B8AC10B2 /* BaseOSXTableViewDataSource.m in Sources */,
 				19290100A93BD71B21D962F3 /* BookmarkItemViewModel.m in Sources */,
 				192907DB5B2B68A3478F28D8 /* BookmarkRepositoryImpl.m in Sources */,
 			);
@@ -1551,12 +1584,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				27D4F6D421CE3F1D00F03BCD /* TestServices.m in Sources */,
+				19290F7DE90A6EB64A6B0C08 /* UserServiceTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		272DC27521D374D5000010B6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 27BFA45321CF9088007C524B /* DCFOSX */;
+			targetProxy = 272DC27421D374D5000010B6 /* PBXContainerItemProxy */;
+		};
 		27D4F6D721CE3F1D00F03BCD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 277AB1B321C0B99E0008DABE /* DCFiOS */;
@@ -1796,7 +1835,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = TL9V27BMW8;
 				INFOPLIST_FILE = TestServices/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1805,6 +1846,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.floware.universalflo.TestServices;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos osx";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DCFiOS.app/DCFiOS";
 			};
@@ -1814,7 +1858,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = TL9V27BMW8;
 				INFOPLIST_FILE = TestServices/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1823,6 +1869,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.floware.universalflo.TestServices;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos osx";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DCFiOS.app/DCFiOS";
 			};
