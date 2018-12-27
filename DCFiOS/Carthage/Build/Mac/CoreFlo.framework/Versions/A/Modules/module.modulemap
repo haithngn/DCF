@@ -1,0 +1,11 @@
+framework module CoreFlo {
+  umbrella header "CoreFlo.h"
+
+  export *
+  module * { export * }
+}
+
+module CoreFlo.Swift {
+    header "CoreFlo-Swift.h"
+    requires objc
+}
