@@ -3,4 +3,9 @@ osx_image: xcode9.4
 # xcode_project: DCFiOS/DCFiOS.xcodeproj
 # xcode_destination: platform=iOS Simulator,OS=11.4,name=iPad Pro (9.7-inch)
 # xcode_scheme: DCFiOS
-script: bash DCFiOS/tests.sh DCFiOS TestServices iphonesimulator11.4
+# Testing
+script:
+  - ./DCFiOS/tests.sh
+#Slack
+notifications:
+  slack: flouniversal:gjaBHhaSWV2ixwoGheRGIOAK

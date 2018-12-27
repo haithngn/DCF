@@ -1,7 +1,7 @@
 report="../build/tests/tests.log"
-scheme=$1
-testscheme=$2
-device_instance=$3
+scheme="DCFiOS"
+testscheme="TestServices"
+device_instance="iphonesimulator11.4"
 xcodebuild -project DCFiOS.xcodeproj -scheme $scheme -sdk $device_instance build-for-testing
 echo "testing..."
 xctool -project DCFiOS.xcodeproj -scheme $testscheme -launch-timeout 3600 -sdk $device_instance run-tests -reporter plain:$report
