@@ -14,9 +14,9 @@
             buildForAnalyzing = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "27BFA45321CF9088007C524B"
-               BuildableName = "DCFOSX.app"
-               BlueprintName = "DCFOSX"
+               BlueprintIdentifier = "277AB1B321C0B99E0008DABE"
+               BuildableName = "DCFiOS.app"
+               BlueprintName = "DCFiOS"
                ReferencedContainer = "container:DCFiOS.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -42,9 +42,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "27BFA45321CF9088007C524B"
-            BuildableName = "DCFOSX.app"
-            BlueprintName = "DCFOSX"
+            BlueprintIdentifier = "277AB1B321C0B99E0008DABE"
+            BuildableName = "DCFiOS.app"
+            BlueprintName = "DCFiOS"
             ReferencedContainer = "container:DCFiOS.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -55,6 +55,7 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      debugAsWhichUser = "root"
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
       ignoresPersistentStateOnLaunch = "NO"
@@ -65,9 +66,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "27BFA45321CF9088007C524B"
-            BuildableName = "DCFOSX.app"
-            BlueprintName = "DCFOSX"
+            BlueprintIdentifier = "277AB1B321C0B99E0008DABE"
+            BuildableName = "DCFiOS.app"
+            BlueprintName = "DCFiOS"
             ReferencedContainer = "container:DCFiOS.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -80,15 +81,6 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "27BFA45321CF9088007C524B"
-            BuildableName = "DCFOSX.app"
-            BlueprintName = "DCFOSX"
-            ReferencedContainer = "container:DCFiOS.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
