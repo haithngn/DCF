@@ -11,7 +11,7 @@
 @protocol FloItemViewModel;
 
 @interface CollectionsViewModel : BaseViewModel
-@property(nonatomic, copy) void (^onProjects)(NSArray <ProjectItemViewModel> * projectViewModels);
+@property(nonatomic, copy) void (^onProjects)(NSArray <NSObject<FloItemViewModel> *> * projectViewModels);
 @property(nonatomic, copy) void (^onSelect)(NSString * pcollectionId);
 @property(nonatomic, copy) void (^onPreventInteractions)(BOOL prevent);
 

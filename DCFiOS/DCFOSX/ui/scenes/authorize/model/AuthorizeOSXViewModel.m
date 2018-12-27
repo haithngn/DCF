@@ -27,7 +27,7 @@
 
 #pragma mark - AuthenticationObserver
 
-- (void)onChange:(User *)user {
+- (void)onChange:(FloUser *)user {
     if (user != nil) {
         _onAuthorize ? _onAuthorize() : nil;
     } else {

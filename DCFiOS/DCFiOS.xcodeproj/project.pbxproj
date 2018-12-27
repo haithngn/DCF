@@ -105,7 +105,7 @@
 		271C5C0F21D218EC00793CBA /* SwiftyJSON.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 27BFA46C21CF9303007C524B /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		271C5C1121D218EC00793CBA /* CocoaLumberjack.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 273B9B9121D0C5F1006F4DB7 /* CocoaLumberjack.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2794981F21D0D52F0075F136 /* BootstrapWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2794981B21D0D52F0075F136 /* BootstrapWindowController.m */; };
-		2794982021D0D52F0075F136 /* BootstrapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2794981D21D0D52F0075F136 /* BootstrapViewController.m */; };
+		2794982021D0D52F0075F136 /* BootstrapOSXViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2794981D21D0D52F0075F136 /* BootstrapOSXViewController.m */; };
 		2794982121D0D8E10075F136 /* Dependences.m in Sources */ = {isa = PBXBuildFile; fileRef = 19290DFB8C17445C4BA325E2 /* Dependences.m */; };
 		2794982221D0D8F20075F136 /* FloUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 19290D59ED5BA6084956CC56 /* FloUser.m */; };
 		2794982321D0D8F20075F136 /* FloCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 19290FCF6F736A2614A35CEF /* FloCollection.m */; };
@@ -365,8 +365,8 @@
 		273B9B9121D0C5F1006F4DB7 /* CocoaLumberjack.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaLumberjack.framework; path = Carthage/Build/Mac/CocoaLumberjack.framework; sourceTree = "<group>"; };
 		277AB1B421C0B99E0008DABE /* DCFiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DCFiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2794981B21D0D52F0075F136 /* BootstrapWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BootstrapWindowController.m; sourceTree = "<group>"; };
-		2794981C21D0D52F0075F136 /* BootstrapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BootstrapViewController.h; path = DCFOSX/ui/scenes/bootstrap/view/BootstrapViewController.h; sourceTree = SOURCE_ROOT; };
-		2794981D21D0D52F0075F136 /* BootstrapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BootstrapViewController.m; sourceTree = "<group>"; };
+		2794981C21D0D52F0075F136 /* BootstrapOSXViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BootstrapOSXViewController.h; path = DCFOSX/ui/scenes/bootstrap/view/BootstrapOSXViewController.h; sourceTree = SOURCE_ROOT; };
+		2794981D21D0D52F0075F136 /* BootstrapOSXViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BootstrapOSXViewController.m; sourceTree = "<group>"; };
 		2794981E21D0D52F0075F136 /* BootstrapWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BootstrapWindowController.h; sourceTree = "<group>"; };
 		27BFA45421CF9088007C524B /* DCFOSX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DCFOSX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27BFA46921CF9302007C524B /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/Mac/Alamofire.framework; sourceTree = "<group>"; };
@@ -555,8 +555,8 @@
 		19290430CB8C246DF736E34A /* view */ = {
 			isa = PBXGroup;
 			children = (
-				2794981C21D0D52F0075F136 /* BootstrapViewController.h */,
-				2794981D21D0D52F0075F136 /* BootstrapViewController.m */,
+				2794981C21D0D52F0075F136 /* BootstrapOSXViewController.h */,
+				2794981D21D0D52F0075F136 /* BootstrapOSXViewController.m */,
 				2794981E21D0D52F0075F136 /* BootstrapWindowController.h */,
 				2794981B21D0D52F0075F136 /* BootstrapWindowController.m */,
 			);
@@ -1525,7 +1525,7 @@
 				192906F40B8A4A2DDC101BBE /* main.m in Sources */,
 				2794983221D0D9110075F136 /* BookmarkApiImpl.m in Sources */,
 				1929034058AFE34760C430FD /* AppDelegate.m in Sources */,
-				2794982021D0D52F0075F136 /* BootstrapViewController.m in Sources */,
+				2794982021D0D52F0075F136 /* BootstrapOSXViewController.m in Sources */,
 				2794983021D0D9110075F136 /* CollectionApiImpl.m in Sources */,
 				192909EE832895246F7B016E /* BaseOSXViewController.m in Sources */,
 				2794982E21D0D9070075F136 /* GetBookmarksParameter.m in Sources */,

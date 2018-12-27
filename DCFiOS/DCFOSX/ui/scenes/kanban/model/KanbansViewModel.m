@@ -43,11 +43,14 @@
 - (void)load {
     NSString * userId = _userService.currentUserId;
     GetKanbanParameter * params = [[GetKanbanParameter alloc] initWithUserId:userId pItem:[NSNumber numberWithInt:5] minId:nil hasDelete:NO modifiedGTEInSecond:nil];
+    
+    __weak typeof(self) weakSelf = self;
+    
     [_kanbanService getKanbans:params handler:^(NSArray<FloKanban *> * kanbans, NSError *error) {
         if (error == nil) {
-            _onItems ? _onItems([NSArray transformFromKanbans:kanbans]) : nil;
+            weakSelf.onItems ? weakSelf.onItems([NSArray transformFromKanbans:kanbans]) : nil;
         } else {
-            _onError ? _onError(error.localizedDescription) : nil;
+            weakSelf.onError ? weakSelf.onError(error.localizedDescription) : nil;
         }
     }];
 }

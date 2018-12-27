@@ -3,9 +3,9 @@
 // Copyright (c) 2018 Hai Nguyen. All rights reserved.
 //
 
-#import "BootstrapViewController.h"
+#import "BootstrapOSXViewController.h"
 
-@implementation BootstrapViewController {
+@implementation BootstrapOSXViewController {
 
 }
 - (void)viewDidLoad {

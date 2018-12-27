@@ -47,7 +47,7 @@
 }
 
 #pragma mark - AuthenticationObserver
-- (void)onChange:(User *)user {
+- (void)onChange:(FloUser *)user {
     [_authenticationSubscribers enumerateObjectsUsingBlock:^(NSObject <AuthenticationObserver> *subscriber, NSUInteger idx, BOOL *stop) {
         [subscriber onChange:user];
     }];

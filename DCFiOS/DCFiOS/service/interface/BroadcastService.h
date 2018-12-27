@@ -5,11 +5,11 @@
 
 #import <Foundation/Foundation.h>
 
-@class User;
+@class FloUser;
 
 @protocol AuthenticationObserver <NSObject>
 @required
-- (void)onChange:(User *) user;
+- (void)onChange:(FloUser *) user;
 @end
 
 @protocol BroadcastService <NSObject>

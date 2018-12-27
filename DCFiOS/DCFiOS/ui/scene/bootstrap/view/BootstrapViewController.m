@@ -32,11 +32,12 @@
 }
 
 - (void)bindData {
+    __weak typeof(self) weakSelf = self;
     _model.onSignedIn = ^(){
-        [self navigateToMainScreen];
+        [weakSelf navigateToMainScreen];
     };
     _model.onSignedOut = ^(){
-        [self navigateToAuthorizeScreen];
+        [weakSelf navigateToAuthorizeScreen];
     };
 }
 

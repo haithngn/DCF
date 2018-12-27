@@ -37,7 +37,7 @@
 }
 
 #pragma mark - BroadcastService Methods
-- (void)onChange:(User *)user {
+- (void)onChange:(FloUser *)user {
     if (user == nil) {
         _onSignedOut ? _onSignedOut() : nil;
     } else {

@@ -33,13 +33,14 @@
 }
 
 - (void)bindData {
+    __weak typeof(self) weakSelf = self;
     _model.onKanbans = ^(NSArray <NSObject <FloItemViewModel> *>* items){
-        [self.dataSource load:items];
-        [self.tableView reloadData];
+        [weakSelf.dataSource load:items];
+        [weakSelf.tableView reloadData];
     };
 
     _model.onSelectKanban = ^(NSString * kanbanId){
-        [self.delegate didSelectKanbanWithId:kanbanId];
+        [weakSelf.delegate didSelectKanbanWithId:kanbanId];
     };
 }
 

@@ -9,7 +9,7 @@
 @implementation BaseOSXViewController {
 
 }
-- (void)showMessage:(NSString *)message confirmButtonTitle:(NSString *)title onConfirmed:(void (^)())confirmed {
+- (void)showMessage:(NSString *)message confirmButtonTitle:(NSString *)title onConfirmed:(void (^)(void))confirmed {
     NSAlert * alert = [[NSAlert alloc] init];
     alert.messageText = message;
     [alert addButtonWithTitle:title];

@@ -10,7 +10,7 @@
 
 @interface AuthorizeOSXViewModel : NSObject
 @property(nonatomic, copy) void (^onAuthorize)(void);
-@property(nonatomic, copy) void (^onUnauthorize)();
+@property(nonatomic, copy) void (^onUnauthorize)(void);
 
 - (instancetype)initWithBroadcastService:(NSObject <BroadcastService> *)broadcastService;
 

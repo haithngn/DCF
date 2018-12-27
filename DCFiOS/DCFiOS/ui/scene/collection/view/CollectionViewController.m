@@ -36,9 +36,10 @@
 }
 
 - (void)bindData {
+    __weak typeof(self) weakSelf = self;
     _model.onItems = ^(NSArray <CollectionItemViewModel*> * items) {
-        [self.datasource load:items];
-        [self.tableView reloadData];
+        [weakSelf.datasource load:items];
+        [weakSelf.tableView reloadData];
     };
 }
 

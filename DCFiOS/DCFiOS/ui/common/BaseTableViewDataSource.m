@@ -39,7 +39,7 @@
 #pragma mark - UITableView Data Source * Delegate Methods
 
 - (void)load:(NSArray <NSObject <FloItemViewModel> *> *)items {
-    self.items = items;
+    [self.items setArray:items];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {

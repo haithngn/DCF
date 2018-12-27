@@ -43,11 +43,14 @@
 - (void)load {
     GetBookmarksParameter * parameter = [[GetBookmarksParameter alloc] initWithUserId:_userService.currentUserId
             pItem:5 minId:nil modifiedGTE:nil ids:@[] hasDel:false];
+    
+    __weak typeof(self) weakSelf = self;
+    
     [_bookmarkService getBookmarks:parameter handler:^(NSArray<FloBookmark *> *bookmarks, NSError *error) {
         if (error == nil) {
-            _onItems ? _onItems([NSArray transformFromBookmarks: bookmarks]) : nil;
+            weakSelf.onItems ? weakSelf.onItems([NSArray transformFromBookmarks: bookmarks]) : nil;
         } else {
-            _onError ? _onError : nil;
+            weakSelf.onError ? weakSelf.onError(error.localizedDescription) : nil;
         }
     }];
 }

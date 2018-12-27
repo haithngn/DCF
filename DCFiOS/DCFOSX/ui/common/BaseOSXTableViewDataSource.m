@@ -29,7 +29,7 @@
 
 
 - (void)load:(NSArray <NSObject <FloItemViewModel> *> *)items {
-    self.items = items;
+    [self.items setArray:items];
 }
 
 #pragma mark - NSTableViewDataSource

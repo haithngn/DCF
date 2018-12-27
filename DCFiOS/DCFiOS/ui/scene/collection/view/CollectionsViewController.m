@@ -37,7 +37,7 @@
 
 - (void)bindData {
     __weak typeof(self) weakSelf = self;
-    _model.onProjects = ^(NSArray <ProjectItemViewModel>* items){
+    _model.onProjects = ^(NSArray <NSObject<FloItemViewModel> * > * items){
         [weakSelf.datasource load:items];
         [weakSelf.tableView reloadData];
     };

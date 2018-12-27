@@ -7,5 +7,5 @@
 #import "BaseOSXViewController.h"
 
 
-@interface BootstrapViewController : BaseOSXViewController
+@interface BootstrapOSXViewController : BaseOSXViewController
 @end

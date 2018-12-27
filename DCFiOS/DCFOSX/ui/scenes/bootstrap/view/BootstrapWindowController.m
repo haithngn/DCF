@@ -25,18 +25,20 @@
     _model = [[BootstrapViewModel alloc] initWithBroadcastService:[Dependences broadcastService] userService:[Dependences userService]];
 
     [self bindData];
-
+    
+    __weak typeof(self) weakSelf = self;
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 5.0f * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
-        [_model autoLogin];
+        [weakSelf.model autoLogin];
     });
 }
 
 - (void)bindData {
+    __weak typeof(self) weakSelf = self;
     _model.onSignedIn = ^(){
-        [self navigateToMainScreen];
+        [weakSelf navigateToMainScreen];
     };
     _model.onSignedOut = ^(){
-        [self navigateToAuthorizeScreen];
+        [weakSelf navigateToAuthorizeScreen];
     };
 }
 

@@ -46,7 +46,7 @@
 
 #pragma mark - AuthenticationObserver
 
-- (void)onChange:(User *)user {
+- (void)onChange:(FloUser *)user {
     if (user == nil) {
         AuthorizeWindowController * windowController = [[OSXStoryboards main] instantiateControllerWithIdentifier:@"AuthorizeWindowController"];
         [windowController showWindow:nil];
