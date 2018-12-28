@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+   BearTrack.plist
+   Flo
+
+   Created by Nguyen Thanh Hai on 9/29/17.
+   Copyright (c) 2017 Left Coast Logic. All rights reserved.
+-->
+<plist version="1.0">
+    <array>
+        <dict>
+            <key>Group</key>
+            <string>Group0</string>
+            <key>Id</key>
+            <string>bearTrack0</string>
+            <key>Order</key>
+            <integer>0</integer>
+            <key>Title</key>
+            <string>10 seconds</string>
+            <key>Value</key>
+            <integer>10</integer>
+            <key>Default</key>
+            <false/>
+        </dict>
+        <dict>
+            <key>Group</key>
+            <string>Group0</string>
+            <key>Id</key>
+            <string>bearTrack1</string>
+            <key>Order</key>
+            <integer>1</integer>
+            <key>Title</key>
+            <string>30 seconds</string>
+            <key>Value</key>
+            <integer>30</integer>
+            <key>Default</key>
+            <false/>
+        </dict>
+        <dict>
+            <key>Group</key>
+            <string>Group0</string>
+            <key>Id</key>
+            <string>bearTrack2</string>
+            <key>Order</key>
+            <integer>2</integer>
+            <key>Title</key>
+            <string>3 Minutes</string>
+            <key>Value</key>
+            <integer>180</integer>
+            <key>Default</key>
+            <false/>
+        </dict>
+        <dict>
+            <key>Group</key>
+            <string>Group0</string>
+            <key>Id</key>
+            <string>bearTrack11</string>
+            <key>Order</key>
+            <integer>3</integer>
+            <key>Title</key>
+            <string>1 hr</string>
+            <key>Value</key>
+            <integer>3600</integer>
+            <key>Default</key>
+            <false/>
+        </dict>
+        <dict>
+            <key>Group</key>
+            <string>Group0</string>
+            <key>Id</key>
+            <string>bearTrack3</string>
+            <key>Order</key>
+            <integer>4</integer>
+            <key>Title</key>
+            <string>2 hrs</string>
+            <key>Value</key>
+            <integer>7200</integer>
+            <key>Default</key>
+            <false/>
+        </dict>
+        <dict>
+            <key>Group</key>
+            <string>Group0</string>
+            <key>Id</key>
+            <string>bearTrack4</string>
+            <key>Order</key>
+            <integer>5</integer>
+            <key>Title</key>
+            <string>5 hrs</string>
+            <key>Value</key>
+            <integer>18000</integer>
+            <key>Default</key>
+            <false/>
+        </dict>
+        <dict>
+            <key>Group</key>
+            <string>Group1</string>
+            <key>Id</key>
+            <string>bearTrack5</string>
+            <key>Order</key>
+            <integer>0</integer>
+            <key>Title</key>
+            <string>1 day</string>
+            <key>Value</key>
+            <integer>86400</integer>
+            <key>Default</key>
+            <false/>
+        </dict>
+        <dict>
+            <key>Group</key>
+            <string>Group1</string>
+            <key>Id</key>
+            <string>bearTrack6</string>
+            <key>Order</key>
+            <integer>1</integer>
+            <key>Title</key>
+            <string>2 days</string>
+            <key>Value</key>
+            <integer>172800</integer>
+            <key>Default</key>
+            <true/>
+        </dict>
+        <dict>
+            <key>Group</key>
+            <string>Group2</string>
+            <key>Id</key>
+            <string>bearTrack7</string>
+            <key>Order</key>
+            <integer>0</integer>
+            <key>Title</key>
+            <string>3 days</string>
+            <key>Value</key>
+            <integer>259200</integer>
+            <key>Default</key>
+            <false/>
+        </dict>
+        <dict>
+            <key>Group</key>
+            <string>Group2</string>
+            <key>Id</key>
+            <string>bearTrack8</string>
+            <key>Order</key>
+            <integer>1</integer>
+            <key>Title</key>
+            <string>5 days</string>
+            <key>Value</key>
+            <integer>432000</integer>
+            <key>Default</key>
+            <false/>
+        </dict>
+        <dict>
+            <key>Group</key>
+            <string>Group2</string>
+            <key>Id</key>
+            <string>bearTrack9</string>
+            <key>Order</key>
+            <integer>2</integer>
+            <key>Title</key>
+            <string>10 days</string>
+            <key>Value</key>
+            <integer>864000</integer>
+            <key>Default</key>
+            <false/>
+        </dict>
+        <dict>
+            <key>Group</key>
+            <string>Group2</string>
+            <key>Id</key>
+            <string>bearTrack10</string>
+            <key>Order</key>
+            <integer>3</integer>
+            <key>Title</key>
+            <string>30 days</string>
+            <key>Value</key>
+            <integer>2592000</integer>
+            <key>Default</key>
+            <false/>
+        </dict>
+    </array>
+</plist>
