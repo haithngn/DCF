@@ -1,5 +1,5 @@
 /**
- * Sample React Native App
+ * Sample React Native Bootstrap
  * https://github.com/facebook/react-native
  *
  * @format
@@ -17,7 +17,7 @@ const instructions = Platform.select({
 });
 
 type Props = {};
-export default class App extends Component<Props> {
+export default class Bootstrap extends Component<Props> {
   render() {
     return (
       <View style={styles.container}>

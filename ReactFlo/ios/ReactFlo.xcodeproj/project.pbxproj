@@ -19,7 +19,7 @@
 		139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 139FDEF41B06529B00C62182 /* libRCTWebSocket.a */; };
 		140ED2AC1D01E1AD002B40FF /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
 		146834051AC3E58100842450 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
-		19290A3846FCB0125475A4BD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1929068DC4212DD27204076D /* LaunchScreen.xib */; };
+		192906F8C37337EFAD0B8E11 /* AuthorizeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1929024DB2E5D70E689FE381 /* AuthorizeViewController.swift */; };
 		19290C7BED2BCC3DDDF8D075 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1929028A9DE659895E6CD849 /* Images.xcassets */; };
 		19290E95CB704A9C5F5DAF89 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 192909D64FAF13EBDD7871A1 /* main.m */; };
 		19290FF0FA521C7AF9B42FDC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 192906CD6B9CD6D0F127D431 /* AppDelegate.m */; };
@@ -31,6 +31,9 @@
 		2718F5EB21D6117D00DF71F6 /* FloRest.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2718F42421D608B900DF71F6 /* FloRest.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2718F5ED21D6117D00DF71F6 /* KeychainAccess.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2718F42721D608BA00DF71F6 /* KeychainAccess.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2718F5EF21D6117D00DF71F6 /* SwiftyJSON.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2718F42821D608BA00DF71F6 /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2718F66F21D6156500DF71F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2718F66E21D6156500DF71F6 /* Main.storyboard */; };
+		2718F67121D6157400DF71F6 /* Launch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2718F67021D6157400DF71F6 /* Launch.storyboard */; };
+		2718F67521D6185800DF71F6 /* BootstrapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2718F61621D614D200DF71F6 /* BootstrapViewController.swift */; };
 		2D02E4C21E0B4AEC006451C7 /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157351DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
 		2D02E4C31E0B4AEC006451C7 /* libRCTImage-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3E841DF850E9000B6D8A /* libRCTImage-tvOS.a */; };
 		2D02E4C41E0B4AEC006451C7 /* libRCTLinking-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3E881DF850E9000B6D8A /* libRCTLinking-tvOS.a */; };
@@ -355,8 +358,9 @@
 		139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTWebSocket.xcodeproj; path = "../node_modules/react-native/Libraries/WebSocket/RCTWebSocket.xcodeproj"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* ReactFlo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReactFlo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		146833FF1AC3E56700842450 /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "../node_modules/react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
+		1929024DB2E5D70E689FE381 /* AuthorizeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorizeViewController.swift; sourceTree = "<group>"; };
 		1929028A9DE659895E6CD849 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		1929068DC4212DD27204076D /* LaunchScreen.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
+		19290675978B61DCC256AE88 /* ReactFlo-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ReactFlo-Bridging-Header.h"; sourceTree = "<group>"; };
 		192906CD6B9CD6D0F127D431 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		19290828C46DBC8F33D7D7C9 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		192909D64FAF13EBDD7871A1 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -383,6 +387,9 @@
 		2718F5DD21D6103900DF71F6 /* google_app_oauth.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = google_app_oauth.plist; sourceTree = "<group>"; };
 		2718F5DE21D6103900DF71F6 /* BearTrack.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = BearTrack.plist; sourceTree = "<group>"; };
 		2718F5DF21D6103900DF71F6 /* caldav_configurations.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = caldav_configurations.plist; sourceTree = "<group>"; };
+		2718F61621D614D200DF71F6 /* BootstrapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BootstrapViewController.swift; sourceTree = "<group>"; };
+		2718F66E21D6156500DF71F6 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		2718F67021D6157400DF71F6 /* Launch.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Launch.storyboard; sourceTree = "<group>"; };
 		2D02E47B1E0B4A5D006451C7 /* ReactFlo-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ReactFlo-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* ReactFlo-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ReactFlo-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D16E6891FA4F8E400B85C8A /* libReact.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libReact.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -557,6 +564,14 @@
 			path = configuration;
 			sourceTree = "<group>";
 		};
+		192900742BCD79691ADCDE1C /* view */ = {
+			isa = PBXGroup;
+			children = (
+				2718F61621D614D200DF71F6 /* BootstrapViewController.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
 		192900FBAF860A3B7DC77D87 /* resource */ = {
 			isa = PBXGroup;
 			children = (
@@ -565,12 +580,38 @@
 			path = resource;
 			sourceTree = "<group>";
 		};
+		192902318027647D2926A830 /* scenes */ = {
+			isa = PBXGroup;
+			children = (
+				192908889D5F196BA53A9580 /* bootstrap */,
+				19290DDC80B2E18F44F83309 /* authorize */,
+			);
+			path = scenes;
+			sourceTree = "<group>";
+		};
 		192903FB4EC84B1DC8C1FF43 /* storyboard */ = {
 			isa = PBXGroup;
 			children = (
-				1929068DC4212DD27204076D /* LaunchScreen.xib */,
+				2718F66E21D6156500DF71F6 /* Main.storyboard */,
+				2718F67021D6157400DF71F6 /* Launch.storyboard */,
 			);
 			path = storyboard;
+			sourceTree = "<group>";
+		};
+		192905F6C7C0B2EC7F58A646 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				1929024DB2E5D70E689FE381 /* AuthorizeViewController.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		192908889D5F196BA53A9580 /* bootstrap */ = {
+			isa = PBXGroup;
+			children = (
+				192900742BCD79691ADCDE1C /* view */,
+			);
+			path = bootstrap;
 			sourceTree = "<group>";
 		};
 		19290C6719405862C50A8B07 /* application */ = {
@@ -580,14 +621,24 @@
 				19290F22ED4C71839D91B6DB /* AppDelegate.h */,
 				192906CD6B9CD6D0F127D431 /* AppDelegate.m */,
 				19290828C46DBC8F33D7D7C9 /* Info.plist */,
+				19290675978B61DCC256AE88 /* ReactFlo-Bridging-Header.h */,
 			);
 			path = application;
+			sourceTree = "<group>";
+		};
+		19290DDC80B2E18F44F83309 /* authorize */ = {
+			isa = PBXGroup;
+			children = (
+				192905F6C7C0B2EC7F58A646 /* view */,
+			);
+			path = authorize;
 			sourceTree = "<group>";
 		};
 		19290FCD4306833F081EA11C /* ui */ = {
 			isa = PBXGroup;
 			children = (
 				192903FB4EC84B1DC8C1FF43 /* storyboard */,
+				192902318027647D2926A830 /* scenes */,
 			);
 			path = ui;
 			sourceTree = "<group>";
@@ -820,6 +871,7 @@
 					};
 					13B07F861A680F5B00A75B9A = {
 						DevelopmentTeam = TL9V27BMW8;
+						LastSwiftMigration = 0940;
 						ProvisioningStyle = Manual;
 					};
 					2D02E47A1E0B4A5D006451C7 = {
@@ -1178,8 +1230,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2718F66F21D6156500DF71F6 /* Main.storyboard in Resources */,
 				19290C7BED2BCC3DDDF8D075 /* Images.xcassets in Resources */,
-				19290A3846FCB0125475A4BD /* LaunchScreen.xib in Resources */,
+				2718F67121D6157400DF71F6 /* Launch.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1276,8 +1329,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2718F67521D6185800DF71F6 /* BootstrapViewController.swift in Sources */,
 				19290E95CB704A9C5F5DAF89 /* main.m in Sources */,
 				19290FF0FA521C7AF9B42FDC /* AppDelegate.m in Sources */,
+				192906F8C37337EFAD0B8E11 /* AuthorizeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1315,6 +1370,7 @@
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -1336,6 +1392,7 @@
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
 				INFOPLIST_FILE = ReactFloTests/Info.plist;
@@ -1355,7 +1412,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2718F5D221D6103900DF71F6 /* Debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
@@ -1374,6 +1433,9 @@
 				PRODUCT_NAME = ReactFlo;
 				PROVISIONING_PROFILE = "2b91ead7-3e70-4e13-9d5b-e6c99ab2b7c6";
 				PROVISIONING_PROFILE_SPECIFIER = "Flo Universal Debug";
+				SWIFT_OBJC_BRIDGING_HEADER = "ReactFlo/application/ReactFlo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -1383,7 +1445,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2718F5DA21D6103900DF71F6 /* Release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
@@ -1402,6 +1466,8 @@
 				PRODUCT_NAME = ReactFlo;
 				PROVISIONING_PROFILE = "d77d3567-b011-4e93-8411-eacfc2d80302";
 				PROVISIONING_PROFILE_SPECIFIER = "Flo Universal QC";
+				SWIFT_OBJC_BRIDGING_HEADER = "ReactFlo/application/ReactFlo-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
