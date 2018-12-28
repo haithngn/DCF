@@ -8,6 +8,10 @@
 
 import React, {Component} from 'react';
 import {Platform, StyleSheet, Text, View} from 'react-native';
+import {NativeModules} from 'react-native';
+
+let AuthorizeBridge = NativeModules.AuthorizeBridge;
+AuthorizeBridge.submitUsername('ios@123flo.com', '111111');
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',

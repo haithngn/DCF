@@ -9,3 +9,7 @@
 #import <React/RCTUtils.h>
 #import <React/RCTConvert.h>
 #import <React/RCTBundleURLProvider.h>
+#import "BootstrapViewModel.h"
+#import "Dependences.h"
+#import "BroadcastService.h"
+#import "UserService.h"

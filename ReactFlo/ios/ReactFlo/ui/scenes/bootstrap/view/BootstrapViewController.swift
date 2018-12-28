@@ -10,7 +10,23 @@ import Foundation
 import UIKit
 
 @objc class BootstrapViewController: UINavigationController {
+    var model: BootstrapViewModel!
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        model = BootstrapViewModel(broadcastService: Dependences.broadcastService(), userService: Dependences.userService())
+        bindData()
+
+        model.autoLogin()
+    }
+
+    private func bindData() {
+        model.onSignedIn = { [weak self] in
+
+        }
+
+        model.onSignedOut = { [weak self] in
+
+        }
     }
 }
