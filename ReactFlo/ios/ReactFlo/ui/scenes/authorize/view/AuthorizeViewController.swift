@@ -7,8 +7,12 @@ import Foundation
 import UIKit
 
 @objc class AuthorizeViewController: UIViewController {
+    var model: AuthorizeViewModel!
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        model = AuthorizeViewModel()
+        bindData()
 
         let jsCodeLocationL:URL = RCTBundleURLProvider.sharedSettings().jsBundleURL(forBundleRoot: "index", fallbackResource: nil)
         let rootView: RCTRootView = RCTRootView(bundleURL: jsCodeLocationL, moduleName: "ReactFlo", initialProperties: nil)
@@ -21,5 +25,11 @@ import UIKit
         let vConstrains = NSLayoutConstraint.constraints(withVisualFormat: "V:|[view]|", options: [], metrics: nil, views: ["view": rootView])
 
         self.view.addConstraints(hConstrains + vConstrains)
+
+
+    }
+
+    private func bindData() {
+        RFBridging.sharedInstance().authorizeDelegate = model
     }
 }

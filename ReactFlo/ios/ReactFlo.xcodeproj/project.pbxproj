@@ -19,11 +19,12 @@
 		139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 139FDEF41B06529B00C62182 /* libRCTWebSocket.a */; };
 		140ED2AC1D01E1AD002B40FF /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
 		146834051AC3E58100842450 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
+		192906E655DD547D4718233D /* AuthorizeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19290D019D405F68FB4D7F5F /* AuthorizeViewModel.swift */; };
 		192906F8C37337EFAD0B8E11 /* AuthorizeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1929024DB2E5D70E689FE381 /* AuthorizeViewController.swift */; };
-		192908E2E4BB2A1E05B6F024 /* AuthorizeBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 19290CC6B987A5059C5BA223 /* AuthorizeBridge.m */; };
 		19290C7BED2BCC3DDDF8D075 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1929028A9DE659895E6CD849 /* Images.xcassets */; };
 		19290E95CB704A9C5F5DAF89 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 192909D64FAF13EBDD7871A1 /* main.m */; };
 		19290FF0FA521C7AF9B42FDC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 192906CD6B9CD6D0F127D431 /* AppDelegate.m */; };
+		19290FFC48EBB8EB4CED7AEA /* RFBridging.m in Sources */ = {isa = PBXBuildFile; fileRef = 1929083E07A594388D0EA967 /* RFBridging.m */; };
 		2718F5E121D6117D00DF71F6 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2718F42621D608BA00DF71F6 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2718F5E321D6117D00DF71F6 /* CocoaLumberjack.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2718F42221D608B900DF71F6 /* CocoaLumberjack.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2718F5E521D6117D00DF71F6 /* CocoaLumberjackSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2718F42521D608BA00DF71F6 /* CocoaLumberjackSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -379,14 +380,15 @@
 		139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTWebSocket.xcodeproj; path = "../node_modules/react-native/Libraries/WebSocket/RCTWebSocket.xcodeproj"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* ReactFlo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReactFlo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		146833FF1AC3E56700842450 /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "../node_modules/react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
-		192901324ABCEF974C6EC53D /* AuthorizeBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthorizeBridge.h; sourceTree = "<group>"; };
 		1929024DB2E5D70E689FE381 /* AuthorizeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorizeViewController.swift; sourceTree = "<group>"; };
 		1929028A9DE659895E6CD849 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		19290675978B61DCC256AE88 /* ReactFlo-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ReactFlo-Bridging-Header.h"; sourceTree = "<group>"; };
 		192906CD6B9CD6D0F127D431 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		19290725C5EE32C8A95F8A63 /* RFBridging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFBridging.h; sourceTree = "<group>"; };
 		19290828C46DBC8F33D7D7C9 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
+		1929083E07A594388D0EA967 /* RFBridging.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFBridging.m; sourceTree = "<group>"; };
 		192909D64FAF13EBDD7871A1 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		19290CC6B987A5059C5BA223 /* AuthorizeBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuthorizeBridge.m; sourceTree = "<group>"; };
+		19290D019D405F68FB4D7F5F /* AuthorizeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorizeViewModel.swift; sourceTree = "<group>"; };
 		19290F22ED4C71839D91B6DB /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2718F42221D608B900DF71F6 /* CocoaLumberjack.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaLumberjack.framework; path = Carthage/Build/iOS/CocoaLumberjack.framework; sourceTree = "<group>"; };
 		2718F42321D608B900DF71F6 /* CoreFlo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFlo.framework; path = Carthage/Build/iOS/CoreFlo.framework; sourceTree = "<group>"; };
@@ -665,8 +667,7 @@
 		192903E25A4E41CBACCA8845 /* model */ = {
 			isa = PBXGroup;
 			children = (
-				19290CC6B987A5059C5BA223 /* AuthorizeBridge.m */,
-				192901324ABCEF974C6EC53D /* AuthorizeBridge.h */,
+				19290D019D405F68FB4D7F5F /* AuthorizeViewModel.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -707,6 +708,8 @@
 				192906CD6B9CD6D0F127D431 /* AppDelegate.m */,
 				19290828C46DBC8F33D7D7C9 /* Info.plist */,
 				19290675978B61DCC256AE88 /* ReactFlo-Bridging-Header.h */,
+				19290725C5EE32C8A95F8A63 /* RFBridging.h */,
+				1929083E07A594388D0EA967 /* RFBridging.m */,
 			);
 			path = application;
 			sourceTree = "<group>";
@@ -1566,7 +1569,8 @@
 				2718F70B21D6209300DF71F6 /* GetKanbanParameter.m in Sources */,
 				2718F70321D6209300DF71F6 /* UserServiceImpl.m in Sources */,
 				2718F70921D6209300DF71F6 /* GetBookmarksParameter.m in Sources */,
-				192908E2E4BB2A1E05B6F024 /* AuthorizeBridge.m in Sources */,
+				19290FFC48EBB8EB4CED7AEA /* RFBridging.m in Sources */,
+				192906E655DD547D4718233D /* AuthorizeViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

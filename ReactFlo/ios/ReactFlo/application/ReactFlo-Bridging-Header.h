@@ -13,3 +13,4 @@
 #import "Dependences.h"
 #import "BroadcastService.h"
 #import "UserService.h"
+#import "RFBridging.h"
