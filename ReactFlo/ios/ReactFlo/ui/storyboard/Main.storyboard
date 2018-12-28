@@ -13,7 +13,6 @@
         <!--Bootstrap View Controller-->
         <scene sceneID="cIs-3D-IUG">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="y0O-S5-qTi" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController storyboardIdentifier="BootstrapViewController" id="L6J-bs-EbI" customClass="BootstrapViewController" customModule="DCFiOS" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="53Y-BC-lfv">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -23,6 +22,7 @@
                         <segue destination="uAn-2y-pIV" kind="relationship" relationship="rootViewController" id="Apr-Uw-Xli"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="y0O-S5-qTi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-382" y="5"/>
         </scene>

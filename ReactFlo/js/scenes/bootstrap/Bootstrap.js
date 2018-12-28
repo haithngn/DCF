@@ -9,6 +9,8 @@
 import React, {Component} from 'react';
 import {Platform, StyleSheet, Text, View} from 'react-native';
 import {NativeModules} from 'react-native';
+import { Button } from 'react-native-elements';
+import Icon from 'react-native-vector-icons/FontAwesome';
 
 let RFBridging = NativeModules.RFBridging;
 RFBridging.submitUsername('ios@123flo.com', '111111');
@@ -25,9 +27,14 @@ export default class Bootstrap extends Component<Props> {
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.welcome}>Welcome to React Native!</Text>
-        <Text style={styles.instructions}>To get started, edit App.js</Text>
-        <Text style={styles.instructions}>{instructions}</Text>
+        <Button
+            icon={{
+              name: 'arrow-right',
+              size: 15,
+              color: 'white'
+            }}
+            title='BUTTON WITH ICON OBJECT'
+        />
       </View>
     );
   }
