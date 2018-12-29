@@ -7,8 +7,9 @@
 #import "ReactService.h"
 
 @class RFBridging;
+@protocol UserService;
 
 @interface ReactServiceImpl : NSObject <ReactService>
-- (instancetype)initWithBridger:(RFBridging *)bridger;
+- (instancetype)initWithBridger:(RFBridging *)bridger userservice:(NSObject <UserService> * ) userService;
 
 @end

@@ -29,13 +29,17 @@
 
 RCT_EXPORT_MODULE();
 
-RCT_EXPORT_METHOD(submitUsername:(NSString *)username password:(NSString *)password){
-    [[RFBridging sharedInstance] onInputUsername:username password:password];
+RCT_EXPORT_METHOD(submitUsername:(NSString *)username password:(NSString *)password callback:(RCTResponseSenderBlock)callback){
+    [[RFBridging sharedInstance] onInputUsername:username password:password callback:callback];
+}
+
+RCT_EXPORT_METHOD(getCollections:(RCTResponseSenderBlock)callback){
+    callback(@[@"[{\"id\":\"aaa\"}]"]);
 }
 
 #pragma mark - Instance Methods
-- (void)onInputUsername:(NSString *)username password:(NSString *)password {
-    [_authorizeDelegate didSubmit:username password:password];
+- (void)onInputUsername:(NSString *)username password:(NSString *)password callback:(RCTResponseSenderBlock)callback {
+    [_authorizeDelegate didSubmit:username password:password callback: callback];
 }
 
 @end

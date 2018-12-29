@@ -192,7 +192,7 @@
 
 - (NSObject <ReactService> *)reactService {
     if (_reactService == nil) {
-        _reactService = [[ReactServiceImpl alloc] initWithBridger:[RFBridging sharedInstance]];
+        _reactService = [[ReactServiceImpl alloc] initWithBridger:[RFBridging sharedInstance] userservice:self.userService];
     }
 
     return _reactService;

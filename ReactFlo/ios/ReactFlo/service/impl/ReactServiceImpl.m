@@ -5,11 +5,14 @@
 
 #import "ReactServiceImpl.h"
 #import "RFBridging.h"
+#import "UserService.h"
+#import "LoginParameter.h"
 
 @interface ReactServiceImpl () <RFBridgingAuthorizeDelegate>
 
 @property (nonatomic, strong) RFBridging * bridger;
 @property (nonatomic, strong) NSMutableArray <NSObject <ReactObserver> *> * subscribers;
+@property (nonatomic, strong) NSObject <UserService> * userService;
 
 @end
 
@@ -21,11 +24,12 @@
 
 @synthesize subscribers = _subscribers;
 
-- (instancetype)initWithBridger:(RFBridging *)bridger {
+- (instancetype)initWithBridger:(RFBridging *)bridger userservice:(NSObject <UserService> * ) userService {
     self = [super init];
     if (self) {
         self.bridger = bridger;
         bridger.authorizeDelegate = self;
+        self.userService = userService;
     }
 
     return self;
@@ -35,6 +39,17 @@
     if ([self.subscribers containsObject:client] == NO) {
         [self.subscribers addObject:client];
     }
+}
+
+- (void)didSubmit:(NSString *)username password:(NSString *)password callback:(RCTResponseSenderBlock)callback {
+    LoginParameter * parameter = [[LoginParameter alloc] initWithUsername:username password:password];
+    [_userService signIn:parameter complete:^(FloUser *user, NSError *error) {
+        if (error != nil) {
+            callback(@[@"{\"error\":\"code\"}"]);
+        } else {
+            callback(@[[NSNull null]]);
+        }
+    }];
 }
 
 - (void)didSubmit:(NSString *)username password:(NSString *)password {

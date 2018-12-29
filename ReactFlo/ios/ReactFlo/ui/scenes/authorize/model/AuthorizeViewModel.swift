@@ -9,6 +9,8 @@ import Foundation
     var reactService: ReactService
     var userService: UserService
 
+    var onAuthorized: (() -> ())?
+
     init(userService: UserService, reactService: ReactService) {
         self.reactService = reactService
         self.userService = userService
@@ -19,7 +21,9 @@ import Foundation
     func didSubmit(_ username: String!, password: String!) {
         if let usr = username, let pwd = password {
             let params: LoginParameter = LoginParameter(username: usr, password: pwd)
-            userService.sign(in: params) { [weak self] (user: FloUser!, error: Error!) in  }
+            userService.sign(in: params) { [weak self] (user: FloUser!, error: Error!) in
+                self?.onAuthorized?()
+            }
         }
     }
 }

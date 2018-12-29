@@ -8,7 +8,7 @@
 
 @protocol RFBridgingAuthorizeDelegate <NSObject>
 @required
-- (void)didSubmit:(NSString *)username password:(NSString *)password;
+- (void)didSubmit:(NSString *)username password:(NSString *)password callback:(RCTResponseSenderBlock)callback;
 
 @end
 

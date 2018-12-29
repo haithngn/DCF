@@ -8,6 +8,7 @@ import UIKit
 
 @objc class AuthorizeViewController: UIViewController {
     var model: AuthorizeViewModel!
+    var bridge: RFRCTBridge!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -16,7 +17,10 @@ import UIKit
 
         let jsCodeLocationL:URL = RCTBundleURLProvider.sharedSettings().jsBundleURL(forBundleRoot: "index", fallbackResource: nil)
 //      let jsCodeLocationL:URL = Bundle.main.url(forResource: "main", withExtension: "jsbundle")!
-        let rootView: RCTRootView = RCTRootView(bundleURL: jsCodeLocationL, moduleName: "ReactFlo", initialProperties: nil)
+        bridge = RFRCTBridge(bundleURL: jsCodeLocationL, moduleProvider: nil, launchOptions: nil)
+
+        let rootView: RCTRootView = RCTRootView(bridge: bridge, moduleName: "ReactFlo", initialProperties: nil)
+                //RCTRootView(bundleURL: jsCodeLocationL, moduleName: "ReactFlo", initialProperties: nil)
 
         self.view.addSubview(rootView)
 
@@ -31,6 +35,12 @@ import UIKit
     }
 
     private func bindData() {
+        model.onAuthorized = { [weak self] in
+            self?.authorized()
+        }
+    }
 
+    private func authorized() {
+        bridge.navigateToMainScreen()
     }
 }
