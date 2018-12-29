@@ -7,13 +7,12 @@
  */
 
 import React, {Component} from 'react';
-import {Platform, StyleSheet, Text, View} from 'react-native';
 import {NativeModules} from 'react-native';
-import { Button } from 'react-native-elements';
-import Icon from 'react-native-vector-icons/FontAwesome';
+import {Platform, StyleSheet, Text, View} from 'react-native';
+import { Button, Input, Divider } from 'react-native-elements';
+import Icon from "react-native-vector-icons/FontAwesome";
 
 let RFBridging = NativeModules.RFBridging;
-RFBridging.submitUsername('ios@123flo.com', '111111');
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
@@ -24,17 +23,56 @@ const instructions = Platform.select({
 
 type Props = {};
 export default class Bootstrap extends Component<Props> {
+
+    _signInAsync = async () => {
+        RFBridging.submitUsername(this.state.username, this.state.password);
+    };
+
+    state = { username: '', password: '' }
+
+    onChangeText = (key, val) => {
+        this.setState({ [key]: val})
+    }
+
   render() {
     return (
       <View style={styles.container}>
-        <Button
-            icon={{
-              name: 'arrow-right',
-              size: 15,
-              color: 'white'
-            }}
-            title='BUTTON WITH ICON OBJECT'
-        />
+          <View style={{backgroundColor: '#1f65ff'}} />
+          <View style={{width: 250, flexDirection: 'column', justifyContent: 'center'}}>
+              <View style={{backgroundColor: '#1f65ff'}} />
+              <View style={{height: 250, flexDirection: 'column', justifyContent: 'flex-start'}}>
+                  <Input
+                      placeholder='username'
+                      leftIcon={
+                          <Icon
+                              name='user'
+                              size={24}
+                              color='white'
+                          />
+                      }
+                      inputStyle={{color:'white'}} onChangeText={val => this.onChangeText('username', val)}
+                  />
+                  <Divider style={{ height:8, backgroundColor: 'rgba(52, 52, 52, 0.0)' }} />
+                  <Input
+                      placeholder='password'
+                      leftIcon={
+                          <Icon
+                              name='user'
+                              size={24}
+                              color='white'
+                          />
+                      }
+                      inputStyle={{color:'white'}} secureTextEntry={true} onChangeText={val => this.onChangeText('password', val)}
+                  />
+                  <Divider style={{ height:32, backgroundColor: 'rgba(52, 52, 52, 0.0)' }} />
+                  <Button
+                      raised
+                      icon={{name: 'cached'}}
+                      title='Sign In' onPress={this._signInAsync}/>
+              </View>
+              <View style={{backgroundColor: '#1f65ff'}} />
+          </View>
+          <View style={{backgroundColor: '#1f65ff'}} />
       </View>
     );
   }
@@ -42,19 +80,9 @@ export default class Bootstrap extends Component<Props> {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#1f65ff',
-  },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#ffffff',
-    marginBottom: 5,
-  },
+      flex: 1,
+      backgroundColor: '#1f65ff',
+      flexDirection:'row',
+      justifyContent: 'center'
+  }
 });

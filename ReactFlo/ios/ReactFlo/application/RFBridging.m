@@ -30,7 +30,6 @@
 RCT_EXPORT_MODULE();
 
 RCT_EXPORT_METHOD(submitUsername:(NSString *)username password:(NSString *)password){
-    NSLog(@"Pretending to create an event %@ at %@", username, password);
     [[RFBridging sharedInstance] onInputUsername:username password:password];
 }
 

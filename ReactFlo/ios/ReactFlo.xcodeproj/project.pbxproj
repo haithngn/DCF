@@ -22,6 +22,7 @@
 		146834051AC3E58100842450 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
 		192906E655DD547D4718233D /* AuthorizeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19290D019D405F68FB4D7F5F /* AuthorizeViewModel.swift */; };
 		192906F8C37337EFAD0B8E11 /* AuthorizeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1929024DB2E5D70E689FE381 /* AuthorizeViewController.swift */; };
+		19290C661ABD58A649CE977E /* ReactServiceImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 192904BDF91042B843C8FB86 /* ReactServiceImpl.m */; };
 		19290C7BED2BCC3DDDF8D075 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1929028A9DE659895E6CD849 /* Images.xcassets */; };
 		19290E95CB704A9C5F5DAF89 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 192909D64FAF13EBDD7871A1 /* main.m */; };
 		19290FF0FA521C7AF9B42FDC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 192906CD6B9CD6D0F127D431 /* AppDelegate.m */; };
@@ -58,21 +59,7 @@
 		2718F70A21D6209300DF71F6 /* LoginParameter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2718F6F821D6209300DF71F6 /* LoginParameter.m */; };
 		2718F70B21D6209300DF71F6 /* GetKanbanParameter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2718F6F921D6209300DF71F6 /* GetKanbanParameter.m */; };
 		2718F70E21D6218F00DF71F6 /* Dependences.m in Sources */ = {isa = PBXBuildFile; fileRef = 2718F70C21D6218E00DF71F6 /* Dependences.m */; };
-		27E3B34721D63BF5008C7C5D /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 27E3B31121D63BF5008C7C5D /* Octicons.ttf */; };
-		27E3B34821D63BF5008C7C5D /* Feather.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 27E3B31221D63BF5008C7C5D /* Feather.ttf */; };
-		27E3B34921D63BF5008C7C5D /* Entypo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 27E3B31321D63BF5008C7C5D /* Entypo.ttf */; };
-		27E3B34A21D63BF5008C7C5D /* FontAwesome5_Brands.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 27E3B31421D63BF5008C7C5D /* FontAwesome5_Brands.ttf */; };
-		27E3B34B21D63BF5008C7C5D /* MaterialCommunityIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 27E3B31521D63BF5008C7C5D /* MaterialCommunityIcons.ttf */; };
-		27E3B34C21D63BF5008C7C5D /* AntDesign.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 27E3B31621D63BF5008C7C5D /* AntDesign.ttf */; };
-		27E3B34D21D63BF5008C7C5D /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 27E3B31721D63BF5008C7C5D /* Foundation.ttf */; };
-		27E3B34E21D63BF5008C7C5D /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 27E3B31821D63BF5008C7C5D /* Ionicons.ttf */; };
-		27E3B34F21D63BF5008C7C5D /* FontAwesome5_Solid.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 27E3B31921D63BF5008C7C5D /* FontAwesome5_Solid.ttf */; };
-		27E3B35021D63BF5008C7C5D /* FontAwesome5_Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 27E3B31A21D63BF5008C7C5D /* FontAwesome5_Regular.ttf */; };
-		27E3B35121D63BF5008C7C5D /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 27E3B31B21D63BF5008C7C5D /* FontAwesome.ttf */; };
-		27E3B35221D63BF5008C7C5D /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 27E3B31C21D63BF5008C7C5D /* Zocial.ttf */; };
-		27E3B35321D63BF5008C7C5D /* EvilIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 27E3B31D21D63BF5008C7C5D /* EvilIcons.ttf */; };
-		27E3B35421D63BF5008C7C5D /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 27E3B31E21D63BF5008C7C5D /* SimpleLineIcons.ttf */; };
-		27E3B35521D63BF5008C7C5D /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 27E3B31F21D63BF5008C7C5D /* MaterialIcons.ttf */; };
+		27EDF2D721D68D2200D0EAC1 /* main.jsbundle in Resources */ = {isa = PBXBuildFile; fileRef = 27EDF2AF21D68D2200D0EAC1 /* main.jsbundle */; };
 		2D02E4C21E0B4AEC006451C7 /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157351DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
 		2D02E4C31E0B4AEC006451C7 /* libRCTImage-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3E841DF850E9000B6D8A /* libRCTImage-tvOS.a */; };
 		2D02E4C41E0B4AEC006451C7 /* libRCTLinking-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3E881DF850E9000B6D8A /* libRCTLinking-tvOS.a */; };
@@ -429,6 +416,8 @@
 		146833FF1AC3E56700842450 /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "../node_modules/react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
 		1929024DB2E5D70E689FE381 /* AuthorizeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorizeViewController.swift; sourceTree = "<group>"; };
 		1929028A9DE659895E6CD849 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		19290459A9041BF7F58F5E9A /* ReactServiceImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReactServiceImpl.h; sourceTree = "<group>"; };
+		192904BDF91042B843C8FB86 /* ReactServiceImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReactServiceImpl.m; sourceTree = "<group>"; };
 		19290675978B61DCC256AE88 /* ReactFlo-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ReactFlo-Bridging-Header.h"; sourceTree = "<group>"; };
 		192906CD6B9CD6D0F127D431 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		19290725C5EE32C8A95F8A63 /* RFBridging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFBridging.h; sourceTree = "<group>"; };
@@ -436,6 +425,7 @@
 		1929083E07A594388D0EA967 /* RFBridging.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFBridging.m; sourceTree = "<group>"; };
 		192909D64FAF13EBDD7871A1 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		19290D019D405F68FB4D7F5F /* AuthorizeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorizeViewModel.swift; sourceTree = "<group>"; };
+		19290EEB43D9C6D9EEF91D5E /* ReactService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReactService.h; sourceTree = "<group>"; };
 		19290F22ED4C71839D91B6DB /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2709F74C444B4E5EAB95F4BB /* libRNVectorIcons.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNVectorIcons.a; sourceTree = "<group>"; };
 		2718F42221D608B900DF71F6 /* CocoaLumberjack.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaLumberjack.framework; path = Carthage/Build/iOS/CocoaLumberjack.framework; sourceTree = "<group>"; };
@@ -528,6 +518,7 @@
 		27E3B31D21D63BF5008C7C5D /* EvilIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = EvilIcons.ttf; sourceTree = "<group>"; };
 		27E3B31E21D63BF5008C7C5D /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SimpleLineIcons.ttf; sourceTree = "<group>"; };
 		27E3B31F21D63BF5008C7C5D /* MaterialIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MaterialIcons.ttf; sourceTree = "<group>"; };
+		27EDF2AF21D68D2200D0EAC1 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
 		29B768794383479EBF5F1EC8 /* FontAwesome5_Brands.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Brands.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Brands.ttf"; sourceTree = "<group>"; };
 		2D02E47B1E0B4A5D006451C7 /* ReactFlo-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ReactFlo-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* ReactFlo-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ReactFlo-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -783,6 +774,7 @@
 		19290C6719405862C50A8B07 /* application */ = {
 			isa = PBXGroup;
 			children = (
+				27EDF2AF21D68D2200D0EAC1 /* main.jsbundle */,
 				2718F70D21D6218E00DF71F6 /* Dependences.h */,
 				2718F70C21D6218E00DF71F6 /* Dependences.m */,
 				192909D64FAF13EBDD7871A1 /* main.m */,
@@ -949,6 +941,8 @@
 				2718F6E921D6209300DF71F6 /* BroadcastServiceImpl.h */,
 				2718F6EA21D6209300DF71F6 /* BookmarkServiceImpl.m */,
 				2718F6EB21D6209300DF71F6 /* KanbanServiceImpl.m */,
+				192904BDF91042B843C8FB86 /* ReactServiceImpl.m */,
+				19290459A9041BF7F58F5E9A /* ReactServiceImpl.h */,
 			);
 			path = impl;
 			sourceTree = "<group>";
@@ -961,6 +955,7 @@
 				2718F6EF21D6209300DF71F6 /* KanbanService.h */,
 				2718F6F021D6209300DF71F6 /* BroadcastService.h */,
 				2718F6F121D6209300DF71F6 /* CollectionService.h */,
+				19290EEB43D9C6D9EEF91D5E /* ReactService.h */,
 			);
 			path = interface;
 			sourceTree = "<group>";
@@ -1611,37 +1606,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				27E3B34E21D63BF5008C7C5D /* Ionicons.ttf in Resources */,
 				2718F66F21D6156500DF71F6 /* Main.storyboard in Resources */,
-				27E3B34D21D63BF5008C7C5D /* Foundation.ttf in Resources */,
-				27E3B34B21D63BF5008C7C5D /* MaterialCommunityIcons.ttf in Resources */,
-				27E3B35321D63BF5008C7C5D /* EvilIcons.ttf in Resources */,
-				27E3B34921D63BF5008C7C5D /* Entypo.ttf in Resources */,
 				19290C7BED2BCC3DDDF8D075 /* Images.xcassets in Resources */,
-				27E3B34821D63BF5008C7C5D /* Feather.ttf in Resources */,
-				27E3B35121D63BF5008C7C5D /* FontAwesome.ttf in Resources */,
 				2718F67121D6157400DF71F6 /* Launch.storyboard in Resources */,
-				27E3B34C21D63BF5008C7C5D /* AntDesign.ttf in Resources */,
-				27E3B34A21D63BF5008C7C5D /* FontAwesome5_Brands.ttf in Resources */,
 				B17A8C3A7161419E91C291BC /* AntDesign.ttf in Resources */,
 				AAE1868CE3CE4542A64FFFA6 /* Entypo.ttf in Resources */,
 				DA8D71FD6D34415DBDE34820 /* EvilIcons.ttf in Resources */,
 				61A182CCDC7F49E7BD1E43C6 /* Feather.ttf in Resources */,
-				27E3B35021D63BF5008C7C5D /* FontAwesome5_Regular.ttf in Resources */,
-				27E3B35521D63BF5008C7C5D /* MaterialIcons.ttf in Resources */,
 				25C1AC4CD4BC407C8ADD63B0 /* FontAwesome.ttf in Resources */,
-				27E3B34F21D63BF5008C7C5D /* FontAwesome5_Solid.ttf in Resources */,
 				EACCAF2C02264F57BB40C0F2 /* FontAwesome5_Brands.ttf in Resources */,
 				B744AE0CDC3C40EDB242E36F /* FontAwesome5_Regular.ttf in Resources */,
 				5A3EDB789B414A968F5AE226 /* FontAwesome5_Solid.ttf in Resources */,
 				F176E7E1989F49E982377619 /* Foundation.ttf in Resources */,
-				27E3B35221D63BF5008C7C5D /* Zocial.ttf in Resources */,
 				8F2B009E38F8484B9F88791E /* Ionicons.ttf in Resources */,
 				3E1B9F35E0004B0D808FB7C2 /* MaterialCommunityIcons.ttf in Resources */,
+				27EDF2D721D68D2200D0EAC1 /* main.jsbundle in Resources */,
 				F32F973704124F7EB0080FD6 /* MaterialIcons.ttf in Resources */,
 				D97CA5EE60D544E686CDC439 /* Octicons.ttf in Resources */,
-				27E3B34721D63BF5008C7C5D /* Octicons.ttf in Resources */,
-				27E3B35421D63BF5008C7C5D /* SimpleLineIcons.ttf in Resources */,
 				7428C14EAA834953A32DD1CB /* SimpleLineIcons.ttf in Resources */,
 				5150A3480A7142DEBF3E3540 /* Zocial.ttf in Resources */,
 			);
@@ -1766,6 +1747,7 @@
 				2718F70921D6209300DF71F6 /* GetBookmarksParameter.m in Sources */,
 				19290FFC48EBB8EB4CED7AEA /* RFBridging.m in Sources */,
 				192906E655DD547D4718233D /* AuthorizeViewModel.swift in Sources */,
+				19290C661ABD58A649CE977E /* ReactServiceImpl.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

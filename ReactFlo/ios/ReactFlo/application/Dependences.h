@@ -11,6 +11,7 @@
 @protocol CollectionService;
 @protocol KanbanService;
 @protocol BookmarkService;
+@protocol ReactService;
 
 @interface Dependences : NSObject
 
@@ -20,4 +21,5 @@
 + (NSObject <CollectionService> *)collectionService;
 + (NSObject <KanbanService> *)kanbanService;
 + (NSObject <BookmarkService>*)bookmarkService;
++ (NSObject <ReactService>*)reactService;
 @end

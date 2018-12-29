@@ -11,10 +11,11 @@ import UIKit
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        model = AuthorizeViewModel()
+        model = AuthorizeViewModel(userService: Dependences.userService(), reactService: Dependences.reactService())
         bindData()
 
         let jsCodeLocationL:URL = RCTBundleURLProvider.sharedSettings().jsBundleURL(forBundleRoot: "index", fallbackResource: nil)
+//      let jsCodeLocationL:URL = Bundle.main.url(forResource: "main", withExtension: "jsbundle")!
         let rootView: RCTRootView = RCTRootView(bundleURL: jsCodeLocationL, moduleName: "ReactFlo", initialProperties: nil)
 
         self.view.addSubview(rootView)
@@ -30,6 +31,6 @@ import UIKit
     }
 
     private func bindData() {
-        RFBridging.sharedInstance().authorizeDelegate = model
+
     }
 }

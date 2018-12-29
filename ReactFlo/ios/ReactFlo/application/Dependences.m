@@ -22,6 +22,9 @@
 #import "BookmarkApi.h"
 #import "BookmarkApiImpl.h"
 #import "BookmarkServiceImpl.h"
+#import "ReactService.h"
+#import "ReactServiceImpl.h"
+#import "RFBridging.h"
 
 @class FloKanbanApi;
 @class FloBookmarkApi;
@@ -38,6 +41,7 @@
 @property (nonatomic, strong) NSObject <KanbanService> * kanbanService;
 @property (nonatomic, strong) NSObject <BookmarkApi> * bookmarkApi;
 @property (nonatomic, strong) NSObject <BookmarkService> * bookmarkService;
+@property (nonatomic, strong) NSObject <ReactService> * reactService;
 
 @end
 
@@ -52,6 +56,7 @@
     NSObject <KanbanService> *_kanbanService;
     NSObject <BookmarkApi> *_bookmarkApi;
     NSObject <BookmarkService> *_bookmarkService;
+    NSObject <ReactService> *_reactService;
 }
 
 @synthesize userService = _userService;
@@ -63,6 +68,8 @@
 @synthesize kanbanService = _kanbanService;
 @synthesize bookmarkApi = _bookmarkApi;
 @synthesize bookmarkService = _bookmarkService;
+
+@synthesize reactService = _reactService;
 
 + (instancetype)sharedInstance {
     static Dependences *sharedInstance = nil;
@@ -103,11 +110,15 @@
     return [Dependences sharedInstance].kanbanService;;
 }
 
-#pragma mark - Instance Properties
-
 + (NSObject <BookmarkService>*)bookmarkService {
     return [Dependences sharedInstance].bookmarkService;
 }
+
++ (NSObject <ReactService> *)reactService {
+    return [Dependences sharedInstance].reactService;
+}
+
+#pragma mark - Instance Methods
 
 - (NSObject <UserService> *)userService {
     if (_userService == nil) {
@@ -177,6 +188,14 @@
     }
 
     return _bookmarkService;
+}
+
+- (NSObject <ReactService> *)reactService {
+    if (_reactService == nil) {
+        _reactService = [[ReactServiceImpl alloc] initWithBridger:[RFBridging sharedInstance]];
+    }
+
+    return _reactService;
 }
 
 @end
