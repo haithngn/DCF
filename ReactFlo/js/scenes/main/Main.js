@@ -1,7 +1,23 @@
 import React, {Component} from 'react';
-import {AppRegistry, FlatList, NativeModules, StyleSheet, Text, View} from 'react-native';
+import {AppRegistry, FlatList, NativeModules, StyleSheet, Text, View, Alert} from 'react-native';
+import {Button} from "react-native-elements";
+import {AppNavigator} from "../bootstrap/Bootstrap";
 
 let RFBridging = NativeModules.RFBridging;
+
+class LogoTitle extends React.Component {
+    render() {
+        return (
+            <Text
+                style={{ height: 36, padding: 26, margin: 16, color: '#0e5aff', fontSize: 18 }}
+            >Collections</Text>
+        );
+    }
+}
+
+function goBack() {
+
+}
 
 export default class Main extends React.Component {
     async getCollections() {
@@ -14,20 +30,13 @@ export default class Main extends React.Component {
                 let cols = collectionsInJSON.collections;
                 console.log(cols);
                 var col;
+                var theData = [];
                 for (var i = 0; i < cols.length; i++) {
                     let col = cols[i];
                     console.log(col['id']);
+                    theData.push({key:col['name']})
                 }
-                this.setState({ data: [
-                        {key: 'Devin'},
-                        {key: 'Hai'},
-                        {key: 'James'},
-                        {key: 'Joel'},
-                        {key: 'John'},
-                        {key: 'Jillian'},
-                        {key: 'Jimmy'},
-                        {key: 'Julie'},
-                    ]});
+                this.setState({ data: theData});
             }
         });
     };
@@ -48,6 +57,27 @@ export default class Main extends React.Component {
             </View>
         );
     }
+
+    static navigationOptions = {
+        headerTitle: <LogoTitle />,
+        headerRight: (
+            <Button
+                onPress={() =>
+                    Alert.alert(
+                        'React Flo',
+                        'Do you want to sign out ?',
+                        [
+                            {text: 'Cancel', onPress: () => goBack()},
+                            {text: 'Yes', onPress: () => RFBridging.signOut()},
+                        ],
+                        { cancelable: false }
+                    )
+                }
+                title="Sign Out"
+                color="#fff"
+            />
+        )
+    };
 }
 
 const styles = StyleSheet.create({

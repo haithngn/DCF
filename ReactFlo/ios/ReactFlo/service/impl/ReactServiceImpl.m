@@ -73,7 +73,7 @@
                 [cols addObject:@{@"id":floCol.collectionId, @"name": floCol.collectionName}];
             }];
 
-            NSData *jsonData = [NSJSONSerialization dataWithJSONObject: @{@"collections": @[@{@"id":@"collectionId"}]}
+            NSData *jsonData = [NSJSONSerialization dataWithJSONObject: @{@"collections": cols}
                                                                options:NSJSONWritingPrettyPrinted // Pass 0 if you don't care about the readability of the generated string
                                                                  error:&err];
 
@@ -98,6 +98,11 @@
         }
     }];
 }
+
+- (void)signOut {
+    [_userService logOut];
+}
+
 
 #pragma mark -
 

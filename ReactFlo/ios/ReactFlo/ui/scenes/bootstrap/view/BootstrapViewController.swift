@@ -21,12 +21,6 @@ import UIKit
     }
 
     private func bindData() {
-        model.onSignedIn = { [weak self] in
 
-        }
-
-        model.onSignedOut = { [weak self] in
-
-        }
     }
 }

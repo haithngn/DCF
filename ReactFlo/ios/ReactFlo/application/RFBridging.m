@@ -31,19 +31,10 @@ RCT_EXPORT_METHOD(submitUsername:(NSString *)username password:(NSString *)passw
 
 RCT_EXPORT_METHOD(getCollections:(RCTResponseSenderBlock)callback){
     [[RFBridging sharedInstance] fetchCollections:callback];
-    /*
-    NSError *error;
-    NSData *jsonData = [NSJSONSerialization dataWithJSONObject: @{@"collections": @[@{@"id":@"collectionId"}]}
-                                                       options:NSJSONWritingPrettyPrinted // Pass 0 if you don't care about the readability of the generated string
-                                                         error:&error];
+}
 
-    if (! jsonData) {
-        NSLog(@"Got an error: %@", error);
-    } else {
-        NSString *jsonString = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
-        callback(@[[NSNull null],jsonString]);
-    }
-     */
+RCT_EXPORT_METHOD(signOut){
+    [[RFBridging sharedInstance] logout];
 }
 
 #pragma mark - Instance Methods
@@ -67,6 +58,10 @@ RCT_EXPORT_METHOD(getCollections:(RCTResponseSenderBlock)callback){
     } else {
         [_collectionDelegate getCollections:callback];
     }
+}
+
+- (void)logout{
+    [_authorizeDelegate signOut];
 }
 
 @end

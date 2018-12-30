@@ -7,8 +7,8 @@
  */
 
 import React, {Component} from 'react';
-import {NativeModules} from 'react-native';
-import {StyleSheet, Text, View } from 'react-native';
+import {Alert, NativeModules} from 'react-native';
+import {StyleSheet, View } from 'react-native';
 import { Button, Input, Divider } from 'react-native-elements';
 import Icon from "react-native-vector-icons/FontAwesome";
 import Main from '../main/Main';
@@ -24,12 +24,14 @@ class Bootstrap extends React.Component {
         RFBridging.submitUsername(this.state.username, this.state.password, ((error) => {
             console.log(error);
             if (error) {
-                this.props.navigation.dispatch(StackActions.reset({
-                    index: 0,
-                    actions: [
-                        NavigationActions.navigate({ routeName: 'Details' })
+                Alert.alert(
+                    'React Flo',
+                    'Wrong username/password!',
+                    [
+                        {text: 'Close'},
                     ],
-                }))
+                    { cancelable: false }
+                )
             } else {
                 this.props.navigation.dispatch(StackActions.reset({
                     index: 0,
@@ -102,7 +104,7 @@ const styles = StyleSheet.create({
 
 
 
-const AppNavigator = createStackNavigator({
+export const AppNavigator = createStackNavigator({
     Home: {
         screen: Bootstrap,
     },
