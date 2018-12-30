@@ -29,7 +29,7 @@
 }
 
 - (void)autoLogin {
-    [_userService autoLogin];
+    [_userService logOut];
 }
 
 #pragma mark - BroadcastService Methods

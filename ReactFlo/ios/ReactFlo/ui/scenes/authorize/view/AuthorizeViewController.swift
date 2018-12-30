@@ -15,10 +15,17 @@ import UIKit
         model = AuthorizeViewModel(userService: Dependences.userService(), reactService: Dependences.reactService())
         bindData()
 
-        let jsCodeLocationL:URL = RCTBundleURLProvider.sharedSettings().jsBundleURL(forBundleRoot: "index", fallbackResource: nil)
+      var jsCodeLocationL:URL!
+      #if DEBUG
+        jsCodeLocationL = RCTBundleURLProvider.sharedSettings().jsBundleURL(forBundleRoot: "index", fallbackResource: nil)
+      #else
+        jsCodeLocationL = Bundle.main.url(forResource: "main", withExtension: "jsbundle")!
+      #endif
 //      let jsCodeLocationL:URL = Bundle.main.url(forResource: "main", withExtension: "jsbundle")!
+        bridge = RFRCTBridge(bundleURL: jsCodeLocationL, moduleProvider: nil, launchOptions: nil)
 
-        let rootView: RCTRootView = RCTRootView(bundleURL: jsCodeLocationL, moduleName: "ReactFlo", initialProperties: nil)
+        let rootView: RCTRootView = RCTRootView(bridge: bridge, moduleName: "ReactFlo", initialProperties: nil)
+                //RCTRootView(bundleURL: jsCodeLocationL, moduleName: "ReactFlo", initialProperties: nil)
 
         self.view.addSubview(rootView)
 

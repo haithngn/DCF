@@ -1932,6 +1932,7 @@
 					"-ObjC",
 					"-lc++",
 				);
+				OTHER_SWIFT_FLAGS = "-DDEBUG";
 				PRODUCT_NAME = ReactFlo;
 				PROVISIONING_PROFILE = "2b91ead7-3e70-4e13-9d5b-e6c99ab2b7c6";
 				PROVISIONING_PROFILE_SPECIFIER = "Flo Universal Debug";
@@ -1970,6 +1971,7 @@
 					"-ObjC",
 					"-lc++",
 				);
+				OTHER_SWIFT_FLAGS = "-DRELEASE";
 				PRODUCT_NAME = ReactFlo;
 				PROVISIONING_PROFILE = "d77d3567-b011-4e93-8411-eacfc2d80302";
 				PROVISIONING_PROFILE_SPECIFIER = "Flo Universal QC";

@@ -7,7 +7,7 @@
  */
 
 import React, {Component} from 'react';
-import {Alert, NativeModules} from 'react-native';
+import {Alert, NativeModules, Text} from 'react-native';
 import {StyleSheet, View } from 'react-native';
 import { Button, Input, Divider } from 'react-native-elements';
 import Icon from "react-native-vector-icons/FontAwesome";
@@ -16,10 +16,20 @@ import { createAppContainer, createStackNavigator, StackActions, NavigationActio
 
 let RFBridging = NativeModules.RFBridging;
 
+class LogoTitle extends React.Component {
+    render() {
+        return (
+            <Text
+                style={{ height: 36, color: '#0e5aff', fontSize: 24 }}
+            >Sign In</Text>
+        );
+    }
+}
+
 class Bootstrap extends React.Component {
     _authorized = async () => {
-        console.log("ABC");
     };
+
     _signInAsync = async () => {
         RFBridging.submitUsername(this.state.username, this.state.password, ((error) => {
             console.log(error);
@@ -47,7 +57,7 @@ class Bootstrap extends React.Component {
 
     onChangeText = (key, val) => {
         this.setState({ [key]: val})
-    }
+    };
 
     render() {
         return (
@@ -58,9 +68,11 @@ class Bootstrap extends React.Component {
                     <View style={{height: 250, flexDirection: 'column', justifyContent: 'flex-start'}}>
                         <Input
                             placeholder='username'
+                            placeholderTextColor="#81888D"
+                            autoCapitalize="none"
                             leftIcon={
                                 <Icon
-                                    name='user'
+                                    name='user-circle'
                                     size={24}
                                     color='white'
                                 />
@@ -70,9 +82,10 @@ class Bootstrap extends React.Component {
                         <Divider style={{ height:8, backgroundColor: 'rgba(52, 52, 52, 0.0)' }} />
                         <Input
                             placeholder='password'
+                            placeholderTextColor="#81888D"
                             leftIcon={
                                 <Icon
-                                    name='user'
+                                    name='shield'
                                     size={24}
                                     color='white'
                                 />
@@ -82,7 +95,6 @@ class Bootstrap extends React.Component {
                         <Divider style={{ height:32, backgroundColor: 'rgba(52, 52, 52, 0.0)' }} />
                         <Button
                             raised
-                            icon={{name: 'cached'}}
                             title='Sign In' onPress={this._signInAsync}/>
                     </View>
                     <View style={{backgroundColor: '#1f65ff'}} />
@@ -91,6 +103,10 @@ class Bootstrap extends React.Component {
             </View>
         );
     }
+
+    static navigationOptions = {
+        headerTitle: <LogoTitle />
+    };
 }
 
 const styles = StyleSheet.create({
