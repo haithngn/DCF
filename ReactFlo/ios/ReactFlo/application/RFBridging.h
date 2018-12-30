@@ -12,9 +12,16 @@
 
 @end
 
+@protocol RFBridgingCollectionDelegate <NSObject>
+@required
+- (void)getCollections:(RCTResponseSenderBlock)callback;
+
+@end
+
 @interface RFBridging : NSObject <RCTBridgeModule>
 
 @property (nonatomic, weak) NSObject <RFBridgingAuthorizeDelegate> * authorizeDelegate;
+@property (nonatomic, weak) NSObject <RFBridgingCollectionDelegate> * collectionDelegate;
 
 + (instancetype)sharedInstance;
 

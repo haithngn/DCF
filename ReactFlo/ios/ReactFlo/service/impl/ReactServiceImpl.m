@@ -7,12 +7,15 @@
 #import "RFBridging.h"
 #import "UserService.h"
 #import "LoginParameter.h"
+#import "CollectionService.h"
+#import "FloCollection.h"
 
-@interface ReactServiceImpl () <RFBridgingAuthorizeDelegate>
+@interface ReactServiceImpl () <RFBridgingAuthorizeDelegate, RFBridgingCollectionDelegate>
 
 @property (nonatomic, strong) RFBridging * bridger;
 @property (nonatomic, strong) NSMutableArray <NSObject <ReactObserver> *> * subscribers;
 @property (nonatomic, strong) NSObject <UserService> * userService;
+@property (nonatomic, strong) NSObject <CollectionService> * collectionService;
 
 @end
 
@@ -24,12 +27,14 @@
 
 @synthesize subscribers = _subscribers;
 
-- (instancetype)initWithBridger:(RFBridging *)bridger userservice:(NSObject <UserService> * ) userService {
+- (instancetype)initWithBridger:(RFBridging *)bridger userservice:(NSObject <UserService> * ) userService collectionService:(NSObject <CollectionService> *) collectionService {
     self = [super init];
     if (self) {
         self.bridger = bridger;
         bridger.authorizeDelegate = self;
+        bridger.collectionDelegate = self;
         self.userService = userService;
+        self.collectionService = collectionService;
     }
 
     return self;
@@ -42,7 +47,7 @@
 }
 
 - (void)didSubmit:(NSString *)username password:(NSString *)password callback:(RCTResponseSenderBlock)callback {
-    LoginParameter * parameter = [[LoginParameter alloc] initWithUsername:username password:password];
+    LoginParameter * parameter = [[LoginParameter alloc] initWithUsername:[username lowercaseString] password:password];
     [_userService signIn:parameter complete:^(FloUser *user, NSError *error) {
         if (error != nil) {
             callback(@[@"{\"error\":\"code\"}"]);
@@ -58,6 +63,41 @@
     }];
 }
 
+- (void)getCollections:(RCTResponseSenderBlock)callback {
+    [_collectionService findAll:^(NSArray<FloCollection *> *collections, NSError *error) {
+        if (error == nil) {
+            NSError *err;
+            NSMutableArray * cols = [NSMutableArray new];
+
+            [collections enumerateObjectsUsingBlock:^(FloCollection *floCol, NSUInteger idx, BOOL *stop) {
+                [cols addObject:@{@"id":floCol.collectionId, @"name": floCol.collectionName}];
+            }];
+
+            NSData *jsonData = [NSJSONSerialization dataWithJSONObject: @{@"collections": @[@{@"id":@"collectionId"}]}
+                                                               options:NSJSONWritingPrettyPrinted // Pass 0 if you don't care about the readability of the generated string
+                                                                 error:&err];
+
+            if (! jsonData) {
+                NSLog(@"Got an error: %@", err);
+            } else {
+                NSString *jsonString = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
+                callback(@[[NSNull null],jsonString]);
+            }
+        } else {
+            NSError *err;
+            NSData *jsonData = [NSJSONSerialization dataWithJSONObject: @{@"collections": @[@{@"id":@"collectionId"}]}
+                                                               options:NSJSONWritingPrettyPrinted // Pass 0 if you don't care about the readability of the generated string
+                                                                 error:&err];
+
+            if (! jsonData) {
+                NSLog(@"Got an error: %@", err);
+            } else {
+                NSString *jsonString = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
+                callback(@[[NSNull null],jsonString]);
+            }
+        }
+    }];
+}
 
 #pragma mark -
 

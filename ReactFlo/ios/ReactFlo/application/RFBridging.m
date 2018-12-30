@@ -6,10 +6,6 @@
 #import <React/RCTBridgeModule.h>
 #import "RFBridging.h"
 
-@interface RFBridging ()
-
-@end
-
 @implementation RFBridging {
 
 }
@@ -34,12 +30,43 @@ RCT_EXPORT_METHOD(submitUsername:(NSString *)username password:(NSString *)passw
 }
 
 RCT_EXPORT_METHOD(getCollections:(RCTResponseSenderBlock)callback){
-    callback(@[@"[{\"id\":\"aaa\"}]"]);
+    [[RFBridging sharedInstance] fetchCollections:callback];
+    /*
+    NSError *error;
+    NSData *jsonData = [NSJSONSerialization dataWithJSONObject: @{@"collections": @[@{@"id":@"collectionId"}]}
+                                                       options:NSJSONWritingPrettyPrinted // Pass 0 if you don't care about the readability of the generated string
+                                                         error:&error];
+
+    if (! jsonData) {
+        NSLog(@"Got an error: %@", error);
+    } else {
+        NSString *jsonString = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
+        callback(@[[NSNull null],jsonString]);
+    }
+     */
 }
 
 #pragma mark - Instance Methods
 - (void)onInputUsername:(NSString *)username password:(NSString *)password callback:(RCTResponseSenderBlock)callback {
     [_authorizeDelegate didSubmit:username password:password callback: callback];
+}
+
+- (void)fetchCollections:(RCTResponseSenderBlock)callback {
+    if (_collectionDelegate == nil) {
+        NSError *error;
+        NSData *jsonData = [NSJSONSerialization dataWithJSONObject: @{@"error": @[@{@"id":@"collectionId"}]}
+                                                           options:NSJSONWritingPrettyPrinted // Pass 0 if you don't care about the readability of the generated string
+                                                             error:&error];
+
+        if (! jsonData) {
+            NSLog(@"Got an error: %@", error);
+        } else {
+            NSString *jsonString = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
+            callback(@[jsonString,jsonString]);
+        }
+    } else {
+        [_collectionDelegate getCollections:callback];
+    }
 }
 
 @end

@@ -8,8 +8,9 @@
 
 @class RFBridging;
 @protocol UserService;
+@protocol CollectionService;
 
 @interface ReactServiceImpl : NSObject <ReactService>
-- (instancetype)initWithBridger:(RFBridging *)bridger userservice:(NSObject <UserService> * ) userService;
+- (instancetype)initWithBridger:(RFBridging *)bridger userservice:(NSObject <UserService> * ) userService collectionService:(NSObject <CollectionService> *) collectionService;
 
 @end
