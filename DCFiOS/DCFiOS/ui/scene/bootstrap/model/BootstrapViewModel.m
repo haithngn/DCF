@@ -29,6 +29,7 @@
 }
 
 - (void)autoLogin {
+    [_userService logOut];
     if (_userService.currentUserId != nil){
         [_userService autoLogin];
     } else {
