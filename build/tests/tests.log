@@ -1,0 +1,121 @@
+[Info] Loading settings for scheme 'BGFetchTests' ... (1452 ms)
+
+=== RUN-TESTS ===
+
+  [Info] Collecting info for testables... (2333 ms)
+  run-test BGFetchTests.xctest (iphonesimulator11.4, iPhone 5s, application-test)
+    [Info] Prepared 'iPhone 5s' simulator to run tests. (13 ms)
+    [Info] Installed 'com.floware.universalflo.dev'. (2114 ms)
+    [Info] Launched 'com.floware.universalflo.dev' on 'iPhone 5s'. (2067 ms)
+      -[BGFetchRequestTests testHowManyNewMessagesWillBeRequested]
+--------------------------------------------------------------------------------
+"Top Msg UID: 10"
+"Next UID (on remote IMAP Folder): 18"
+22:12:12.119 💚 DEBUG SyncPeriodServiceImpl.releaseWorker():115 - releaseWorker()
+22:12:12.121 💚 DEBUG SyncPeriodServiceImpl.deinit():735 - Flo.SyncWorker deallocing ....
+22:12:12.123 💚 DEBUG BGMessageFetcherImpl.fetch():31 - fetch(complete:)
+22:12:12.124 💚 DEBUG BGFolderStatusFetcherImpl.fetch():20 - fetch(complete:)
+22:12:12.126 ❤️ ERROR RemoteNotificationServiceImpl.updateDeviceTokenFailure():36 - Error Domain=NSCocoaErrorDomain Code=3010 "remote notifications are not supported in the simulator" UserInfo={NSLocalizedDescription=remote notifications are not supported in the simulator}
+22:12:12.127 💚 DEBUG BGFolderStatusFetcherImpl.fetch():26 - Optional(Flo.FolderStatus(uidNext: 18, uidValidity: 111111, recentCount: 0, unseenCount: 0, messageCount: 8, sessionId: "test@123flo.com", folderPath: "INBOX", folderId: "test@123flo.com_INBOX"))
+22:12:12.128 💚 DEBUG SyncPeriodServiceImpl.releaseWorker():115 - releaseWorker()
+22:12:12.129 💚 DEBUG SyncPeriodServiceImpl.deinit():735 - Flo.SyncWorker deallocing ....
+22:12:12.129 💚 DEBUG BGFolderStatusFetcherImpl.fetch():27 - nil
+22:12:12.130 💚 DEBUG BGMessageFetcherImpl.fetch():53 - [Flo.FolderStatus(uidNext: 18, uidValidity: 111111, recentCount: 0, unseenCount: 0, messageCount: 8, sessionId: "test@123flo.com", folderPath: "INBOX", folderId: "test@123flo.com_INBOX")]
+22:12:12.131 💚 DEBUG BGMessageFetcherImpl.leechMessages():89 - [Message [test]]
+22:12:12.132 💙 INFO BGMessageFetcherImpl.leechMessages():91 - Fetched 1 messages in 1 IMAP folders
+22:12:12.132 ❤️ ERROR BGMessageContentFetcherImpl.fetch():49 - nil
+22:12:12.132 💚 DEBUG BGMessageContentFetcherImpl.fetch():50 - Optional("")
+----|---------------------------------------------------------------------------
+    ~ -[BGFetchRequestTests testHowManyNewMessagesWillBeRequested] (23 ms)
+      -[BGFetchRequestTests testHowManyOldMessagesWillBeRequested]
+--------------------------------------------------------------------------------
+22:12:12.136 💙 INFO BackgroundServiceImpl.run():60 - Starting Background Fetch....
+22:12:12.136 💙 INFO BackgroundServiceImpl.init():108 - init()
+22:12:12.136 💚 DEBUG BGMessageFetcherImpl.fetch():31 - fetch(complete:)
+22:12:12.137 💚 DEBUG BGFolderStatusFetcherImpl.fetch():20 - fetch(complete:)
+22:12:12.137 💚 DEBUG BGFolderStatusFetcherImpl.fetch():26 - Optional(Flo.FolderStatus(uidNext: 18, uidValidity: 111111, recentCount: 0, unseenCount: 0, messageCount: 8, sessionId: "test@123flo.com", folderPath: "INBOX", folderId: "test@123flo.com_INBOX"))
+22:12:12.138 💚 DEBUG BGFolderStatusFetcherImpl.fetch():27 - nil
+22:12:12.138 💚 DEBUG BGMessageFetcherImpl.fetch():53 - [Flo.FolderStatus(uidNext: 18, uidValidity: 111111, recentCount: 0, unseenCount: 0, messageCount: 8, sessionId: "test@123flo.com", folderPath: "INBOX", folderId: "test@123flo.com_INBOX")]
+22:12:12.139 💚 DEBUG BGMessageFetcherImpl.leechMessages():89 - [Message [test]]
+22:12:12.140 💙 INFO BGMessageFetcherImpl.leechMessages():91 - Fetched 1 messages in 1 IMAP folders
+22:12:12.140 ❤️ ERROR BGMessageContentFetcherImpl.fetch():49 - nil
+22:12:12.140 💚 DEBUG BGMessageContentFetcherImpl.fetch():50 - Optional("")
+22:12:12.141 💙 INFO BackgroundServiceImpl.run():87 - Background fech has finished - Spent: 0.00264286994934082 second(s)
+22:12:12.141 💚 DEBUG BackgroundServiceImpl.mine():145 - mine(complete:)
+22:12:12.141 💙 INFO BackgroundServiceImpl.run():218 - [Message [test]]
+22:12:12.142 💙 INFO BackgroundServiceImpl.run():99 - Mined more old message
+22:12:12.142 💙 INFO BackgroundServiceImpl.run():224 - Mined 1 message(s) in folder INBOX
+22:12:45.272 ❤️ ERROR BackgroundServiceImpl.run():64 - The fetch cannot finish in this session!
+----|---------------------------------------------------------------------------
+    ~ -[BGFetchRequestTests testHowManyOldMessagesWillBeRequested] (33139 ms)
+      -[BGFetchRequestTests testRequestFloInboxIMAPFolderOnly]
+--------------------------------------------------------------------------------
+22:12:45.272 💚 DEBUG BGMessageFetcherImpl.deinit():116 - Flo.BGMessageFetcherImpl deallocing...
+22:12:45.273 💚 DEBUG BGFolderStatusFetcherImpl.deinit():42 - Flo.BGFolderStatusFetcherImpl deallocing...
+22:12:45.273 💚 DEBUG BGMessageLeecherImpl.deinit():39 - Flo.BGMessageLeecherImpl deallocing...
+"Testing testHowManyOldMessagesWillBeRequested()"
+Optional(Flo.TaskError.timedout)
+22:12:45.274 💚 DEBUG BackgroundServiceImpl.deinit():240 - Flo.BackgroundServiceImpl.MessageMiner deallocing...
+22:12:45.275 💚 DEBUG BackgroundServiceImpl.deinit():235 - Flo.BackgroundServiceImpl.MessageMiner.Miner deallocing...
+22:12:45.275 💚 DEBUG BGMessageFetcherImpl.fetch():31 - fetch(complete:)
+"getFolderStatus(_:handler:)"
+22:12:45.276 💚 DEBUG BGFolderStatusFetcherImpl.fetch():20 - fetch(complete:)
+22:12:45.276 💚 DEBUG BGFolderStatusFetcherImpl.fetch():26 - nil
+"test testRequestFloInboxIMAPFolderOnly()"
+22:12:45.276 💚 DEBUG BGFolderStatusFetcherImpl.fetch():27 - Optional(Flo.ApiError.BadRequest(""))
+"ABC [\"INBOX\"]"
+22:12:45.277 💚 DEBUG BGMessageFetcherImpl.fetch():53 - []
+----|---------------------------------------------------------------------------
+    ~ -[BGFetchRequestTests testRequestFloInboxIMAPFolderOnly] (2 ms)
+    ~ -[BGFetchRequestTests testRequestInboxIMAPFolders] (1 ms)
+      -[BGFetchTests testFetchTimedoutByIMAPServer]
+--------------------------------------------------------------------------------
+22:12:45.277 💚 DEBUG BGMessageFetcherImpl.fetch():31 - fetch(complete:)
+"getFolderStatus(_:handler:)"
+22:12:45.278 💚 DEBUG BGFolderStatusFetcherImpl.fetch():20 - fetch(complete:)
+"getFolderStatus(_:handler:)"
+22:12:45.278 💚 DEBUG BGFolderStatusFetcherImpl.fetch():26 - nil
+"testRequestInboxIMAPFolders() [\"INBOX\", \"INBOX\"]"
+22:12:45.278 💚 DEBUG BGFolderStatusFetcherImpl.fetch():27 - Optional(Flo.ApiError.BadRequest(""))
+22:12:45.279 💚 DEBUG BGFolderStatusFetcherImpl.fetch():26 - nil
+22:12:45.279 💚 DEBUG BGFolderStatusFetcherImpl.fetch():27 - Optional(Flo.ApiError.BadRequest(""))
+22:12:45.280 💚 DEBUG BGMessageFetcherImpl.fetch():53 - []
+22:12:45.280 💙 INFO BackgroundServiceImpl.run():60 - Starting Background Fetch....
+22:12:45.280 💙 INFO BackgroundServiceImpl.init():108 - init()
+22:12:45.280 💚 DEBUG BGMessageFetcherImpl.fetch():31 - fetch(complete:)
+22:12:45.281 💚 DEBUG BGFolderStatusFetcherImpl.fetch():20 - fetch(complete:)
+22:12:45.281 💚 DEBUG BGFolderStatusFetcherImpl.fetch():26 - Optional(Flo.FolderStatus(uidNext: 1, uidValidity: 111, recentCount: 0, unseenCount: 0, messageCount: 110, sessionId: "test@123flo.com", folderPath: "INBOX", folderId: "test@123flo.com_INBOX"))
+22:12:45.282 💚 DEBUG BGFolderStatusFetcherImpl.fetch():27 - nil
+22:12:45.282 💚 DEBUG BGMessageFetcherImpl.fetch():53 - [Flo.FolderStatus(uidNext: 1, uidValidity: 111, recentCount: 0, unseenCount: 0, messageCount: 110, sessionId: "test@123flo.com", folderPath: "INBOX", folderId: "test@123flo.com_INBOX")]
+22:12:45.283 💚 DEBUG BGMessageFetcherImpl.leechMessages():89 - [Message [test]]
+22:12:45.283 💙 INFO BGMessageFetcherImpl.leechMessages():91 - Fetched 1 messages in 1 IMAP folders
+"Testing testFetchTimedoutByIMAPServer()"
+22:13:16.282 ❤️ ERROR BackgroundServiceImpl.run():64 - The fetch cannot finish in this session!
+Optional(Flo.TaskError.timedout)
+22:13:16.282 ❤️ ERROR BGMessageContentFetcherImpl.fetch():49 - nil
+22:13:16.282 💚 DEBUG BGMessageContentFetcherImpl.fetch():50 - Optional("")
+22:13:16.283 💚 DEBUG BGMessageFetcherImpl.deinit():116 - Flo.BGMessageFetcherImpl deallocing...
+22:13:16.283 💚 DEBUG BGFolderStatusFetcherImpl.deinit():42 - Flo.BGFolderStatusFetcherImpl deallocing...
+22:13:16.284 💚 DEBUG BGMessageLeecherImpl.deinit():39 - Flo.BGMessageLeecherImpl deallocing...
+----|---------------------------------------------------------------------------
+    ~ -[BGFetchTests testFetchTimedoutByIMAPServer] (31004 ms)
+      -[BGFetchTests testReportStatusSuccessToiOSCaseNoFloAccAuthorize]
+--------------------------------------------------------------------------------
+22:13:16.284 💚 DEBUG BackgroundServiceImpl.deinit():240 - Flo.BackgroundServiceImpl.MessageMiner deallocing...
+22:13:16.284 💙 INFO BackgroundServiceImpl.run():87 - Background fech has finished - Spent: 31.0036251544952 second(s)
+22:13:16.285 💙 INFO BackgroundServiceImpl.run():60 - Starting Background Fetch....
+22:13:16.285 💙 INFO BackgroundServiceImpl.init():108 - init()
+22:13:16.285 💚 DEBUG BGMessageFetcherImpl.fetch():31 - fetch(complete:)
+22:13:16.286 💙 INFO BackgroundServiceImpl.run():87 - Background fech has finished - Spent: 4.10079956054688e-05 second(s)
+22:13:16.286 💚 DEBUG BackgroundServiceImpl.mine():145 - mine(complete:)
+22:13:16.287 💙 INFO BackgroundServiceImpl.run():99 - Mined more old message
+"Testing testReportStatusSuccessToiOSCaseNoFloAccAuthorize()"
+Optional(Flo.TaskError.timedout)
+22:13:47.285 ❤️ ERROR BackgroundServiceImpl.run():64 - The fetch cannot finish in this session!
+----|---------------------------------------------------------------------------
+    ~ -[BGFetchTests testReportStatusSuccessToiOSCaseNoFloAccAuthorize] (31002 ms)
+    6 passed, 0 failed, 0 errored, 6 total (95174 ms)
+
+
+** RUN-TESTS SUCCEEDED: 6 passed, 0 failed, 0 errored, 6 total ** (103475 ms)
+
